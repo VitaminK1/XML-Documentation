@@ -18,22 +18,22 @@ XML파일들은 매치가 진행되는 동안 Game 플러그인이 매치를 제
 
 
 ### XML파일 작성하기
-Almost every text editor can create and edit XML files, however editors designed for XML can automatically indent and syntax your code to help spot mistakes.
+거의 모든 텍스트 에디터는 XML파일을 생성하고 편집할 수 있지만, XML을 위해 만들어진 에디터는 자동으로 코드를 수정해주는 기능이 있어 실수를 줄이는데 도움이 될 수 있습니다.
 
-We recommend that you use [Sublime Text](http://www.sublimetext.com) to create and edit XML files.
+[Sublime Text](http://www.sublimetext.com)를 사용하여 XML파일을 생성하고 편집하는 것이 좋습니다.
 
-To keep your XML file clean & readable you should indent lines using 4 spaces and only specify elements or attributes you intend to use.
+XML을 파일을 보다 깔끔하고 가독성있게 유지하려면 4개의 공백을 사용하여 줄을 구성하고 사용하려는 요소나 속성만을 지정해야합니다.
 
 ### 맵 릴리즈하기
-Before releasing your map for testing, you must package your map following [these guidelines](/guides/packaging/cleaning_files).
-This will speed up the time it takes to get your map ready for testing.
+테스트를 위한 맵을 배포하기 전에 맵을 압축해야합니다 [이 가이드라인](/guides/packaging/cleaning_files).
+이 가이드라인을 통해 맵을 테스트할 수 있는 시간을 단축할 수 있습니다.
 
 </div>
 <div class="col-sm-6" markdown="1">
-### Using These Docs
-This documentation is intended to list all currently available XML modules, their attributes & sub-elements; and describe how the modules work and interact with the player. It is designed to be used as a reference when coding the XML files accompanying a map to ensure that the XML is valid and works as intended.
+### 이 문서를 사용하며
+이 문서는 현재 사용가능한 모든 XML모듈, 속성 및 하위 요소를 나열하고, 모듈이 어떻게 작동하는지와 상호작용하는 방법을 설명하기 위한 문서입니다. 또한 이 문서는 XML이 유효하고 의도대로 작동하는지 확인하기 위해 참조할 수 있도록 설계되었습니다.
 
-All attributes or sub-elements for a element or module are listed in a table and required attributes or sub-elements are marked in red. In the following example the `color` attribute is required but `id` is not. The attribute or elements default value is also listed if there is one.
+요소 또는 모듈에 대한 모든 속성 또는 하위 요소는 표에 명시되어있으며 필요한 속성 또는 하위 요소는 빨간색으로 표시됩니다. 예를 들어 `color`속성은 필수이지만 `id`는 그렇지 않습니다. 속성 또는 요소 기본 값 또한 하나의 항목이 있는 경우 나열됩니다.
 
 ##### 테이블 예시
 <div class="table-responsive">
@@ -63,10 +63,10 @@ All attributes or sub-elements for a element or module are listed in a table and
         </td>
         <td>
           <span class="label label-danger">필수</span>
-          This examples color.
+          색깔의 예시입니다.
         </td>
         <td>
-          <a href="/reference/colors"> Dye Color Name</a>
+          <a href="/reference/colors"> 염료 색 이름</a>
         </td>
         <td></td>
       </tr>

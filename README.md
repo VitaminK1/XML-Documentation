@@ -3,23 +3,23 @@
 XML은 맵 특정 기능을 정의하는데 사용됩니다.
 _이 페이지는 GitHub Pages를 사용하여 호스팅되고 있습니다_
 
-#### Editing Notes
+#### 수정 도움말
 
-1. Pages are formated in markdown and may contain HTML, HTML should only be used where absolutely needed.
-2. Markdown is parsed with [kramdown](https://kramdown.gettalong.org/) which has an [enhanced syntax](https://kramdown.gettalong.org/syntax.html).
-3. Care should be taken when removing trailing whitespace since markdown uses two spaces to create a newline.
+1. 페이지는 마크다운문법이 사용되었으며 HTML이 사용될 수 있습니다. 하지만 HTML은 반드시 필요한 경우에만 사용해야 합니다.
+2. 마크다운은 [향상된 구문](https://kramdown.gettalong.org/syntax.html).을 가진 [kramdown](https://kramdown.gettalong.org/)으로 분석됩니다.
+3. Markdown을 사용하여 새 줄을 만들려면 두개의 여백을 사용해야 하므로 주의를 기울여야 합니다.
 
 
 #### Pull Requests
 
-Pull requests should have the following things:
+Pull requests에는 다음과 같은 사항이 있어야 합니다.
 
-1. The commits should have a descriptive message and which is not in the past tense.
+1. 그 commit은 서술적인 메시지를 담고 있어야 하며 과거 시제로는 작성될 수 없습니다.
 
-   For example:  
-   `Describe the XYZ module with more detail.` or `Add detailed description for XYZ.` is good, but: `Added XYZ.` isn't.
+   예를 들어:  
+   `A모듈에 대한 자세한 설명` 이나 `A모듈에 대한 자세한 설명 추가.` 는 괜찮지만, `A 추가` 는 그렇지 않습니다.
 
-2. Content should be grammatically correct and the spelling should be US English, e.g. Color not Colour.
+2. 모든 내용은 문법적으로 옳아야 합니다.
 
 
 #### 변경 사항 미리보기
