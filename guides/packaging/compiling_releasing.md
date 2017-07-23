@@ -1,9 +1,9 @@
 ---
 layout: page
 
-category: "Guides"
-category_lead:  "Packaging Maps for Release"
-title:  "Compiling & Releasing"
+category: "가이드"
+category_lead:  "배포를 위한 맵 패키징"
+title:  "컴파일 및 배포하기"
 
 ---
 
