@@ -25,8 +25,7 @@ XML파일들은 매치가 진행되는 동안 Game 플러그인이 매치를 제
 XML을 파일을 보다 깔끔하고 가독성있게 유지하려면 4개의 공백을 사용하여 줄을 구성하고 사용하려는 요소나 속성만을 지정해야합니다.
 
 ### 맵 릴리즈하기
-테스트를 위한 맵을 배포하기 전에 맵을 압축해야합니다 [이 가이드라인](/guides/packaging/cleaning_files).
-이 가이드라인을 통해 맵을 테스트할 수 있는 시간을 단축할 수 있습니다.
+테스트를 위한 맵을 배포하기 전에 맵을 압축해야합니다 [이 가이드라인](/guides/packaging/cleaning_files)을 통해 맵을 테스트할 수 있는 시간을 단축할 수 있습니다.
 
 </div>
 <div class="col-sm-6" markdown="1">
@@ -51,7 +50,7 @@ XML을 파일을 보다 깔끔하고 가독성있게 유지하려면 4개의 공
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference this element.</td>
+        <td>이 요소를 참고하는 데 사용되는 고유 식별자입니다.</td>
         <td>
           <span class="label label-primary">문자열</span>
         </td>
