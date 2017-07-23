@@ -2,7 +2,7 @@
 layout: page
 
 category: "Modules"
-title:  "Animations"
+title:  "애니메이션"
 
 ---
 
