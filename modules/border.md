@@ -2,7 +2,7 @@
 layout: page
 
 category: "Modules"
-title:  "World Border"
+title:  "월드 보더"
 
 ---
 
