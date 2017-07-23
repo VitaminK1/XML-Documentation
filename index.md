@@ -4,16 +4,16 @@ layout: default
 
 <div class="container">
 <div class="jumbotron">
-<h1>XML Documentation</h1>
-<p class="lead">Documentation on XML files that are required for each map to be added to the servers</p>
+<h1>XML 문서</h1>
+<p class="lead">서버에 추가될 각 맵에 필요한 XML에 대한 가이드</p>
 </div>
 <section>
 <div class="page-header">
-<h1>Welcome</h1>
+<h1>환영합니다!</h1>
 </div>
 <div class="row">
 <div class="col-sm-6" markdown="1">
-### What Do XML Files Do?
+### XML파일들은 무슨 일을 하나요?
 XML files configure how the PGM plug-in controls the map during a match. Any map released on Stratus requires an XML file to function. The XML defines aspects of the game such as spawn points, teams, kits and more. Each file is unique to its map, however the components and modules are generic and are used on many different maps.
 
 
