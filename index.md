@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
 <div class="jumbotron">
-<h1>XML 문서</h1>
+<h1>아비스 네트워크 XML 문서</h1>
 <p class="lead">서버에 추가될 각 맵에 필요한 XML에 대한 가이드</p>
 </div>
 <section>
@@ -14,7 +14,7 @@ layout: default
 <div class="row">
 <div class="col-sm-6" markdown="1">
 ### XML파일들은 무슨 일을 하나요?
-XML files configure how the PGM plug-in controls the map during a match. Any map released on Stratus requires an XML file to function. The XML defines aspects of the game such as spawn points, teams, kits and more. Each file is unique to its map, however the components and modules are generic and are used on many different maps.
+XML파일들은 매치가 진행되는 동안 Game 플러그인이 매치를 제어하는데 필요합니다. 아비스 네트워크에 배포된 모든 맵에는 XML파일이 필요합니다. XML은 스폰 지점, 팀, 키트 들과 같은것들을 정의합니다. 각 파일은 맵마다 다르지만 구성 요소 및 모듈은 일반적으로 여러가지 맵에 사용됩니다.
 
 
 ### XML파일 작성하기
