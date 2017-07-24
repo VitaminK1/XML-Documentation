@@ -1,24 +1,24 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Main Map Element"
+category: "모듈"
+title:  "기본 맵 요소"
 
 ---
 
-Every map XML file must contain the base `<map>` module. It contains modules that specify the map name, version, objective, authors, contributors and all other map settings. The objective is the text that players see when they join the match, and so it's important for this to be very clear, concise, and informative.
+모든 맵 XML파일에는 기본이 되는 `<map>` 모듈이 포함되어야 합니다. 여기에는 맵 이름, 버전, 객관적, 저자, 기여자 및 기타 모든 지도 설정을 지정하는 모듈이 포함되어 있습니다. 목표물은 참가자들이 경기에 참여할 때 보여지는 텍스트입니다, 그래서 이것이 매우 명확하고 간결하게 작성되는것이 중요합니다.
 
-The `proto=""` attribute specifies what PGM version the XML file was created for. If this value is higher than the version of PGM that is running, the map won't load. If it's lower, the map will load but the XML may be interpreted in an outdated way. Mapmakers should always use the latest supported XML version, and this may be required of new maps that are to be added to the Stratus Network rotations.
+`proto=""`속성은 XML파일이 생성한 Game버전을 저장합니다. 이 값이 실행 중인 Game의 버전보다 높으면 맵이 로드되지 않습니다. 더 낮은 경우 맵이 로드되지만 XML은 오래된 방식으로 해석될 수 있습니다. 맵 제작자들은 항상 최신 버전의 XML을 사용해야 하며, 이는 Avis Network 로테이션에 추가되는 새로운 맵에 필요할 수 있습니다.
 
-The maps version should follow the versioning schema `major.minor.patch`.
+맵 버전은 버전 관리 스키마인 `major.minor.patch`를 따라야 합니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Map Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>맵 요소</th>
+        <th>설명</th>
+        <th>값/자식 모듈</th>
       </tr>
     </thead>
     <tbody>
@@ -29,24 +29,24 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          The main map node containing all the modules used in this match.
+          이 경기에 사용되는 모든 모듈을 포함하는 메인 맵 노드입니다
         </td>
         <td>
-          <span class='label label-default'>XML Modules</span>
+          <span class='label label-default'>XML 모듈</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Map Attributes</h5>
+<h5>맵 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -55,8 +55,8 @@ The maps version should follow the versioning schema `major.minor.patch`.
           <code>proto</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The maps XML protocol version.
+          <span class='label label-danger'>필요합니다</span>
+          맵 XML 프로토콜 버전입니다
         </td>
         <td>
           <code>{{site.current_proto}}</code>
@@ -67,9 +67,9 @@ The maps version should follow the versioning schema `major.minor.patch`.
         <td>
           <code>game</code>
         </td>
-        <td>A custom title for this match's gamemode.</td>
+        <td>이 경기의 게임 모드에 대한 사용자 정의 제목입니다</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -77,24 +77,24 @@ The maps version should follow the versioning schema `major.minor.patch`.
         <td>
           <code>internal</code>
         </td>
-        <td>Prevent compass teleports above Y 255</td>
+        <td>나침반을 이용해서 Y255보다 높은 곳을 이동하는것을 방지합니다</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Map Sub-elements</h5>
+<h5>맵 하위요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 150px;'>Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
-        <th>Default</th>
+        <th style='min-width: 150px;'>요소</th>
+        <th>설명</th>
+        <th>값/자식 모듈</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -105,32 +105,13 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The name of the map.
+          <span class='label label-danger'>필요합니다</span>
+          맵의 제목을 나타냅니다
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
-      </tr>
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<slug>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          The map's slug, usually auto generated from the maps name.
-          This should only be used when a map is renamed to retain the map's ratings, etc.
-          <br/>
-          Valid slugs are lowercase and only contain the characters: <code>a-z 0-9 _</code>
-        </td>
-        <td>
-          <span class='label label-primary'>String</span>
-        </td>
-        <td>
-          <span class='label label-default'>Auto Generated</span>
-        </td>
       </tr>
       <tr>
         <td>
@@ -139,10 +120,10 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The map's
-          <a href='http://semver.org'>semantic version</a>
-          string.
+          <span class='label label-danger'>필요합니다</span>
+          맵의
+          <a href='http://semver.org'>Semantic version</a>
+          문자열
         </td>
         <td>
           <code>1.0.0</code>
@@ -156,11 +137,11 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The map's objective, shown at the start of the match.
+          <span class='label label-danger'>필요합니다</span>
+          경기가 시작될 때 보여지는 맵의 목표
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -171,8 +152,8 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The authors of the map, at least one author is required.
+          <span class='label label-danger'>필요합니다</span>
+          맵의 제작자, 적어도 한명 이상의 제작자가 필요합니다
         </td>
         <td>
           <code>{{'<author>' | escape_once}}</code>
@@ -186,7 +167,7 @@ The maps version should follow the versioning schema `major.minor.patch`.
           </span>
         </td>
         <td>
-          Contributors to the map.
+          맵을 제작하는 데 기여를 한 사람
         </td>
         <td>
           <code>{{'<contributor>' | escape_once}}</code>
@@ -196,48 +177,15 @@ The maps version should follow the versioning schema `major.minor.patch`.
       <tr>
         <td>
           <span class='highlight'>
-            <code>{{'<phase>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          Phase of this map. Only maps with phase:`production` and edition:`standard` show up on the website.
-        </td>
-        <td>
-          <code>development</code>
-          <code>production</code>
-        </td>
-        <td>
-          <code>production</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<edition>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>Edition of this map, describes which servers it is run on.</td>
-        <td>
-          <code>standard</code>
-          <code>ranked</code>
-          <code>tournament</code>
-        </td>
-        <td>
-          <code>standard</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class='highlight'>
             <code>{{'<gamemode>' | escape_once}}</code>
           </span>
         </td>
         <td>
           <a class='left-ref-link' href='#gamemode'><i class="fa fa-chevron-down"></i></a>
-          The gamemode(s) of this map, if this is not specified the map will set the gamemode(s) to whatever modules are used.
+          맵의 게임 모드, 만약 이 값이 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다
         </td>
         <td>
-          <span class='label label-primary'>Gamemode ID</span>
+          <span class='label label-primary'>게임모드 ID</span>
         </td>
         <td></td>
       </tr>
@@ -246,13 +194,13 @@ The maps version should follow the versioning schema `major.minor.patch`.
 </div>
     <?xml version="1.0"?>
     <map proto="{{site.current_proto}}">
-    <name>Map Name</name>
+    <name>맵 이름</name>
     <version>1.0.0</version>
-    <objective>Short description about the maps objective.</objective>
+    <objective>맵 목표에 대한 간략한 설명</objective>
 
-    <!-- Map authors & contributors. -->
+    <!-- 맵 제작자와 기여자 -->
 
-    <!-- Map modules, i.e. objectives, regions, spawns. -->
+    <!-- 맵 모듈 (예: 목표, 지역, 스폰 지점) -->
 
     </map>
 
@@ -260,18 +208,18 @@ The maps version should follow the versioning schema `major.minor.patch`.
 
 <br/>
 
-#### Authors & Contributors {#authors_contributors}
-The authors and contributers elements provide information about who created and helped create the map. There can be multiple authors and contributors to a map. The contribution attribute should be used to specify what their contribution to the map was.
+#### 제작자와 기여자 {#authors_contributors}
+제작자와 기여자 요소는 누가 맵을 만들고 도왔는가에 관한 정보를 제공합니다. 맵에는 다수의 제작자와 기여자가 있을 수 있습니다. 기여자 요소는 맵에 대한 기여도를 지정하는 데 사용해야 합니다.
 
-A players name should **not** be used to credit them, instead their UUID should be used. A UUID is a unique user identifier that is used to keep track of players even if they change their name. You can check player UUID's at [mcuuid.net](http://mcuuid.net). If an author or contributor is defined without a UUID that player will not get any mapmaker perks on the map.
-<h5>Author or Contributor Sub-elements</h5>
+플레이어 이름은 **절대** 그들의 기여를 표하기 위해서 사용되서는 안됩니다, 대신 UUID를 사용할 수 있습니다. UUID는 사용자 이름을 변경하더라도 플레이어를 추적하는 데 사용되는 고유한 사용자 ID입니다. [mcuuid.net](http://mcuuid.net)에서 플레이어의 UUID를 확인할 수 있습니다. 제작자나 기여자가 UUID없이 정의된 경우, 플레이어는 맵에서 맵 제작자 특권을 얻지 못할 것입니다.
+<h5>제작자 또는 기여자 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값/자식 모듈</th>
       </tr>
     </thead>
     <tbody>
@@ -282,12 +230,12 @@ A players name should **not** be used to credit them, instead their UUID should 
           </span>
         </td>
         <td>
-          A major author of the map, used in
-          <code>{{'<authors>' | escape_once}}</code>
+          맵의 주요 제작자,
+          <code>{{'<authors>' | escape_once}}</code>의 하위 요소로 사용됩니다
           <br/>
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
       </tr>
       <tr>
@@ -297,24 +245,24 @@ A players name should **not** be used to credit them, instead their UUID should 
           </span>
         </td>
         <td>
-          A contributor to the map, used in
-          <code>{{'<contributors>' | escape_once}}</code>
+          맵의 기여자,
+          <code>{{'<contributors>' | escape_once}}</code>의 하위 요소로 사용됩니다
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Author & Contributor Attributes</h5>
+<h5>제작자 및 기여자 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
       </tr>
     </thead>
     <tbody>
@@ -322,7 +270,7 @@ A players name should **not** be used to credit them, instead their UUID should 
         <td>
           <code>contribution</code>
         </td>
-        <td>The contribution this author or contributor made to the map.</td>
+        <td>맵에 대한 기여 내용을 담고 있습니다</td>
         <td>
           <span class='label label-primary'>String</span>
         </td>
@@ -331,45 +279,43 @@ A players name should **not** be used to credit them, instead their UUID should 
         <td>
           <code>uuid</code>
         </td>
-        <td>UUID used to identify a player.</td>
+        <td>플레이어를 식별하는 데 사용되는 UUID입니다</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-    <!-- Major map authors. -->
+    <!-- 주요 맵 제작자. -->
     <authors>
         <author>aPerson</author>
-        <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8" contribution="Clarification of element usage, etc."/> <!-- Plastix -->
+        <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8" contribution="요소 사용 분류 등"/> <!-- Plastix -->
         <author uuid="260004f0-996b-4539-ba21-df4ee6336b63"/> <!-- Elliott_ -->
     </authors>
 
-    <!-- People that contributed in some way to the map. -->
+    <!-- 맵을 만드는 데 기여한 사람들 -->
     <contributors>
-        <!-- Credit a person that doesn't have a minecraft account -->
+        <!-- Minecraft계정이 없는 사람에게 기여를 표할 때 -->
         <contributor contribution="A contribution">aHelper</contributor>
-        <contributor uuid="3fbec7dd-0a5f-40bf-9d11-885a54507112" contribution="Some Help"/> <!-- Cubist -->
+        <contributor uuid="3fbec7dd-0a5f-40bf-9d11-885a54507112" contribution="약간의 도움"/> <!-- Cubist -->
     </contributors>
 
 
 <br/>
 
-#### Map Gamemode {#gamemode}
+#### 맵 게임모드 {#gamemode}
 
-The gamemode element is used to specify the gamemode(s) of the map.
-This mainly affects how the map is categorized and displayed.
-If no `<gamemode>` tags are specified the map will set the gamemode(s) to whatever modules are used.
-This means that a map that uses destroyables and flags would be listed as a "DTM & CTF" unless specified otherwise.
+게임모드 요소는 맵의 게임모드를 지정하는 데 사용됩니다. 이는 주로 맵이 분류되고 표시되는 방식에 영향을 미칩니다.
+만약 `<gamemode>` 태그가 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다. 이 말은 지정되지 않은 한 destroyables와 깃발을 사용하는 맵은 "DTM 과 CTF"로 표시될 것입니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값/자식 모듈</th>
       </tr>
     </thead>
     <tbody>
@@ -380,24 +326,24 @@ This means that a map that uses destroyables and flags would be listed as a "DTM
           </span>
         </td>
         <td>
-          The gamemode(s) of this map.
+          맵의 게임모드를 나타냅니다
         </td>
         <td>
-          <span class='label label-primary'>Gamemode ID</span>
+          <span class='label label-primary'>게임모드 ID</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Gamemode ID's</h5>
+<h5>게임모드 ID</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
         <th>ID</th>
-        <th>Description</th>
+        <th>설명</th>
         <th>ID</th>
-        <th>Description</th>
+        <th>설명</th>
       </tr>
     </thead>
     <tbody>
@@ -405,78 +351,78 @@ This means that a map that uses destroyables and flags would be listed as a "DTM
         <td>
           <code>tdm</code>
         </td>
-        <td>Team Deathmatch</td>
+        <td>팀 데스매치</td>
         <td>
           <code>ctw</code>
         </td>
-        <td>Capture the Wool</td>
+        <td>양털 뺏기 게임</td>
       </tr>
       <tr>
         <td>
           <code>ctf</code>
         </td>
-        <td>Capture the Flag</td>
+        <td>깃발 뺏기 게임</td>
         <td>
           <code>dtc</code>
         </td>
-        <td>Destroy the Core</td>
+        <td>코어 부수기 게임</td>
       </tr>
       <tr>
         <td>
           <code>dtm</code>
         </td>
-        <td>Destroy the Monument</td>
+        <td>모뉴먼트 부수기 게임</td>
         <td>
           <code>ad</code>
         </td>
-        <td>Attack/Defend</td>
+        <td>공격/방어</td>
       </tr>
       <tr>
         <td>
           <code>koth</code>
         </td>
-        <td>King of the Hill</td>
+        <td>거점 점령 게임</td>
         <td>
           <code>blitz</code>
         </td>
-        <td>Blitz</td>
+        <td>Blitz게임</td>
       </tr>
       <tr>
         <td>
           <code>rage</code>
         </td>
-        <td>Rage</td>
+        <td>Rage게임</td>
         <td>
           <code>scorebox</code>
         </td>
-        <td>Scorebox</td>
+        <td>스코어박스 게임</td>
       </tr>
       <tr>
         <td>
           <code>arcade</code>
         </td>
-        <td>Arcade</td>
+        <td>아케이드 게임</td>
         <td>
           <code>gs</code>
         </td>
-        <td>Ghost Squadron</td>
+        <td>Ghost Squadron게임</td>
       </tr>
       <tr>
         <td>
           <code>ffa</code>
         </td>
-        <td>Free-for-All</td>
+        <td>개인전 게임</td>
         <td>
           <code>mixed</code>
         </td>
-        <td>Mixed Gamemodes</td>
+        <td>여러가지 게임</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Example
+예시
 
-    <!-- A FFA map with scoreboxes -->
+    <!-- 스코어박스가 있는 FFA게임 -->
     <gamemode>ffa</gamemode>
     <gamemode>scorebox</gamemode>
