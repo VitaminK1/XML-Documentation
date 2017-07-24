@@ -1,21 +1,21 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Time Periods"
+category: "참고 자료"
+title:  "시간의 단위"
 
 ---
 
-Time periods are numbers suffixed with a time unit. Periods with no formatter suffix default to seconds.
+시간 단위는 시간 단위로 표시된 숫자입니다. 형식이 지정된 기간이 없는 기간은 초 단위입니다.
 
-In some contexts, `oo` can be used to indicate an infinite time period.
+몇몇 경우에는 `oo` 가 무한의 기간을 나타낼 때 쓰일 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Suffix</th>
-        <th>Duration</th>
+        <th>접미사</th>
+        <th>기간</th>
       </tr>
     </thead>
     <tbody>
@@ -23,31 +23,31 @@ In some contexts, `oo` can be used to indicate an infinite time period.
         <td>
           <code>d</code>
         </td>
-        <td>Day</td>
+        <td>일</td>
       </tr>
       <tr>
         <td>
           <code>h</code>
         </td>
-        <td>Hour</td>
+        <td>시간</td>
       </tr>
       <tr>
         <td>
           <code>m</code>
         </td>
-        <td>Minute</td>
+        <td>분</td>
       </tr>
       <tr>
         <td>
           <code>s</code>
         </td>
-        <td>Seconds</td>
+        <td>초</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Examples
+예시
 
-    <!-- 5 minutes -->
+    <!-- 5분 -->
     <time>5m</time>

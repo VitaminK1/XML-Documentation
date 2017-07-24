@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Potion Effects"
+category: "참고 자료"
+title:  "포션 효과"
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Entity Spawn Reason"
+category: "참고 자료"
+title:  "엔티티 스폰 사유"
 
 ---
 
