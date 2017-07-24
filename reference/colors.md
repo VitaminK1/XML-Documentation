@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Dye Colors"
+category: "참고 자료"
+title:  "염료 색깔"
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Item Attributes"
+category: "참고 자료"
+title:  "아이템 속성"
 
 ---
 

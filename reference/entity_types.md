@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Reference"
-title:  "Entity Types"
+category: "참고 자료"
+title:  "엔티티 종류"
 
 ---
 

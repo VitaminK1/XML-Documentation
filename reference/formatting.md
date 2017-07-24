@@ -137,25 +137,25 @@ title:  "텍스트 포맷"
         <td>
           <code>l</code>
         </td>
-        <td>**볼드체**</td>
+        <td>볼드체</td>
       </tr>
       <tr>
         <td>
           <code>m</code>
         </td>
-        <td>~~STRIKETHROUGH~~</td>
+        <td>취소선</td>
       </tr>
       <tr>
         <td>
           <code>n</code>
         </td>
-        <td>++UNDERLINE++</td>
+        <td>밑줄</td>
       </tr>
       <tr>
         <td>
           <code>o</code>
         </td>
-        <td>*ITALIC*</td>
+        <td>기울임꼴</td>
       </tr>
       <tr>
         <td>
@@ -167,13 +167,13 @@ title:  "텍스트 포맷"
   </table>
 </div>
 
-The magic formatter will convert all the text after it into a scrambled, constantly changing mess of letters.
+랜덤 포맷은 모든 문자를 섞어 나타냅니다
 
-`NOTE:` Reset resets all color and text styles.
+`참고:` 초기화 포맷은 모든 색과 텍스트 스타일을 초기화합니다
 
-To have a line all italic and one word red you will have to to do the following.
+모든 텍스트가 기울임꼴이면서 한 단어를 빨간색으로 표시하려면 다음과 같아야합니다
 
-    <!-- Everything is italic and the word "italic" is also red -->
-    <line>`oThis is a `citalic `r`otext with a single red word.</line>
+    <!-- 모든 것은 기울임꼴이고 "italic"이라는 단어 역시 빨간색이다 -->
+    <line>`o이것은 `r`o빨간색`c단어로 된 기울임꼴 `r`o텍스트이다</line>
 
-Copied from: [bukkit docs - Chat Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html)
+[bukkit docs - Chat Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html)에서 복사되었습니다
