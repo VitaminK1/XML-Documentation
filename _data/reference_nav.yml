@@ -2,7 +2,7 @@ title: "일반적인 참조"
 content:
   - "아이템"
   - path: "/reference/inventory"
-    name: "인벤토리 및 재료"
+    name: "인벤토리"
   - path: "/reference/enchantments"
     name: "인첸트"
   - path: "/reference/attributes"
