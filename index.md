@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<div class="content">
-  <h1 class="title">Avis Network</h1>
+<div class="container">
+<div class="jumbotron">
+<h1>아비스 네트워크 XML 문서</h1>
+<p class="lead">서버에 추가될 각 맵에 필요한 XML에 대한 가이드</p>
 </div>
 <section>
 <div class="page-header">

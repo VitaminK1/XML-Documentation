@@ -10,11 +10,8 @@
     <link href='/css/custom-highlight.css' rel='stylesheet' />
     <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
     <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <!-- Typekit -->
-    <script src="https://use.typekit.net/rea7yia.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
@@ -23,11 +20,20 @@
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
   </head>
   <body>
-    <section id="banner">
-      <div class="wrapper">
-        <header>
-          <p id="logo"><a href="/">Arka <span>Network</span></a></p>
-          <nav>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle Navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <nav class='collapse navbar-collapse navbar-main-collapse'>
             <li class='{% if page.url == "/" %}active{% endif %}'>
               <a href='/'>
                 <i class='fa fa-home'></i>
