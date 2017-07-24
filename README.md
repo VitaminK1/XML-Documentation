@@ -7,7 +7,7 @@ _이 페이지는 GitHub Pages를 사용하여 호스팅되고 있습니다_
 #### 수정 도움말
 
 1. 페이지는 마크다운문법이 사용되었으며 HTML이 사용될 수 있습니다. 하지만 HTML은 반드시 필요한 경우에만 사용해야 합니다.
-2. 마크다운은 [향상된 구문](https://kramdown.gettalong.org/syntax.html).을 가진 [kramdown](https://kramdown.gettalong.org/)으로 분석됩니다.
+2. 마크다운은 [향상된 구문](https://kramdown.gettalong.org/syntax.html)을 가진 [kramdown](https://kramdown.gettalong.org/)으로 분석됩니다.
 3. Markdown을 사용하여 새 줄을 만들려면 두개의 여백을 사용해야 하므로 주의를 기울여야 합니다.
 
 
