@@ -1,9 +1,9 @@
 ---
 layout: page-single
 
-category: "Examples"
-category_lead:  "XML File Examples"
-title:  "Examples"
+category: "예시"
+category_lead:  "XML 파일 예시"
+title:  "예시"
 
 ---
 

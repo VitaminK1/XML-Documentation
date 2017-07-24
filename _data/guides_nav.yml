@@ -1,10 +1,10 @@
 title: "가이드"
 content:
-  - "XML Pointers"
+  - "XML 포인터"
   - path: "/guides/regions"
     name: "지역 정의하기"
   - path: "/guides/filter_apply_order"
-    name: "Filter Apply Order"
+    name: "필터 적용하기"
   - path: "/guides/xml_conventions"
     name: "XML 규약"
   - "맵 패키징"

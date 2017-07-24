@@ -1,9 +1,9 @@
 ---
 layout: page
 
-category: "Guides"
-category_lead:  "XML Pointers"
-title:  "Filter Apply Order"
+category: "가이드"
+category_lead:  "XML 포인터"
+title:  "필터 적용하기"
 
 ---
 

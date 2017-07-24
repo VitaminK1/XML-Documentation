@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Examples"
-category_lead:  "XML File Examples"
+category: "예시"
+category_lead:  "XML 파일 예시"
 title:  "Snowy Wars"
 
 ---

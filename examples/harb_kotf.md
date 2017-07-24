@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Examples"
-category_lead:  "XML File Examples"
+category: "예시"
+category_lead:  "XML 파일 예시"
 title:  "Harb KoTF"
 
 ---
@@ -65,7 +65,7 @@ Filters are used to apply a certain true-false condition. In these filters, `no-
             </not>
         </filter>
      </filters>
-     
+
 [<i class="fa fa-share right-ref-link"></i>](/modules/regions)
 In these regions, there are many different regions that provide different functions:
 - `outside-map` provides a boundary by defining three different rectangles. You cannot leave. Using a union, you can combine regions.
@@ -99,7 +99,7 @@ In these regions, there are many different regions that provide different functi
     </regions>
 
 [<i class="fa fa-share right-ref-link"></i>](/modules/kits)
-This defines the spawn kits. In this example, both teams get the same kit. 
+This defines the spawn kits. In this example, both teams get the same kit.
 </br>
 **Two special kits are applied:**
 - `get-flag`, which lowers the health and gives night vision.
@@ -206,7 +206,7 @@ Once you kill a player, you will be given one golden apple and TNT block as a re
         <item>golden apple</item>
         <item>tnt</item>
     </killreward>
-    
+
 [<i class="fa fa-share right-ref-link"></i>](/modules/tnt)
 These are the behavioral modifications of TNT. It will instantly be primed, it does not require a license, you cannot defuse team TNT, it will not do damage to blocks,
 

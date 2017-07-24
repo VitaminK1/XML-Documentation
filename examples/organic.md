@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Examples"
-category_lead:  "XML File Examples"
+category: "예시"
+category_lead:  "XML 파일 예시"
 title:  "Organic"
 
 ---
@@ -15,7 +15,7 @@ Every map XML file starts with the XML header and then the base `<map>` module.
     <name>Organic</name>
     <version>1.0.5</version>
     <objective>Leak the enemey's core 5 blocks!</objective>
-    
+
 Specify the map's authors. Each author can be given an optional attribute contribution="" attribute to set to their specific contribution to the map.
 
     <authors>
@@ -26,7 +26,7 @@ Specify the map's authors. Each author can be given an optional attribute contri
 The time is locked in place to what time the world is initially so a day and night cycle does not occur.
 
     <timelock>on</timelock>
-    
+
 Defining two teams, use their respective [colors](/reference/formatting#chatColors) and names. You must have a `max` to specify the amount of players who can play, keep in mind however this is not the maximum capacity. Donors and staff will be able to join above the `max`. To combat this, use `max-overfill` with a number greater than the `max`.
 
     <teams>
@@ -35,7 +35,7 @@ Defining two teams, use their respective [colors](/reference/formatting#chatColo
     </teams>
 
 [<i class="fa fa-share right-ref-link"></i>](/modules/kits)
-This defines the spawn kits. In this example, both teams get the same kit. 
+This defines the spawn kits. In this example, both teams get the same kit.
 
     <kits>
         <kit id="spawn">
@@ -58,7 +58,7 @@ This defines the spawn kits. In this example, both teams get the same kit.
             <helmet color="334CB2">leather helmet</helmet>
         </kit>
     </kits>
-    
+
 [<i class="fa fa-share right-ref-link"></i>](/modules/gamemode_dtc)
 This is the component that makes Destroy the Core work. In order to win, you must leak the enemy's core. Each core has an owner, and a distance required for the core to leak. In this instance, the match will yield a win once the lava has leaked to `5` blocks below its source. Core regions apply only to the material, so air in the selection is fine. In this case, it is `obsidian`.
 
@@ -74,7 +74,7 @@ This is the component that makes Destroy the Core work. In order to win, you mus
 	          </region>
         </core>
     </cores>
-    
+
 This map uses `monument modes`. After a certain period of time, the obsidian material will change to `gold blocks`, then once the match time reaches `30m` the `gold blocks` will turn to `glass`.
 
 <modes>
@@ -103,7 +103,7 @@ Spawning in a cuboid means that they will spawn in every block that is within th
             </region>
         </default>
     </spawns>
-    
+
 [<i class="fa fa-share right-ref-link"></i>](/modules/filters)
 Filters are used to apply a certain true-false condition.
 In these filters, `no-void` means you cannot build in the void, `only-red` means that the filter is applied only to red, and `only-blue` means that the filter is applied only to blue.
@@ -115,7 +115,7 @@ In these filters, `no-void` means you cannot build in the void, `only-red` means
            <void/>
         </deny>
     </filters>
-    
+
 [<i class="fa fa-share right-ref-link"></i>](/modules/regions)
 In these regions, there are many different regions that provide different functions:
 - `allow-block-place` allows blocks to be placed in its respective cuboid region.
@@ -173,7 +173,7 @@ Once you kill a player, you will be given one golden apple as a reward.
     <killreward>
         <item amount="1">golden apple</item>
     </killreward>
-    
+
 Define how high a user can build. Once they reach the Y-axis of `60`, they will be restricted from building.
 
     <maxbuildheight>60</maxbuildheight>
@@ -181,6 +181,3 @@ Define how high a user can build. Once they reach the Y-axis of `60`, they will 
 Finally, Close the main `<map>` module.
 
     </map>
-
-
-

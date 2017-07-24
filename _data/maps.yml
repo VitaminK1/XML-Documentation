@@ -1,36 +1,19 @@
-- name: "Arcane Realms"
-  slug: "arcane_realms"
-  gamemode: "Race for Wool"
-
-- name: "Flush"
-  slug: "flush"
-  gamemode: "Capture the Flag"
-  
-- name: "Gleon"
-  slug: "gleon"
-  gamemode: "Team Deathmatch"
-  
 - name: "Harb KoTF"
   slug: "harb_kotf"
-  gamemode: "King of the Flag"
-  
+  gamemode: "깃발 뺏기 게임"
+
 - name: "Organic"
   slug: "organic"
-  gamemode: "Destroy the Core"
-    
+  gamemode: "코어 부수기 게임"
+
 - name: "Race for Victory 3"
   slug: "race_for_victory_3"
-  gamemode: "Capture the Wool"
-  
-- name: "Siege"
-  slug: "siege"
-  gamemode: "Capture Points"
-  
+  gamemode: "양털 뺏기 게임"
+
 - name: "Snowy Wars"
   slug: "snowy_wars"
-  gamemode: "Destroy the Monument"
-  
+  gamemode: "모뉴먼트 부수기 게임"
+
 - name: "Storm"
   slug: "storm"
-  gamemode: "King of the Hill"
-  
+  gamemode: "거점 점령 게임"

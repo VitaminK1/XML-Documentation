@@ -1,9 +1,9 @@
 ---
 layout: page
 
-category: "Guides"
-category_lead:  "XML Pointers"
-title:  "Properly Defining Regions"
+category: "가이드"
+category_lead:  "XML 포인터"
+title:  "올바르게 지역 지정하기"
 
 ---
 

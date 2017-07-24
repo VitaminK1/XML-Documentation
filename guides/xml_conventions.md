@@ -1,40 +1,13 @@
 ---
 layout: page
 
-category: "Guides"
-category_lead:  "XML Pointers"
-title:  "XML Conventions"
+category: "가이드"
+category_lead:  "XML 포인터"
+title:  "XML 규약"
 
 ---
 
-<!-- <div class="post-header">
-  <div>
-    <div>
-      <span class="pull-left" style="margin: 4px 5px 0 0;">
-      <img style="width: 32px;height: 32px;border-radius: 3px;vertical-align: bottom;" width="32" height="32" class="avatar" src="https://crafatar.com/avatars/260004f0996b4539ba21df4ee6336b63?size=32" alt="Elliott_" title="Elliott_">
-      </span>
-    </div>
-    <div style="margin-left: 37px;">
-      <span style="color: #2233aa; font-weight: bold; margin-right: 3px">Elliott_</span>
-    </div>
-    <div style="margin-left: 37px;">
-      <span class="post-timestamp" data-container="body" data-placement="right" rel="tooltip" title="" data-original-title="May 13th, 2016 - 9:43 PM (Posted on December 18th, 2015 - 6:20 PM)">
-        <small>May 13th, 2016</small>
-      </span>
-    </div>
-  </div>
-</div>
-<hr>
-
-
-_The following is an extract from the Map Developers Conventions - if there are any grammatical/spelling errors feel free to mention_
-
-We decided this would also be useful to you guys to ensure you meet what we are looking for in XML's to keep our repository neat and professional.
-
-
-<br/> -->
-
-### 1: Indentation
+### 1: 들여쓰기
 
 ##### 1.1 Map Indentation
 Modules must all start on column one. This means that all children tags under the `<map>` tag must be aligned with said `<map>` tag.

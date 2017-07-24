@@ -7,54 +7,37 @@ title:  "컴파일 및 배포하기"
 
 ---
 
-Once your world is cleaned up and pruned, it is ready to be compiled. To start, add in your `map.xml` file. Then, add in your `map.png` file. Below is an image of what your folder should look like:
+일단 월드가 청소되고 정리되었다면, 이제 컴파일할 준비가 되었다고 말할 수 있습니다. 시작하려면, 월드 폴더에 `map.xml` 파일을 추가하세요. 그다음 `map.png` 파일을 추가하면 됩니다. 다음은 월드 폴더가 어떻게 생겼는지 보여 주는 이미지입니다:
 
 ![](/img/folder_layout.png)
 
 <br/>
 
-#### The Map's XML File
+#### 맵 XML 파일
 
-The `map.xml` file is the XML you coded for your map. This file is essential when it comes to having your map loaded and tested. While you may submit maps without this file, it means someone else will have to code all the gameplay for your map. This makes your map less likely to be tested or used at all.
+`map.xml` 파일은 맵에 대한 설정 파일이라고 볼 수 있습니다. 이 파일은 맵을 로드하고 테스트하는 데 있어 필수적입니다. XML파일 없이 배포는 할 수 있지만 테스트나 사용되기 위해서는 누군가가 XML파일을 코딩해야한다는 것을 의미합니다.
 
-Also, take note of the following coding guidelines when creating your `map.xml` file:
+또한 `map.xml` 파일을 생성할 때 다음과 같은 가이드라인을 참고하세요:
 
-* Verify there are **no tabs in the XML** -- 4 spaces only
-* Verify the main map element and its main elements are not indented
-* Follow [Semantic Versioning](http://semver.org) when deciding the map version
-* Bump the map version if gameplay has changed
-* [Validate](http://www.w3schools.com/xml/xml_validator.asp) the XML to make sure it does not have any syntax errors
-
-<br/>
-
-#### The Map Image
-
-The `map.png` file displays the image of your map on the website. The standard resolution for these pictures is `290x246`. This image should contain a general overview of the map's playing area.
-
-Image Examples
-
-<div class="row">
-    <div class="col-md-6">
-        <img class="thumbnail center-block" src="/img/BlockRage_map.png"/>
-    </div>
-    <div class="col-md-6">
-        <img class="thumbnail center-block" src="/img/Rage Quit_map.png"/>
-    </div>
-</div>
+* **XML파일에 탭이 없는지** 확인합니다 -- 4개의 여백만 있으면 됩니다.
+* 기본 맵 요소와 다른 요소들끼리 서로 중복되지않는지 확인합니다.
+* 맵 버전을 작성할 때는 [Semantic Versioning](http://semver.org)을 참고하세요
+* 게임플레이가 변경된 경우 그에따른 새로운 XML을 작성해야 합니다.
+* [구문 분석기](http://www.w3schools.com/xml/xml_validator.asp)를 사용하여  작성한 XML에 구문 오류가 없는지 확인합니다.
 
 <br/>
 
-#### Compressing the folder to a ZIP file
+#### 폴더를 ZIP파일로 압축하기
 
-Before you upload the map, you must compress the folder to a `.zip` format. Do **not** compress to a `.rar` or any other format.
+맵을 업로드하기 전에 먼저 폴더를 `.zip`형식으로 압축해야 합니다. **절대** `.rar`또는 다른 형식으로 압축하지 마세요
 
-To compress a folder:
+폴더를 압축하려면:
 
-* `Windows:` Right Click > Send To > Compressed Zip
-* `Mac`: Right Click > Compress
+* `Windows:` 마우스 오른쪽 클릭 > 보내기 > 압축 (ZIP) 폴더
+* `macOS`: 마우스 오른쪽 클릭 > 압축
 
 <br/>
 
-#### Uploading the map
-To upload the map, we recommend using [Google Drive](https://drive.google.com/) or [Dropbox](https://www.dropbox.com/).
-Note: We do not allow submissions through Mediafire
+#### 맵 업로드 하기
+맵을 업로드하려면 [Google Drive](https://drive.google.com/) 또는 [Dropbox](https://www.dropbox.com/)를 사용하는 것이 좋습니다.
+참고: Mediafire을 통해 제출되는 맵은 받지 않습니다.
