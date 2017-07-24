@@ -1,4 +1,4 @@
-title: "XML 모듈"
+\title: "XML 모듈"
 content:
   - "일반"
   - path: "/modules/main"
@@ -11,7 +11,7 @@ content:
   - path: "/modules/broadcasts"
     name: "알림과 팁"
   - path: "/modules/rules"
-    name: "특별한 규칙"
+    name: "특정 규정"
   - "환경"
   - path: "/modules/world"
     name: "World & Terrain"
@@ -23,14 +23,20 @@ content:
     name: "몹 스폰"
   - "포맷"
   - path: "/modules/players"
-    name: "플레이어 (free-for-all)"
+    name: "플레이어 (Free-For-All)"
   - path: "/modules/teams"
     name: "팀"
   - "목표물"
   - path: "/modules/gamemode_ctw"
+<<<<<<< HEAD
     name: "양털 쟁탈 게임"
   - path: "/modules/gamemode_ctf"
     name: "깃발 쟁탈 게임"
+=======
+    name: "양털 쟁탈전 게임"
+  - path: "/modules/gamemode_ctf"
+    name: "깃발 쟁탈전 게임"
+>>>>>>> 5f3369d8923a15f65fd5524dc6de76f0b2030916
   - path: "/modules/control_points"
     name: "점령 지점"
   - path: "/modules/gamemode_dtm"
