@@ -2,7 +2,7 @@
 layout: page
 
 category: "가이드"
-category_lead:  "Physical"
+category_lead:  "자료"
 title:  "추천 플러그인"
 
 ---
