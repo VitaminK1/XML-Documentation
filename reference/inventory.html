@@ -120,11 +120,11 @@ title:  "인벤토리 및 재료"
           재료 검색
         </h3>
 <p>
-<i style="display: 블럭;">
+<i style="display: block;">
             Use <code>~갑옷</code>, <code>~블럭</code>, <code>~음식</code>, <code>~flower</code>, <code>~레드스톤</code> etc. to filter by tags
           </i>
 </p>
-<div id="블럭s">
+<div id="blocks">
 <form role="search">
 <div class="form-group input-group">
 <input class="form-control" disabled="true" id="searchField" oninput="doMaterialSearch('dataTable')" placeholder="No Search - JavaScript Disabled :(" type="search"/>
@@ -1794,7 +1794,7 @@ title:  "인벤토리 및 재료"
 <tr>
 <td class="uid text-muted">99</td>
 <td class="data text-muted">
-<a href="http://minecraft.gamepedia.com/Mushroom_(블럭)#블럭_data">
+<a href="http://minecraft.gamepedia.com/Mushroom_(블럭)#block_data">
 <i class="fa fa-fw fa-external-link-square"></i>
 </a>
 </td>
@@ -1807,7 +1807,7 @@ title:  "인벤토리 및 재료"
 <tr>
 <td class="uid text-muted">100</td>
 <td class="data text-muted">
-<a href="http://minecraft.gamepedia.com/Mushroom_(블럭)#블럭_data">
+<a href="http://minecraft.gamepedia.com/Mushroom_(블럭)#block_data">
 <i class="fa fa-fw fa-external-link-square"></i>
 </a>
 </td>
@@ -5564,7 +5564,7 @@ title:  "인벤토리 및 재료"
           var rowData = targetTable.rows;
           parsedRowData = new Array();
           for (var rowIndex = 0; rowIndex < rowData.length; rowIndex++) {
-              var tableRow = rowData.아이템(rowIndex);
+              var tableRow = rowData.item(rowIndex);
               // Not a data row, ignore.
               if (tableRow.cells.length != 4) {
                   continue;
@@ -5572,9 +5572,9 @@ title:  "인벤토리 및 재료"
 
               // Get and nicely format the search-able terms in the table.
               // We add the text to an empty string so that we don't do indexOf against null later on in the code.
-              var materialUID = '' + tableRow.cells.아이템(0).textContent.trim().replace(/\s\s+/g, ' ').toLocaleLowerCase();
-              var materialName = '' + tableRow.cells.아이템(2).textContent.trim().replace(/\s\s+/g, ' ').replace(/(_)/gm, " ").toLocaleLowerCase();
-              var materialTags = '' + tableRow.cells.아이템(3).textContent.trim().replace(/\s\s+/g, ' ').toLocaleLowerCase().split(", ");
+              var materialUID = '' + tableRow.cells.item(0).textContent.trim().replace(/\s\s+/g, ' ').toLocaleLowerCase();
+              var materialName = '' + tableRow.cells.item(2).textContent.trim().replace(/\s\s+/g, ' ').replace(/(_)/gm, " ").toLocaleLowerCase();
+              var materialTags = '' + tableRow.cells.item(3).textContent.trim().replace(/\s\s+/g, ' ').toLocaleLowerCase().split(", ");
 
               parsedRowData.push([tableRow, materialUID, materialName, materialTags]);
           }
@@ -5666,7 +5666,7 @@ title:  "인벤토리 및 재료"
 
           cell.appendChild(cellText);
           row.appendChild(cell);
-          row.setAttribute("id", "no_아이템");
+          row.setAttribute("id", "no_items");
           cell.setAttribute("colspan", "4");
           // Insert it as the first child.
           newTableBody.insertBefore(row, newTableBody.firstChild);
