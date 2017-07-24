@@ -1,6 +1,6 @@
 - name: "Harb KoTF"
   slug: "harb_kotf"
-  gamemode: "깃발 뺏기 게임"
+  gamemode: "깃발 쟁탈 게임"
 
 - name: "Organic"
   slug: "organic"
@@ -8,7 +8,7 @@
 
 - name: "Race for Victory 3"
   slug: "race_for_victory_3"
-  gamemode: "양털 뺏기 게임"
+  gamemode: "양털 쟁탈 게임"
 
 - name: "Snowy Wars"
   slug: "snowy_wars"

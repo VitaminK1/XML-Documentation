@@ -355,13 +355,13 @@ title:  "기본 맵 요소"
         <td>
           <code>ctw</code>
         </td>
-        <td>양털 뺏기 게임</td>
+        <td>양털 쟁탈 게임</td>
       </tr>
       <tr>
         <td>
           <code>ctf</code>
         </td>
-        <td>깃발 뺏기 게임</td>
+        <td>깃발 쟁탈 게임</td>
         <td>
           <code>dtc</code>
         </td>
@@ -385,13 +385,13 @@ title:  "기본 맵 요소"
         <td>
           <code>blitz</code>
         </td>
-        <td>Blitz게임</td>
+        <td>Blitz 게임</td>
       </tr>
       <tr>
         <td>
           <code>rage</code>
         </td>
-        <td>Rage게임</td>
+        <td>Rage 게임</td>
         <td>
           <code>scorebox</code>
         </td>
@@ -405,7 +405,7 @@ title:  "기본 맵 요소"
         <td>
           <code>gs</code>
         </td>
-        <td>Ghost Squadron게임</td>
+        <td>Ghost Squadron 게임</td>
       </tr>
       <tr>
         <td>
