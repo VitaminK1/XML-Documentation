@@ -30,21 +30,21 @@ WorldEdit은 [sk89q](https://github.com/sk89q)에 의해 관리되며 다음과 
 
 VoxelSniper
 -
-[<span class='label label-success'>다운로드</span>](https://dev.bukkit.org/projects/voxelsniper) **VoxelSniper** is a the premier long range map editing tool. This plugin allows you to edit any block that you can see using an arrow (for replacing) and a gunpowder (for adding). It is best used by those with a strong attention to detail and fits a wide array of applications, from making detailed edits to structures with the snipe brush, to making massive terraforming jobs a breeze with some of the earth shattering soft selection tools.
-VoxelSniper is available on [dev.bukkit.org](https://dev.bukkit.org/projects/voxelsniper) and documentation for VoxelSniper can be viewed at [its respective documentation page](https://github.com/TVPT/VoxelGunsmith/wiki)
+[<span class='label label-success'>다운로드</span>](https://dev.bukkit.org/projects/voxelsniper) **VoxelSniper** 는 가장 긴 범위의 맵 편집 도구입니다. 이 플러그인을 사용하면 화살표(교체용)와 화약(추가용)을 사용하여 볼 수 있는 모든 블럭을 편집할 수 있습니다. 이 플러그인은 사소한것 하나까지 주의를 기울이는 사람들이 사용하는 것이 가장 좋으며, 브러쉬를 이용해 구조물에 대한 상세한 편집을 할 수 있게 도와주며, 선택 도구를 사용하여 거대한 지형 작업을 간편하게 할 수 있습니다.
+VoxelSniper는 아래 주소에서 이용 가능합니다. [dev.bukkit.org](https://dev.bukkit.org/projects/voxelsniper) 와 VoxelSniper에 대한 설명서는 [이곳](https://github.com/TVPT/VoxelGunsmith/wiki)에서 보실 수 있습니다.
 
 Multiverse-Core
 -
-[<span class='label label-success'>다운로드</span>](https://dev.bukkit.org/projects/multiverse-core) **Multiverse-Core** is a complete world management solution by having the function of multiple worlds under one server. If you want to have numerous worlds in the same server, this plugin is recommended.
+[<span class='label label-success'>다운로드</span>](https://dev.bukkit.org/projects/multiverse-core) **Multiverse-Core** 는 하나의 서버에서 여러개의 월드를 관리함으로써 완벽한 월드 관리 플러그인입니다. 한 서버에 수많은 월드를 가지고 싶다면 이 플러그인을 사용하는 게 좋습니다.
 
-    - Create multiple worlds of different types, seeds and custom generators
-    - Restrict users from going to specific worlds by using permissions
-    - Conserve memory by having some worlds NOT keep their spawn chunks loaded
-    - Perform all per-world modifications with in-game commands
-    - Custom world aliases
+    - 다양한 유형, 시드 및 맞춤형 생성기에 따른 여러개의 월드를 생성합니다.
+    - 권한을 이용하여 플레이어가 특정 월드로 가는것을 제한합니다.
+    - 사용하지않는 월드의 스폰 청크를 로드하지 않음으로써 메모리를 절약합니다.
+    - 게임 내 명령만으로 모든 작업을 수행합니다.
+    - 월드 이름을 자유롭게 지정할 수 있습니다.
 
-A plugin to generate void (empty) worlds is [recommended to concide with this plugin](https://www.spigotmc.org/resources/voidgenerator.25391/). Using a flag, you can generate void worlds using `/mv create <worldname> normal -g VoidGenerator -t FLAT`
+빈 공간을 생성하기 위해서는 [이 플러그인](https://www.spigotmc.org/resources/voidgenerator.25391/)을 사용하는 것이 좋습니다. 이 플러그인을 사용하면 Multiverse에서 `/mv create <worldname> normal -g VoidGenerator -t FLAT` 커맨드로 쉽게 빈 공간을 생성할 수 있습니다.
 
-Multiverse-Core is maintained by the [Multiverse Team](https://github.com/Multiverse), and provides:
+Multiverse-Core는 [Multiverse Team](https://github.com/Multiverse)에 의해 관리되며 다음과 같은것들을 제공합니다:
 
-- An [End-user documentation](https://github.com/Multiverse/Multiverse-Core/wiki) for plugin abilities
+- 플러그인의 기능을 볼 수 있는 [사용 설명서](https://github.com/Multiverse/Multiverse-Core/wiki)

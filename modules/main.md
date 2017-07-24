@@ -18,7 +18,7 @@ title:  "기본 맵 요소"
       <tr>
         <th>맵 요소</th>
         <th>설명</th>
-        <th>값/자식 모듈</th>
+        <th>값/하위 모듈</th>
       </tr>
     </thead>
     <tbody>
@@ -93,7 +93,7 @@ title:  "기본 맵 요소"
       <tr>
         <th style='min-width: 150px;'>요소</th>
         <th>설명</th>
-        <th>값/자식 모듈</th>
+        <th>값/하위 모듈</th>
         <th>기본값</th>
       </tr>
     </thead>
@@ -219,7 +219,7 @@ title:  "기본 맵 요소"
       <tr>
         <th>요소</th>
         <th>설명</th>
-        <th>값/자식 모듈</th>
+        <th>값/하위 모듈</th>
       </tr>
     </thead>
     <tbody>
@@ -315,7 +315,7 @@ title:  "기본 맵 요소"
       <tr>
         <th>요소</th>
         <th>설명</th>
-        <th>값/자식 모듈</th>
+        <th>값/하위 모듈</th>
       </tr>
     </thead>
     <tbody>

@@ -9,18 +9,18 @@ title:  "XML 규약"
 
 ### 1: 들여쓰기
 
-##### 1.1 Map Indentation
-Modules must all start on column one. This means that all children tags under the `<map>` tag must be aligned with said `<map>` tag.
+##### 1.1 맵 들여쓰기
+모듈은 반드시 열 하나에 기초해야 합니다. 즉, `<map>`태그 아래에 있는 모든 하위 태그들은 `<map>`태그에 따라 정렬되어야 합니다.
 
     <?xml version="1.0"?>
     <map proto="1.4.0">
     <name>Blocks DTC</name>
     <version>1.3.4</version>
-    <objective>Leak lava from the enemy's obsidian core.</objective>
+    <objective>적의 코어를 파괴하세요</objective>
     </map>
 
-##### 1.2 Child Element Indentation
-Modules that have sub elements such as the `author` tag must be indented with 4 spaces below the parent element.
+##### 1.2 하위 요소 들여쓰기
+`<author>`태그와 같은 하위 요소가 있는 모듈은 상위 요소 아래에 4개의 공간을 가지고 있어야 합니다.
 
     <?xml version="1.0"?>
     <map proto=”1.4.0">
@@ -29,19 +29,19 @@ Modules that have sub elements such as the `author` tag must be indented with 4 
     </authors>
     </map>
 
-##### 1.3 Spaces Between Modules
-There should be no white spaces between modules. That means the end of one module should have the start of another on the immediate next line.
+##### 1.3 모듈 사이의 공간
+모듈 사이에는 공백이 없어야 합니다. 즉, 하나의 모듈의 끝난 부분에서 바로 다음 열이 시작되어야 합니다.
 
-    <!-- Correct -->
+    <!-- 올바르게 작성한 경우 -->
     <?xml version="1.0"?>
     <map proto="1.4.0">
     <name>Blocks DTC</name>
     <version>1.3.4</version>
-    <objective>Leak lava from the enemy's obsidian core.</objective>
+    <objective>적의 코어를 파괴하세요</objective>
     </map>
 ^
 
-    <!-- Incorrect! -->
+    <!-- 올바르지않게 작성한 경우 -->
     <?xml version="1.0"?>
 
     <map proto="1.4.0">
@@ -50,89 +50,89 @@ There should be no white spaces between modules. That means the end of one modul
 
     <version>1.3.4</version>
 
-    <objective>Leak lava from the enemy's obsidian core.</objective>
+    <objective>적의 코어를 파괴하세요</objective>
 
     </map>
 
-##### 1.4 Closing tags
-The ending tag of one module should be on the line directly above the beginning tag of a following module.
+##### 1.4 닫는 태그
+하나의 모듈의 닫는 태그는 다음 모듈의 시작 태그 바로 위에 있어야 합니다.
 
-##### 1.5 Line Ending
-XML files must end with an empty line. For example, if the ending `</map>` tag is on line 52, the last line of the XML file would be line 53.
+##### 1.5 행 끝마치기
+XML파일은 빈 줄로 끝나야 합니다. 예를 들어, 끝나는 `<map>`태그가 52행에 있으면 XML 파일의 마지막 줄을 53행이 됩니다.
 
 
 
 <br/>
 
-### 2: Layout
+### 2: 레이아웃
 
-##### 2.1 Main Map Definitions
-There are 6 modules that make up the maps definition. They should all be placed at the top of the document; following the order below: `map`, `name`, `version`, `objective`, `authors` and `contributors`.
+##### 2.1 주요 맵 정의
+맵 정의를 구성하는 6개의 모듈이 있습니다. 그것들은 모두 `map`, `name`, `version`, `objective`, `authors` 와 `contributors`순서대로 위치해야 합니다.
 
-NOTE: Contributors are optional but are still to remain at the top.
+참고: 기여자는 선택 사항이지만 여전히 문서 상단에 위치해야 합니다.
 
     <?xml version="1.0"?>
     <map proto="1.4.0">
     <name>Blocks DTC</name>
     <version>1.3.4</version>
-    <objective>Leak lava from the enemy's obsidian core.</objective>
+    <objective>적의 코어를 파괴하세요</objective>
     <authors>
         <author uuid="260004f0-996b-4539-ba21-df4ee6336b63"/> <!-- Elliott_ -->
     </authors>
     <contributors>
-        <contributor contribution="A contribution">aHelper</contributor>
+        <contributor contribution="A 기여">aHelper</contributor>
     </contributors>
     </map>
 
-##### 2.2 The Protocol
-All maps being added to the repository should use the most up to date protocol.
+##### 2.2 프로토콜
+저장소에 추가되는 모든 맵은 최신 프로토콜을 사용해야 합니다.
 
-##### 2.3 Authors and Contributors
-An author using a uuid definition should have an inline comment to denote the players IGN.
+##### 2.3 제작자와 기여자
+맵 제작자를 나타낼 때 UUID를 사용하는 경우 제작자의 IGN을 나타내는 주석이 있어야 합니다.
 
     <authors>
         <author uuid="260004f0-996b-4539-ba21-df4ee6336b63"/> <!-- Elliott_ -->
     </authors>
 
-##### 2.4 Filters and Regions
-The filter definition should be defined before the definition of regions.
+##### 2.4 필터 및 지역
+필터 정의는 지역 정의보다 먼저 정의되어야 합니다.
 
 
 
 <br/>
 
-### 3: Naming Conventions
+### 3: 이름 규약
 
-##### 3.1 Map Names Map
-Names should not contain any special characters or symbols. This includes unicode and letters with accents.
+##### 3.1 맵 이름
+이름에는 특수 문자나 기호가 없어야 합니다. 여기에는 유니코드 및 악센트 문자가 포함됩니다.
 
-##### 3.2 Versioning
-Follow the Semantic Versioning Schema For example: `1.2.3`
+##### 3.2 버전
+Semantic Versioning Schema를 따릅니다. 예를 들면 다음과 같습니다: `1.2.3`
 
-A Major is classified by the addition of major gameplay changes - changes that could be called a new map.
-A Minor is classified by the addition of changes that affect gameplay but not to the extent of a major.
-A Patch is classified by a small change to fix a bug or unintentional feature.
-NOTE: Bump this patch when you fix something on a map.
+첫자리는 주요 게임 플레이 변경 사항이 생겼을 때 변경될 수 있습니다. (새 맵의 경우도 포함합니다)
+두번째 자리는 게임 플레이에 영향을 미치는 변경 사항이 추가되었지만 그렇게 큰 변동이 없을 경우 변경될 수 있습니다.
+세번째 자리는 버그 또는 고의가 아닌 기능을 수정하기 위해 약간의 변경을 하였을때 변경될 수 있습니다.
+참고: 맵을 수정할 때 마다 이 버전을 업데이트 하십시오
 
-##### 3.3 Objectives
-Objectives should be short and tell the player what they have to do to win the match.
+##### 3.3 목표
+목표에 대한 설명은 간략해야 하며 경기에서 이기려면 무엇을 해야하는지 플레이어에게 알리는 내용을 포함하고 있어야 합니다.
 
-    <objective>Win the match by killing the enemy team!</objective>
+    <objective>상대 팀을 죽여 경기에서 승리하세요!</objective>
 
-##### 3.4 Identification Naming
-Modules that require an `id` to be defined should be named in all lowercase and use a `-` dash to signify a space.
+##### 3.4 식별 이름 지정
+`id`를 요구하는 모듈은 모두 소문자로 작성되어야 하며 `-`를 사용하여 공백을 나타냅니다.
 
-    <team id="only-blue">blue</team>
+    <team id="only-blue">파란팀</team>
 
-##### 3.5 Enumeration naming
-Names which are defined as enumeration in bukkit should be transferred into lower case and `_` underscores replaced with spaces. `PROTECTION_ENVIRONMENTAL` should become `protection environmental`
+##### 3.5 열거 이름 지정
+Bukkit에서 열거된 이름은 소문자로 구분되어야 하며 `_`로 대체된 이름은 공백으로 대체되어야 합니다. 즉, `PROTECTION_ENVIRONMENTAL`은 `protection environmental`이 되어야 합니다.
 
-##### 3.6 Material Definition
-In places where you define a material type use the bukkit name following the Enumeration Naming (3.5) instead of the ID. This makes it a lot easier to know what block is being defined during debugging processes.
+##### 3.6 재료 정의
+재료 유형을 정의하는 경우 ID대신 Bukkit에서 제공하는 이름을 사용합니다. 이를 사용하면 디버깅하는것이 훨씬 쉬워집니다.
 
-##### 3.7 Filters
+##### 3.7 필터
 
-##### 3.7.1 Team Filters
-Team filters should be named by following the Identification naming (3.4) and start with `only-` followed by the team name.
+##### 3.7.1 팀 필터
+팀 필터는 식별 이름(3.4)을 준수하고 `only-`뒤에 팀 이름을 붙여야 합니다.
 
 `only-blue` `only-elves`
