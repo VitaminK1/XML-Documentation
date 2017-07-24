@@ -8,13 +8,13 @@ title:  "Harb KoTF"
 ---
 
 [<i class="fa fa-share right-ref-link"></i>](/modules/main)
-Specify the XML file version and then open the main map module and specify the maps name, version and objective.
+XML파일 버전을 지정한 다음 메인 맵 모듈을 열고 지도 이름, 버전 및 목표를 지정합니다.
 
      <?xml version="1.0"?>
      <map proto="1.3.0">
      <name>Harb KoTF</name>
      <version>2.1</version>
-     <objective>Hold the flag for the most amount of time to win!</objective>
+     <objective>승리하기 위해 가장 많은 시간 동안 깃발을 점유하세요!</objective>
 
 Specify the map's authors. Each author can be given an optional attribute `contribution=""` attribute to set to their specific contribution to the map.
 

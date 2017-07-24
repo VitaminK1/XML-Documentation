@@ -7,9 +7,9 @@ title:  "예시"
 
 ---
 
-Commented XML files from maps in the rotation. Files are split up into their individual modules and the module's function is described. Each section contains a link [<i class="fa fa-share"></i>](#) to the relevant module's page.
+로테이션에 있는 맵의 XML파일에 주석을 달았습니다. 파일이 개별 모듈로 분할되고 모듈의 기능이 설명됩니다. 각 섹션에는 [<i class="fa fa-share"></i>](#) 처럼 생긴 관련 모듈 페이지에 대한 링크가 포함되어 있습니다.
 
-<div class="alert alert-warning"><strong>Note!</strong> The XML code examples may be outdated and use depreciated features.<br/> Always check the relevant modules page to make sure that the features or specifications you intend to use are still valid.</div>
+<div class="alert alert-warning"><strong>참고</strong> XML코드 예제는 오래 되었을 수 있으며 더이상 사용되지 않는 기능들이 사용되었을 수 있습니다.<br/> 항상 관련 모듈 페이지를 확인하여 사용하려는 기능이 여젼히 유효한지 확인하세요</div>
 
 <div class="row">
     {% for map in site.data.maps %}
