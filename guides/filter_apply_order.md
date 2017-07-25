@@ -7,10 +7,10 @@ title:  "필터 적용하기"
 
 ---
 
-After proto `1.3.3` and above, the order that you [apply](/modules/regions#applying) filters to regions affects their behavior.
-Here's an example.
+프로토콜 버전이 `1.3.3`이상이면, 지역에 [적용](/modules/regions#applying)되는 필터가 순서의 영향을 받습니다.
+여기 예시가 있습니다.
 
-Let's start out with a basic filter that **denies** everything **except** TNT.
+TNT를 **제외**하고 모든 것들을 **거부**하는 가장 기본적인 필터를 만들어 봅시다. 
 
     <filter name="only-tnt">
         <block>tnt</block>
