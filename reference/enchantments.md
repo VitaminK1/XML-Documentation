@@ -6,24 +6,24 @@ title:  "아이템 인첸트"
 
 ---
 
-Enchantments can be referenced by their Bukkit or [Minecraft](http://minecraft.gamepedia.com/Data_values#Enchantment_IDs) name.
-Bukkit enchantment names are not case sensitive and a space can be used instead of an underscore.
+인첸트는 Bukkit 또는 [Minecraft](http://minecraft.gamepedia.com/Data_values#Enchantment_IDs)에서 제공하는 이름으로 사용될 수 있습니다.
+Bukkit의 인첸트 이름은 대소문자를 구분하지 않으며 밑줄 대신 공백을 사용할 수 있습니다.
 
-`NOTE:`  PGM allows enchantments to be applied to any item regardless if the enchant was intended for it or not.
+`참고:`  Game 플러그인은 원래 의도와는 상관없이 모든 아이템에 인첸트를 적용할 수 있습니다.
 <br/>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
         <th>ID</th>
-        <th>Bukkit Name</th>
-        <th>Minecraft Name</th>
-        <th>Description</th>
+        <th>버킷 상의 이름</th>
+        <th>Minecraft상의 이름</th>
+        <th>설명</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th colspan='4'>Armor Enchantments</th>
+        <th colspan='4'>갑옷 인첸트s</th>
       </tr>
       <tr>
         <td>
@@ -35,7 +35,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>protection</code>
         </td>
-        <td>Provides protection against environmental damage.</td>
+        <td>환경 피해에 대한 보호를 제공합니다.</td>
       </tr>
       <tr>
         <td>
@@ -47,7 +47,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>fire_protection</code>
         </td>
-        <td>Provides protection against fire damage.</td>
+        <td>불에 의한 피해를 방지합니다.</td>
       </tr>
       <tr>
         <td>
@@ -59,7 +59,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>feather_falling</code>
         </td>
-        <td>Provides protection against fall damage.</td>
+        <td>추락에 의한 피해를 방지합니다.</td>
       </tr>
       <tr>
         <td>
@@ -71,7 +71,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>blast_protection</code>
         </td>
-        <td>Provides protection against explosive damage.</td>
+        <td>폭발에 의한 피해를 방지합니다.</td>
       </tr>
       <tr>
         <td>
@@ -83,7 +83,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>projectile_protection</code>
         </td>
-        <td>Provides protection against projectile damage.</td>
+        <td>투사체에 의한 피해를 방지합니다.</td>
       </tr>
       <tr>
         <td>
@@ -95,7 +95,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>respiration</code>
         </td>
-        <td>Decreases the rate of air loss whilst underwater.</td>
+        <td>물속에서 더 오래 버틸 수 있게 해줍니다.</td>
       </tr>
       <tr>
         <td>
@@ -107,7 +107,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>aqua_affinity</code>
         </td>
-        <td>Increases the speed at which a player may mine underwater.</td>
+        <td>물속에서 작업 속도를 늘려줍니다.</td>
       </tr>
       <tr>
         <td>
@@ -119,7 +119,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>thorns</code>
         </td>
-        <td>Damages the attacker.</td>
+        <td>피해를 반사합니다.</td>
       </tr>
       <tr>
         <td>
@@ -131,7 +131,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>depth_strider</code>
         </td>
-        <td>Increases the speed at which a player may move underwater.</td>
+        <td>물속에서 이동 속도를 늘려줍니다.</td>
       </tr>
       <tr>
         <td>
@@ -143,7 +143,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>frost_walker</code>
         </td>
-        <td>Create frost blocks when walking over water.</td>
+        <td>물 위를 걷게 해줍니다.</td>
       </tr>
       <tr>
         <td>
@@ -155,16 +155,16 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>curse_of_binding</code>
         </td>
-        <td>Item cannot be removed.</td>
+        <td>아이템을 제거할 수 없게 만듭니다.</td>
       </tr>
       <tr>
-        <th colspan='4'>Tool Enchantments</th>
+        <th colspan='4'>도구 인첸트</th>
       </tr>
       <tr>
         <th>ID</th>
-        <th>Bukkit Name</th>
-        <th>Minecraft Name</th>
-        <th>Description</th>
+        <th>Bukkit상의 이름</th>
+        <th>Minecraft상의 이름</th>
+        <th>설명</th>
       </tr>
       <tr>
         <td>
@@ -176,7 +176,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>sharpness</code>
         </td>
-        <td>Increases damage against all targets.</td>
+        <td>모든 대상에 대한 피해를 증가시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -188,7 +188,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>smite</code>
         </td>
-        <td>Increases damage against undead targets.</td>
+        <td>언데드 대상에 대한 피해를 증가시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -200,7 +200,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>bane_of_arthropods</code>
         </td>
-        <td>Increases damage against arthropod targets.</td>
+        <td>절지동물에 대한 피해를 중가시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -212,7 +212,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>knockback</code>
         </td>
-        <td>All damage to other targets will knock them back when hit.</td>
+        <td>대상에 데미지를 가할 시 대상이 밀려납니다.</td>
       </tr>
       <tr>
         <td>
@@ -224,7 +224,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>fire_aspect</code>
         </td>
-        <td>When attacking a target, has a chance to set them on fire.</td>
+        <td>대상을 공격할 때 일정 확률로 불이 붙습니다.</td>
       </tr>
       <tr>
         <td>
@@ -236,7 +236,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>looting</code>
         </td>
-        <td>Provides a chance of gaining extra loot when killing monsters.</td>
+        <td>몬스터를 죽일 때 일정 확률로 전리품이 더 많이 드롭됩니다.</td>
       </tr>
       <tr>
         <td>
@@ -248,7 +248,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>efficiency</code>
         </td>
-        <td>Increases the rate at which you mine/dig.</td>
+        <td>광물이나 땅을 파는 속도를 향상시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -261,9 +261,9 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
           <code>silk_touch</code>
         </td>
         <td>
-          Allows blocks to drop themselves instead of fragments.
+          블럭을 드랍할 때 원석을 드랍할 수 있게 합니다.
           <br/>
-          (For example, stone instead of cobblestone)
+          (예를 들어 조약돌 대신 돌이 드랍되는 경우)
         </td>
       </tr>
       <tr>
@@ -276,7 +276,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>unbreaking</code>
         </td>
-        <td>Decreases the rate at which a tool looses durability.</td>
+        <td>도구의 내구도를 향상시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -288,16 +288,16 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>fortune</code>
         </td>
-        <td>Provides a chance of gaining extra loot when destroying blocks.</td>
+        <td>블록을 파괴 할 때 추가 전리품 획득 기회를 제공합니다.</td>
       </tr>
       <tr>
-        <th colspan='4'>Bow Enchantments</th>
+        <th colspan='4'>활 인첸트</th>
       </tr>
       <tr>
         <th>ID</th>
-        <th>Bukkit Name</th>
-        <th>Minecraft Name</th>
-        <th>Description</th>
+        <th>Bukkit상의 이름</th>
+        <th>Minecraft상의 이름</th>
+        <th>설명</th>
       </tr>
       <tr>
         <td>
@@ -309,7 +309,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>power</code>
         </td>
-        <td>Provides extra damage when shooting arrows from bows.</td>
+        <td>활을 쏠 때 추가적인 피해를 입힙니다.</td>
       </tr>
       <tr>
         <td>
@@ -321,7 +321,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>punch</code>
         </td>
-        <td>Provides a knockback when an entity is hit by an arrow from a bow.</td>
+        <td>화살이 대상에 맞았을 때 넉백을 줍니다.</td>
       </tr>
       <tr>
         <td>
@@ -333,7 +333,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>flame</code>
         </td>
-        <td>Sets entities on fire when hit by arrows shot from a bow.</td>
+        <td>화살을 맞은 대상을 불에 휩싸이게 합니다.</td>
       </tr>
       <tr>
         <td>
@@ -345,16 +345,16 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>infinity</code>
         </td>
-        <td>Provides infinite arrows when shooting a bow.</td>
+        <td>무한개의 화살을 제공합니다.</td>
       </tr>
       <tr>
-        <th colspan='4'>Fishing Enchantments</th>
+        <th colspan='4'>낚시 인첸트</th>
       </tr>
       <tr>
         <th>ID</th>
-        <th>Bukkit Name</th>
-        <th>Minecraft Name</th>
-        <th>Description</th>
+        <th>Bukkit상의 이름</th>
+        <th>Minecraft상의 이름</th>
+        <th>설명</th>
       </tr>
       <tr>
         <td>
@@ -366,7 +366,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>luck_of_the_sea</code>
         </td>
-        <td>Decreases odds of catching worthless junk.</td>
+        <td>잡동사니들의 획득 확률을 증가시킵니다.</td>
       </tr>
       <tr>
         <td>
@@ -378,10 +378,10 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>lure</code>
         </td>
-        <td>Increases rate of fish biting your hook.</td>
+        <td>낚시 바늘을 무는 생선의 수를 늘립니다.</td>
       </tr>
       <tr>
-        <th colspan='4'>Item Enchantments</th>
+        <th colspan='4'>아이템 인첸트</th>
       </tr>
       <tr>
         <td>
@@ -393,7 +393,7 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>mending</code>
         </td>
-        <td>Repair the item using experience orbs.</td>
+        <td>경험치를 통해 아이템을 복구할 수 있게 합니다.</td>
       </tr>
       <tr>
         <td>
@@ -405,10 +405,10 @@ Bukkit enchantment names are not case sensitive and a space can be used instead 
         <td>
           <code>curse_of_vanishing</code>
         </td>
-        <td>Item disappears instead of dropping.</td>
+        <td>아이템을 떨어뜨리는 대신 사라집니다.</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Copied from: [bukkit docs - Enchantments](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html)
+[bukkit docs - Enchantments](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html)에서 복사되었습니다
