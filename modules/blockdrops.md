@@ -27,9 +27,7 @@ title:  "블럭 드롭"
             <code>{{'<block-drops> </block-drops>' | escape_once}}</code>
           </span>
         </td>
-        <td>
-          설정된 블록 드롭 규칙이 모두 포함된 노드입니다.
-        </td>
+        <td>설정된 블록 드롭 규칙이 모두 포함된 노드입니다.</td>
         <td></td>
       </tr>
       <tr>
