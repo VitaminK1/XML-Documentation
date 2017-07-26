@@ -27,19 +27,19 @@ title:  "인벤토리"
 </thead>
 <tbody>
 <tr>
-<td><code>slot.갑옷.chest</code></td>
+<td><code>slot.armor.chest</code></td>
 <td>갑옷</td>
 </tr>
 <tr>
-<td><code>slot.갑옷.feet</code></td>
+<td><code>slot.armor.feet</code></td>
 <td>갑옷</td>
 </tr>
 <tr>
-<td><code>slot.갑옷.head</code></td>
+<td><code>slot.armor.head</code></td>
 <td>갑옷</td>
 </tr>
 <tr>
-<td><code>slot.갑옷.legs</code></td>
+<td><code>slot.armor.legs</code></td>
 <td>갑옷</td>
 </tr>
 <tr>
@@ -66,4 +66,52 @@ title:  "인벤토리"
 </table>
 </div>
 </div>
+</div>
+<br/>
+<h3 id="material_matchers">Material Matchers</h3>
+        Depending on the material/item element used a material or multiple materials can be specified with or without data values.
+        <h5>Material Values</h5>
+<div class="table-responsive">
+<table class="table table-striped table-condensed">
+<thead>
+<tr>
+<th>Value Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="span label label-default">Single Material Pattern</div>
+</td>
+<td>
+                  A single material pattern consisting of a
+                  <code>material_name:data_value</code>
+                  string.
+                </td>
+</tr>
+<tr>
+<td>
+<div class="span label label-default">Material Pattern</div>
+</td>
+<td>
+                  A pattern that supports multiple materials with a optional data value.
+                  <br/>
+                  Multiple materials can be listed by separating them with a semicolon<code>;</code>.
+                  <br/>
+<code>material_name:data_value;material_name:data_value</code>
+</td>
+</tr>
+<tr>
+<td>
+<div class="span label label-default">Material Name</div>
+</td>
+<td>
+                  A single material.
+                  <br/>
+<i>Does not accept a damage/data value.</i>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
