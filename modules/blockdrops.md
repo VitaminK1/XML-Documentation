@@ -68,7 +68,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙에 의해 블럭이 수정될 수 있습니다.
         </td>
         <td>
-          <a href='/modules/filters'>필터</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
