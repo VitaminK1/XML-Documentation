@@ -14,8 +14,8 @@ title:  "아이템 속성"
       <tr>
         <th>이름</th>
         <th>설명</th>
-        <th>기본값</th>
-        <th>최소값</th>
+        <th style="min-width: 60px;">기본값</th>
+        <th style="min-width: 60px;">최소값</th>
         <th style='min-width: 60px;'>최대값</th>
       </tr>
     </thead>
