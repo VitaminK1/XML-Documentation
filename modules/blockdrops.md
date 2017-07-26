@@ -42,7 +42,7 @@ title:  "블럭 드롭"
         </td>
         <td>개별적인 블록 드롭 규칙입니다.</td>
         <td>
-          <span class='label label-default'>하위 요소 규칙</span>
+          <span class='label label-default'>하위 요소 규칙</span>
         </td>
       </tr>
     </tbody>
@@ -56,7 +56,7 @@ title:  "블럭 드롭"
         <th>속성</th>
         <th>설명</th>
         <th>값</th>
-        <td>기본값</td>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -65,7 +65,7 @@ title:  "블럭 드롭"
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙에 의해 블럭이 수정될 수 있습니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙에 의해 블럭이 수정될 수 있습니다.
         </td>
         <td>
           <a href='/modules/filters'>필터</a>
@@ -77,7 +77,7 @@ title:  "블럭 드롭"
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙에 해당하는 지역을 말합니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙에 해당하는 지역을 말합니다.
         </td>
         <td>
           <a href='/modules/regions'>지역</a>
@@ -89,10 +89,10 @@ title:  "블럭 드롭"
           <code>kit</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙이 적용되면 플레이어에게 키트를 제공합니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 이 규칙이 적용되면 플레이어에게 키트를 제공합니다.
         </td>
         <td>
-          <a href='/modules/kits'>키트 ID</a>
+          <a href='/modules/kits'>키트 ID</a>
         </td>
         <td></td>
       </tr>
@@ -101,10 +101,10 @@ title:  "블럭 드롭"
           <code>experience</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 경험치가 드롭되는 양을 설정합니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 경험치가 드롭되는 양을 설정합니다.
         </td>
         <td>
-          <span class='label label-primary'>숫자</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td></td>
       </tr>
@@ -113,13 +113,13 @@ title:  "블럭 드롭"
           <code>replacement</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 파괴한 블럭을 대체할 대상을 설정합니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 파괴한 블럭을 대체할 대상을 설정합니다.
         </td>
         <td>
-          <a href='/reference/inventory#material_matchers'>단일 재료 패턴</a>
+          <a href='/reference/inventory#material_matchers'>단일 재료 패턴</a>
         </td>
         <td>
-          <span class='label label-default'>공기</span>
+          <span class='label label-default'>공기</span>
         </td>
       </tr>
       <tr>
@@ -127,10 +127,10 @@ title:  "블럭 드롭"
           <code>wrongtool</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 블럭을 부수는 도구에 상관없이 아이템을 드롭할 수 있게 합니다.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> 블럭을 부수는 도구에 상관없이 아이템을 드롭할 수 있게 합니다.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -139,11 +139,10 @@ title:  "블럭 드롭"
           <code>punch</code>
         </td>
         <td>
-          블럭을 펀치했을때 이 규칙을 확인하는
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> Check this rule when a block is punched.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> Check this rule when a block is punched.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -152,10 +151,10 @@ title:  "블럭 드롭"
           <code>trample</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> Check this rule when a block is walked on.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span> Check this rule when a block is walked on.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -170,7 +169,7 @@ title:  "블럭 드롭"
         <th style='min-width: 125px;'>요소</th>
         <th>설명</th>
         <th>값/하위</th>
-        <th>기존 설정</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -185,7 +184,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <a href='/modules/filters'>필터</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -200,7 +199,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <a href='/modules/regions'>지역</a>
+          <a href='/modules/regions'>지역</a>
         </td>
         <td></td>
       </tr>
@@ -215,7 +214,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <a href='/modules/kits'>키트</a>
+          <a href='/modules/kits'>키트</a>
         </td>
         <td></td>
       </tr>
@@ -227,7 +226,7 @@ title:  "블럭 드롭"
         </td>
         <td>일치하는 블럭이 파괴되었을 때 어느 아이템을 드롭해야 하는지에 대한 속성.</td>
         <td>
-          <a href='/modules/items'>아이템</a>
+          <a href='/modules/items'>아이템</a>
         </td>
         <td></td>
       </tr>
@@ -242,7 +241,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <span class='label label-primary'>숫자</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td></td>
       </tr>
@@ -260,7 +259,7 @@ title:  "블럭 드롭"
           <a href='/reference/inventory#material_matchers'>단일 재료 패턴</a>
         </td>
         <td>
-          <span class='label label-default'>공기</span>
+          <span class='label label-default'>공기</span>
         </td>
       </tr>
       <tr>
@@ -274,7 +273,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -289,7 +288,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -304,7 +303,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -349,7 +348,7 @@ title:  "블럭 드롭"
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>.
         </td>
         <td>
-          <span class='label label-primary'>숫자</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td></td>
       </tr>
@@ -371,7 +370,7 @@ title:  "블럭 드롭"
           <code>chance</code>
         </td>
         <td>
-          아이템이 실제로 드롭될 가능성입니다.
+          아이템이 실제로 드롭될 가능성을 나타냅니다.
         </td>
         <td>
           <span class='label label-primary'>0 - 1.0</span>
