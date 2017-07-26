@@ -7,39 +7,39 @@ title:  "올바르게 지역 지정하기"
 
 ---
 
-First of all, region coordinates in PGM are _real numbers_. That means they can be fractional values, like 2.3, 4.5, 6.789, and so on. A coordinate represents a _point_ on one of the three axes (X, Y, or Z), and a set of three coordinates represents a _point_ in 3D space. Coordinates do **not** represent blocks, at least not _directly_. When PGM needs to decide if a block is inside a region, it checks if the point at the **center** of the block is inside the region. The center point of a block will always have coordinates that end in `.5`. When making regions, you have to make sure that all the block centers are _inside_ the region.
+먼저, Game 플러그인에서 사용되는 지역 좌표는  _실제 숫자_입니다. 이말인 즉슨, 좌표값은 2.3 4.5 6.789등의 분수 값이 될 수 있음을 의미합니다. 좌표는 세 축(X, Y 또는 Z) 중 하나의 _점_을 나타냅니다. 세 좌표는 3차원 공간에서 _점_을 나타냅니다. Coordinates do **not** represent blocks, at least not _directly_. Game 플러그인이 블럭이 영역 내에 있는 지를 결정할 필요가 있을 때 블럭의 **중심**에 있는 점이 영역 내에 있는지를 확인합니다. 블럭의 중심에 있는 점은 항상 `.5`로 끝나는 좌표를 갖습니다. 지역을 지정할 때는 모든 블럭의 중심점이 지역 _안_에 있는지 확인해야 합니다.
 
-Here is an example. Let's say we want to make region for a destroyable that looks like this:
+여기 예시가 있습니다. 다음과 같이 모뉴먼트 지역을 정의해봅시다.
 
 <p class="scroll"><img src="/img/regions/destroyable.png"/></p>
 
-First, we stand very close to one **corner** of the region and note the coordinates are `(32, 60, -20)`:
+첫째, 우리는 지역의 한쪽 **모서리**에 매우 가깝게 서 있으며, 이 좌표가 `32,60,-20`임을 알 수 있습니다:
 
 <p class="scroll"><img src="/img/regions/destroyable_c1.png"/></p>
 
-Then we stand over the opposite corner and note the coordinates are `(34, 60, -18)`.<br/> We know the monument is three blocks tall, so we'll just subtract three from the Y coordinate to get `(34, 57, -18)`:
+그다음 반대 모서리에 서서 좌표가 `34,60,-18`임을 주목하세요. 우리는 모뉴먼트가 3블럭 높이라는 것을 알고 있습니다. 그러므로 우리는 Y좌표에서 3을 빼서 `34,57,-18`이란 값을 얻을 수 있습니다.
 
 <p class="scroll"><img src="/img/regions/destroyable_c2.png"/></p>
 
-Notice that we are rounding to the  **nearest** integer, since those will obviously be the coordinates of the corner we are standing close to. We don't need to worry about positive vs negative coordinates, as they work the same way, and we never need to add or subtract one.
+가장 **가까운** 정수로 반올림된다는 사실을 기억하세요. 그것들은 분명히 우리가 가까이 서있는 모서리의 좌표일 것입니다. 우리는 양수 와 음수 좌표에 대해 걱정할 필요가 없습니다. 같은 방식으로 작동하기 때문에 음수 값을 더하거나 뺄 필요가 없습니다.
 
-With these coordinates, we can make a cuboid region for the monument:
+이 좌표를 사용하여 모뉴먼트에 대한 직육면체 지역을 만들 수 있습니다.
 
     <cuboid min="32, 60, -20" max="34, 57, -18"/>
 
-For style points, we can make sure all the low coordinates are in min and the high ones in max:
+스타일 포인트의 경우, 낮은 좌표는 `min`에 있고 높은 좌표는 `max`에 있는지 확인할 수 있습니다.
 
     <cuboid min="32, 57, -20" max="34, 60, -18"/>
 
-This is not necessary, as PGM will fix it for you, but it might make the XML easier for a human to read and edit.
+이것은 Game 플러그인이 자동으로 고쳐줄것이기 때문에 꼭 필요한것은 아닙니다. 하지만 사람들이 읽고 편집하기가 쉬워집니다.
 
-An easy way to check that cuboid regions are correct is to simply subtract the low coordinates from the high ones. The result should be the size of the region. If it isn't, you did something wrong.
+정육면체 영역이 올바른지 확인하는 가장 쉬운 방법은 단순히 높은 좌표값에서 낮은 좌표값을 빼는 것입니다. 결과는 영역의 크기여야 합니다. 그렇지 않다면 당신은 무언가 잘못했을 수도있습니다.
 
-Let's try a more interesting region: a cylinder. A cylinder is defined by its base (center) point, radius, and height. Assuming one layer of blocks, the cylinder in the image below is based at `(53.5, 57, -10.5)` and has a radius of `2.5` and a height of `1`. Blocks with their center point inside the cylinder will be considered part of the region. I've highlighted the region boundary and the block centers so you can easily see how this works:
+이제 더 흥미로운 원기둥 영역을 사용해 봅시다. 원기둥은 기본(중심)점, 반지름 및 높이로 정의됩니다. 하나의 블럭 층을 가정해 본다면, 아래 이미지의 원기둥은 `(53.5, 57, -10.5)` 에 기초를 두고 반경이 `2.5` 이고 높이가 `1`이 됩니다. 원기둥 내부에 중심점이 있는 블럭은 영역의 일부로 간주됩니다. 그림에서 지역 경계와 블럭 중심점을 강조 했으므로 이 방법의 작동 방식을 쉽게 볼 수 있습니다.
 
 <p class="scroll"><img src="/img/regions/cylinder.png"/></p>
 
-So the region would be:
+따라서 지역은 다음과 같습니다:
 
     <cylinder base="53.5, 57, -10.5" radius="2.5" height="1"/>
 

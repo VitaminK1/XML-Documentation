@@ -29,7 +29,7 @@ title:  "필터 적용하기"
 
 `<apply>`를 어디에 쓰는지에 따라 무언가가 필터링 되는 결과가 바뀔 수 있습니다.
 앞의 예시를 보면 `only-tnt`필터는 `never`필터보다 앞에 위치하고 있기 때문에 항상 덮어씌워집니다.
-The apply for `region B` won't get checked since it overlaps completely with `region A` and `region A` never returns abstain.
+`Region B`에 대한 적용은 `Region A`와 완전히 중복되지 않으므로 Region A에 적용되지 않습니다.
 
 만약 우리가 필터의 순서를 바꾼다면 어떻게 될까요
 
