@@ -55,7 +55,7 @@ title:  "기본 맵 요소"
           <code>proto</code>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필수</span>
           맵 XML 프로토콜 버전입니다
         </td>
         <td>
@@ -105,7 +105,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필수</span>
           맵의 제목을 나타냅니다
         </td>
         <td>
@@ -120,7 +120,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필수</span>
           맵의
           <a href='http://semver.org'>Semantic version</a>
           문자열
@@ -137,7 +137,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필수</span>
           경기가 시작될 때 보여지는 맵의 목표
         </td>
         <td>
@@ -152,7 +152,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필수</span>
           맵의 제작자, 적어도 한명 이상의 제작자가 필요합니다
         </td>
         <td>
