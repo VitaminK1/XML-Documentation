@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Damage & Disable Damage"
+category: "모듈"
+title:  "데미지와 데미지 비활성화"
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Item Mods"
+category: "모듈"
+title:  "아이템 모드"
 
 ---
 

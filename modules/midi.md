@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "MIDI Files"
+category: "모듈"
+title:  "MIDI 파일"
 
 ---
 

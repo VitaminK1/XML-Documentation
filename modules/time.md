@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Time & Dimension"
+category: "모듈"
+title:  "시간과 차원"
 nav_content:
   - path: "#time"
     name: "Time"

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Kits"
+category: "모듈"
+title:  "키트"
 nav_content:
   - path: "#dynamic-kits"
     name: "Dynamic Kits"
@@ -203,7 +203,7 @@ Kits can also take advantage of [loot sub-elements](/modules/lootables#loot) to 
     </kits>
 
 ### Dynamic Kits {#dynamic-kits}
-Kits are able to be dynamically applied to players which match the response of [dynamic filters](/modules/filters). This allows you to give players special kits or items without them needing to respawn or enter a particular region. 
+Kits are able to be dynamically applied to players which match the response of [dynamic filters](/modules/filters). This allows you to give players special kits or items without them needing to respawn or enter a particular region.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
@@ -1066,14 +1066,14 @@ The force and impulse kits apply a force to the player, propelling them in a cer
     <kit id="impulse-kit">
         <impulse yaw="true" pitch="false">0.5,0.8,0</impulse>
     </kit>
-    
+
     <!-- Apply a continuous upwards force to the player -->
     <kit id="force-kit">
         <force yaw="false" pitch="false">0,0.8,0</force>
     </kit>
-    
+
     <!-- Apply a continuous upwards force only when the player is gliding -->
-    <lend> 
+    <lend>
         <kit>
             <force yaw="false" pitch="false">0,1.2,0</force>
         </kit>

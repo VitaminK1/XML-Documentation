@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Classes"
+category: "모듈"
+title:  "클래스"
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Scoring"
+category: "모듈"
+title:  "점수"
 
 ---
 

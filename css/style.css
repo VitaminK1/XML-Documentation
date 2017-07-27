@@ -205,11 +205,11 @@ td pre code {
 /* - Currently used for collapsible example buttons
    - Title changes from "More Examples" to "Less Examples" and vs versa */
 a.btn-more.collapsed:before {
-    content: "More ";
+    content: "더보기";
 }
 
 a.btn-more:before {
-    content: "Less ";
+    content: "작게 보기 ";
 }
 
 /* Elements with this attribute will show a scrollbar if they overflow their parent */

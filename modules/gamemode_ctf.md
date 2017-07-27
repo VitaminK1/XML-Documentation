@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Capture the Flag"
+category: "모듈"
+title:  "깃발 쟁탈 게임"
 
 ---
 

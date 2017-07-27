@@ -1,7 +1,7 @@
 ---
 layout: page
 
-category: "Modules"
+category: "모듈"
 title:  "애니메이션"
 
 ---

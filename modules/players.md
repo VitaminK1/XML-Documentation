@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Players"
+category: "모듈"
+title:  "플레이어"
 
 ---
 

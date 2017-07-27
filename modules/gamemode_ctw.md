@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Capture the Wool"
+category: "모듈"
+title:  "양털 쟁탈 게임"
 
 ---
 

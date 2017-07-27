@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Gamerules"
+category: "모듈"
+title:  "게임 규칙"
 
 ---
 

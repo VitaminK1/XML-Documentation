@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Potion Effects"
+category: "모듈"
+title:  "포션 효과"
 
 ---
 

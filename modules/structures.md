@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Structures"
+category: "모듈"
+title:  "구조물"
 
 ---
 

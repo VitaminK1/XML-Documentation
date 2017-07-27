@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Renewables"
+category: "모듈"
+title:  "재생"
 
 ---
 

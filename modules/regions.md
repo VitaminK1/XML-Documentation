@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Regions"
+category: "모듈"
+title:  "지역"
 nav_content:
   - path:  "#applying"
     name: "Applying Things to Regions"
@@ -452,7 +452,7 @@ Apply Examples
             <region id="b-knight"/>
         </region>
     </apply>
-  
+
     <!-- Only allow breaking of sandstone stairs and deny placing of all blocks. -->
     <apply block-break="only-sandstone-stairs" block-place="never" message="You may not modify this area">
         <region>
@@ -460,7 +460,7 @@ Apply Examples
             <rectangle min="-6,48" max="7,59"/>
         </region>
     </apply>
-  
+
     <!-- Example regions from Harb using region modifiers. -->
     <regions>
         <rectangle id="main-area" min="-50,-32" max="51,33"/>
@@ -472,7 +472,7 @@ Apply Examples
             <rectangle min="-56,-2" max="57,3"/>
             <region id="main-area"/>
         </complement>
-  
+
         <!-- Protect portal areas -->
         <apply block="never" region="portals-area"/>
         <apply block="no-tnt" region="bases" message="You may not place TNT in the bases."/>

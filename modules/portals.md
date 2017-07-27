@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Portals"
+category: "모듈"
+title:  "포탈"
 
 ---
 
@@ -405,12 +405,12 @@ Examples
         <portal x="@10" y="@8" z="@45">
             <region><cuboid min="-56,33,-1" max="-55,35,2"/></region>
         </portal>
-  
+
         <!-- Adds 12 to the players Z position, turning them to face east and 10° up -->
         <portal z="12" pitch="@10" yaw="@-90">
             <region><cuboid min="-56,33,-1" max="-55,35,2"/></region>
         </portal>
-  
+
         <!-- Teleport the player from portal-entrance to a random point inside portal-exit -->
         <portal region="portal-entrance">
             <destination><region id="portal-exit"/></destination>

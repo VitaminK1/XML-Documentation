@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Kill Rewards"
+category: "모듈"
+title:  "처치 보상"
 
 ---
 

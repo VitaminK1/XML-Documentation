@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Proximity Alarms"
+category: "모듈"
+title:  "접근 알람"
 
 ---
 

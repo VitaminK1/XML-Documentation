@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Mob Spawning"
+category: "모듈"
+title:  "몹 스폰"
 
 ---
 

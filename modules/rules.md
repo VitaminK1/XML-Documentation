@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Rules"
+category: "모듈"
+title:  "규칙"
 
 ---
 

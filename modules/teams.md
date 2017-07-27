@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Teams"
+category: "모듈"
+title:  "팀"
 
 ---
 

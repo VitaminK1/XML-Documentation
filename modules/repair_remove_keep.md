@@ -1,7 +1,7 @@
 ---
 layout: page
 
-category: "Modules"
+category: "모듈"
 title:  "Repair, Remove & Keep"
 nav_content:
   - path: "#repair"

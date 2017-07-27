@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "World & Terrain"
+category: "모듈"
+title:  "월드와 지형"
 nav_content:
   - path: "#terrain"
     name: "Terrain"

@@ -1,7 +1,7 @@
 ---
 layout: page
 
-category: "Modules"
+category: "모듈"
 title:  "Crafting Recipes"
 nav_content:
   - path: "#shaped"

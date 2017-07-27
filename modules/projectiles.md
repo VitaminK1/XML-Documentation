@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Custom Projectiles"
+category: "모듈"
+title:  "사용자 정의 투사체"
 
 ---
 

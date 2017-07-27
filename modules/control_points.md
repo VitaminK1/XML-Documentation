@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Control Points"
+category: "모듈"
+title:  "점령 지점"
 
 ---
 

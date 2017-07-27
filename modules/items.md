@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Items & Armor"
+category: "모듈"
+title:  "아이템과 갑옷"
 nav_content:
   - path: "#heads"
     name: "Player Heads"

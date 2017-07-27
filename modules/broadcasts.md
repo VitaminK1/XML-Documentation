@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Broadcasts"
+category: "모듈"
+title:  "알림과 팁"
 
 ---
 

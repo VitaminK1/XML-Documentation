@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Destroy the Core"
+category: "모듈"
+title:  "코어 부수기 게임"
 
 ---
 

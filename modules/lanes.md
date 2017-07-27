@@ -1,7 +1,7 @@
 ---
 layout: page
 
-category: "Modules"
+category: "모듈"
 title:  "Lanes"
 
 ---

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Lootables"
+category: "모듈"
+title:  "전리품"
 
 ---
 

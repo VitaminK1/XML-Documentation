@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Map Tutorial"
+category: "모듈"
+title:  "맵 튜토리얼"
 
 ---
 

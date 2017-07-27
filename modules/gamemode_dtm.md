@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Destroy the Monument"
+category: "모듈"
+title:  "모뉴먼트 부수기 게임"
 
 ---
 

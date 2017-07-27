@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Filters"
+category: "모듈"
+title:  "필터"
 nav_content:
   - path: "#list"
     name: "Filter Matchers"

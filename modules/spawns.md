@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Spawns"
+category: "모듈"
+title:  "스폰"
 
 ---
 
@@ -310,7 +310,7 @@ Example
             </regions>
         </default>
     </spawns>
-  
+
     <spawns safe="true" sequential="true">
         <spawn team="blue" kit="blue" yaw="180">
             <regions>
@@ -514,7 +514,7 @@ The respawn module allows the map creator to adjust the respawn time and if play
     <respawn delay="5s" spectate="true">
         <message>{translate: "death.respawn.confirmed.waiting.flagDropped"}</message>
     </respawn>
-    
+
     <!-- Allow respawning after different delays for red and blue team -->
     <respawns>
         <respawn delay="3s" filter="only-red"/>

@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Other Game Modes"
+category: "모듈"
+title:  "다른 게임 모드"
 nav_content:
   - path: "#gs"
     name: "Ghost Squadron"

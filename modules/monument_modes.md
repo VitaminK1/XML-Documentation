@@ -1,8 +1,8 @@
 ---
 layout: page
 
-category: "Modules"
-title:  "Monument Modes"
+category: "모듈"
+title:  "모뉴먼트 모드"
 
 ---
 
