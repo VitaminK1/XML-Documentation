@@ -84,15 +84,17 @@
           <li class="pull-right">
             <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
           </li>
-          <a class="pull-right active" href="#">{{ site.languageNames[site.lang] }}</a>
-          {% for lang in site.languageNames %}
-          {% if lang[0] == site.lang %} {% continue %} {% endif %}
-          {% if page.namespace %}
-          <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
-          {% else %}
-          <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
-          {% endif %}
-          {% endfor %}
+          <li class="pull-right">
+            <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+            {% for lang in site.languageNames %}
+            {% if lang[0] == site.lang %} {% continue %} {% endif %}
+            {% if page.namespace %}
+            <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+            {% else %}
+            <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+            {% endif %}
+            {% endfor %}
+        </li>
         </ul>
       </footer>
     </div>
