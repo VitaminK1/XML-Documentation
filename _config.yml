@@ -3,6 +3,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 current_proto: "1.4.3"
 
+gems:
+  - jekyll-multiple-languages-plugin
 
 # Build settings
 markdown: kramdown
@@ -11,8 +13,11 @@ kramdown:
   syntax_highlighter_opts:
     disable : true
 
+# Languages
 languages: ["en", "ko"]
-defaultLang: ko
+
+language_default: 'ko'
+
 languageNames:
   en: English
   ko: 한국어
