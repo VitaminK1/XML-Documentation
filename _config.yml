@@ -10,3 +10,9 @@ markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable : true
+
+languages: ["en", "ko"]
+defaultLang: ko
+languageNames:
+  en: English
+  ko: 한국어

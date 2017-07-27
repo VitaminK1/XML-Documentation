@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>아비스 네트워크 XML 문서</title>
+    <title>{% t site.name %}</title>
 
     <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -25,7 +25,7 @@
         <div class='navbar-header'>
           <a class='navbar-brand' href='/'>
             <img width="48" height="48" src='/img/logo.png' />
-            아비스 네트워크 XML 문서
+            {% t site.name %}
           </a>
           <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
             <span class='sr-only'>Toggle navigation</span>
@@ -84,6 +84,15 @@
           <li class="pull-right">
             <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
           </li>
+          <a class="pull-right active" href="#">{{ site.languageNames[site.lang] }}</a>
+          {% for lang in site.languageNames %}
+          {% if lang[0] == site.lang %} {% continue %} {% endif %}
+          {% if page.namespace %}
+          <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+          {% else %}
+          <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+          {% endif %}
+          {% endfor %}
         </ul>
       </footer>
     </div>
