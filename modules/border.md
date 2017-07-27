@@ -6,16 +6,16 @@ title:  "월드 보더"
 
 ---
 
-The world border module uses the default minecraft world border and allows customization of its size, position and behavior. Only one world border definition can be active at a time.
+월드 보더는 기본 마인크래프트 보더를 사용하고 크기, 위치, 행동을 조정할 수 있게 해 줍니다. 한번에 하나의 월드 보더 정의만 활성화할 수 있습니다.
 
-Attributes for multiple world borders can be applied for all borders by specifying them in the root `<world-borders>` element.
+여러 월드 보더에 대한 속성은 `<world-borders>` 요소 루트에 지정하여 모든 보더에 적용할 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
+        <th>요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -27,13 +27,13 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           </span>
         </td>
         <td>
-          Node containing all the defined world borders.
-        </td>
+          설정된 월드 보더가 들어있는 노드입니다.
+       </td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/Children</th>
       </tr>
       <tr>
         <td>
@@ -42,24 +42,24 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           </span>
         </td>
         <td>
-          A single world border.
-        </td>
+          하나의 월드 보더입니다.
+        </td>
         <td>
-          <span class='label label-default'>World Border Sub-elements</span>
+          <span class='label label-default'>월드 보더 하위 요소</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>World Borders Attributes</h5>
+<h5>월드 보더 성질</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 150px;'>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th style='min-width: 150px;'>성질</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기존 설정</th>
       </tr>
     </thead>
     <tbody>
@@ -68,9 +68,9 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           <code>center</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The center of this world border.
-        </td>
+          <span class='label label-danger'>필요함</span>
+          월드 보더의 중심입니다.
+        </td>
         <td>
           <span class='label label-primary'>X,Z</span>
         </td>
@@ -81,24 +81,23 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           <code>size</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The diameter of the world border, borders are always square.
+          <span class='label label-danger'>필요함</span>
+          월드 보더, 보더의 지름은 항상 직각입니다.
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <code>when</code>
+          <code>언제</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          Filter when this world border is in effect.
-        </td>
+          월드 보더가 효과가 있을때 필터링됩니다.
+        </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -107,24 +106,24 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           <code>after</code>
         </td>
         <td>
-          Time after which this border takes effect.
-          <br/>
-          <i>Not compatible with the <code>when</code> property.</i>
+           보더가 효과를 가질 때의 시간입니다.
+          <br/>
+          <i><code>when</code> 설정과 호환되지 않습니다.</i>
         </td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>기간</a>
         </td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <code>duration</code>
+          <code>duration</code>
         </td>
         <td>
-          The time it takes to transition from the previous state to this state.
+          이전 상태에서 이 상태로 전환하는 데 걸리는 시간입니다.
         </td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>기간</a>
         </td>
         <td></td>
       </tr>
@@ -133,10 +132,10 @@ Attributes for multiple world borders can be applied for all borders by specifyi
           <code>damage</code>
         </td>
         <td>
-          Amount of damage per second inflicted to players for each meter they are outside the border.
-        </td>
+          플레이어가 보더 밖에 있을 때의 거리에 따라 가하는 데미지를 설정합니다.
+        </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>
           0.2
@@ -146,9 +145,9 @@ Attributes for multiple world borders can be applied for all borders by specifyi
         <td>
           <code>buffer</code>
         </td>
-        <td>Distance to the edge of the border where damage to the player begins.</td>
+        <td>플레이어가 데미지를 입을 보더에서 끝까지의 거리입니다.</td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>
           5
@@ -158,9 +157,9 @@ Attributes for multiple world borders can be applied for all borders by specifyi
         <td>
           <code>warning-distance</code>
         </td>
-        <td>Show red vignette to players closer than this to border.</td>
+        <td>플레이어가 보더와 가까울 때 빨간 효과를 주는 거리입니다.</td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>
           5
@@ -170,9 +169,9 @@ Attributes for multiple world borders can be applied for all borders by specifyi
         <td>
           <code>warning-time</code>
         </td>
-        <td>Show red vignette to players when the border is moving and will reach them within this time.</td>
+        <td>보더가 움직여서 플레이어에게 도달할 때 빨간 효과를 주는 시간입니다.</td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>기간</a>
         </td>
         <td>
           15s
@@ -181,31 +180,30 @@ Attributes for multiple world borders can be applied for all borders by specifyi
     </tbody>
   </table>
 </div>
-<h5>World Border Sub-elements</h5>
+<h5>월드 보더 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값/Children</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
+      <tr>
+        <td>
           <span class='highlight'>
             <code>{{'<when>' | escape_once}}</code>
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          Filter when this world border is in effect.
+          월드 보더가 효과가 있을 때 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
-        </td>
-      </tr>
+          <a href='/modules/filters'>필터</a>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
