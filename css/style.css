@@ -116,7 +116,7 @@ h6,
     }
 }
 
-.jumbotron.error {
+.jumbotron.error:after {
   background: url("../img/404.png") repeat scroll center center transparent;
   content: '';
   display: block;
