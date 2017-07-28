@@ -9,7 +9,7 @@ nav_content:
   - path:  "#regionModifiers"
     name: "Region Modifiers"
   - path:  "#pointProviders"
-    name: "Point Providers"
+    name: "지점 제공자"
 ---
 
 Regions are a type of filter that filters the coordinates of a query. They are used to define, among other things, the area a filter applies to or where a portal links from. There are two distinct types of regions; block bounded regions, which contain a finite amount of blocks and unbounded regions that contain a infinite amount. All regions and region modifiers can have a `id` attribute to reference them from kits, portals, etc.
@@ -614,7 +614,7 @@ Examples
 
 <br/>
 
-### Point Providers {#pointProviders}
+### 지점 제공자 {#pointProviders}
 
 A point provider is used to return individual points inside a region. It can also be used to modify the position returned by a region to include the direction a player ends up facing when spawned, etc.
 Input can be a region, a region modifier or simply an exact `X,Y,Z` coordinate.

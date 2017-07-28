@@ -56,7 +56,7 @@ title:  "블럭 드롭"
         <th>속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style="min-width: 64px;>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -451,7 +451,7 @@ title:  "블럭 드롭"
 
 `trample`속성은 플레이어가 그 블럭은 부순 후에도 적용됩니다. `<cause>trample</cause>` 필터를 사용하여 이 동작을 비활성화 할 수 있습니다.
 
-또한, 무작위 필터와 함께 사용되는 `<sprinting/>`, `<walking/>` 및 `<crouching/>` 필터를 사용하여 `trample` 규칙을 적용할 수 있는 확률을 조정할 수 있습니다. 
+또한, 무작위 필터와 함께 사용되는 `<sprinting/>`, `<walking/>` 및 `<crouching/>` 필터를 사용하여 `trample` 규칙을 적용할 수 있는 확률을 조정할 수 있습니다.
 
     <block-drops>
         <rule trample="true">
@@ -494,7 +494,7 @@ title:  "블럭 드롭"
       <tr>
         <th>요소</th>
         <th>설명</th>
-        <th>값/하위</th>
+        <th style="min-width: 64px;>값/하위</th>
       </tr>
     </thead>
     <tbody>
