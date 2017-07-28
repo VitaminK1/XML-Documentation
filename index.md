@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container">
-<div class="jumbotron">
+<div class="jumbotron main">
 <h1>아비스 네트워크 XML 문서</h1>
 <p class="lead">서버에 추가될 각 맵에 필요한 XML에 대한 가이드</p>
 </div>
