@@ -62,7 +62,7 @@ h6,
     z-index: 2;
 }
 
-.jumbotron:after {
+.jumbotron.main:after {
     background: url("../img/grid-15px.png") repeat scroll center center transparent;
     content: '';
     display: block;
