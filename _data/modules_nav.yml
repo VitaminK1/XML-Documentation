@@ -4,7 +4,7 @@ content:
   - path: "/modules/main"
     name: "기본 맵 요소"
   - path: "/modules/includes_conditionals"
-    name: "Include파일과 조건문"
+    name: "Include 파일과 조건문"
   - "정보"
   - path: "/modules/tutorial"
     name: "튜토리얼"
