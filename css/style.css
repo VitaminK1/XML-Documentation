@@ -76,7 +76,7 @@ h6,
 
 .jumbotron.error {
     background: url("../img/404.png") center center;
-    color: #FFF
+    color: #fff;
     content: '';
     display: block;
     position: relative;
