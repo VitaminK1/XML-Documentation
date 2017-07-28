@@ -74,8 +74,9 @@ h6,
     opacity: .8;
 }
 
-.jumbotron.error:after {
-    background: url("../img/404.png") repeat scroll center center transparent;
+.jumbotron.error {
+    background: url("../img/404.png") center center;
+    color: #FFF
     content: '';
     display: block;
     position: relative;
