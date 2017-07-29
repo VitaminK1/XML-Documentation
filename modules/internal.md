@@ -2,13 +2,11 @@
 layout: page
 
 category: "모듈"
-title:  "Internal Maps"
+title:  "맵 내부"
 
 ---
 
-Maps that are entirely indoors or underground can use the `internal` attribute on the [main map element](/modules/main)
-to prevent observers from accidentally teleporting on top of the map with the compass tool.
-In order for this to work, the exterior of the map must be completely filled in with solid blocks,
-all the way up to the maximum build height.
+완전히 실내 또는 지하에 있는 지도는 [기본 맵 요소](/modules/main)에 있는 `internal`속성을 사용할 수 있습니다. 이 속성은 관전자가 실수로 나침반 도구를 사용하여 맵 위에 순간이동하는 것을 방지합니다.
+이 작업을 수행하려면 맵의 외부가 최대 건축 가능한 높이 까지 솔리드 블럭으로 채워져야 합니다.
 
-See [Main Map Element](/modules/main)
+[기본 맵 요소](/modules/main)를 참고하세요
