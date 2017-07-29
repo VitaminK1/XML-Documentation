@@ -34,8 +34,8 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-Elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
@@ -44,10 +44,10 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
           </span>
         </td>
         <td>
-          This will display a [Tip] message
+          [Tip] <메시지> 형태로 표시합니다
         </td>
         <td>
-          <span class='label label-primary'>Formatted Text</span>
+          <span class='label label-primary'>텍스트 포맷</span>
         </td>
       </tr>
       <tr>
