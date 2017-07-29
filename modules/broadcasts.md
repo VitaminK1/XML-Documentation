@@ -18,8 +18,8 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Broadcasts Element</th>
-        <th>Description</th>
+        <th>브로드캐스트 요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -30,7 +30,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
             <code>{{'<broadcasts> </broadcasts>' | escape_once}}</code>
           </span>
         </td>
-        <td>An element containing all the defined broadcast messages.</td>
+        <td>정의된 모든 브로드캐스트 메시지를 포함하고 있는 요소입니다.</td>
         <td></td>
       </tr>
       <tr>
