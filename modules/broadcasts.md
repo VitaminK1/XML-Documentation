@@ -44,10 +44,10 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
           </span>
         </td>
         <td>
-          This will display a [Tip] message
+          [Tip] <code>메시지</code>형태로 표시합니다.
         </td>
         <td>
-          <span class='label label-primary'>Formatted Text</span>
+          <span class='label label-primary'>텍스트 포맷</span>
         </td>
       </tr>
       <tr>
@@ -57,16 +57,16 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
           </span>
         </td>
         <td>
-          This will display an [Alert] message
+          [Alert] <code>메시지</code> 형태로 표시합니다.
         </td>
         <td>
-          <span class='label label-primary'>Formatted Text</span>
+          <span class='label label-primary'>텍스트 포맷</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Message Tag Attributes</h5>
+<h5>메시지 태그 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
