@@ -11,7 +11,7 @@ broadcast 태그 안에 `after=""` 속성이 있는 `<alert>` 또는 `<tip>` 메
 broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 사용하여 형식을 지정할 수 있습니다.
 
 <span class="label label-warning">참고</span>
-이 모듈은 맵에 **고유**하고 **중요**한 정보를 표시하는 데에만 사용하야 합니다.
+이 모듈은 맵에 **고유** 하고 **중요** 한 정보를 표시하는 데에만 사용하야 합니다.
 이것은 일반 Avis Network관련 메시지로는 사용할 수 없습니다.
 
 <div class='table-responsive'>
