@@ -58,8 +58,6 @@ content:
     name: "접근 알람"
   - path: "/modules/midi"
     name: "MIDI 파일"
-  - path: "/modules/lanes"
-    name: "Lanes"
   - path: "/modules/damage"
     name: "데미지"
   - path: "/modules/gamerules"
