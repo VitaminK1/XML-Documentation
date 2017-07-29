@@ -6,24 +6,24 @@ title:  "양털 쟁탈 게임"
 
 ---
 
-Players have to retrieve wool blocks from the enemy teams side of the map and then put them on their victory monument(s). The area a wool has to be placed in is protected by default to prevent it from being blocked with another block.
+플레이어는 맵의 적 팀의 측면에서 양털을 회수해야 하고 그것들을 승리 모뉴먼트에 올려 놓아야 합니다. 양털이 있는 부분은 기본적으로 다른 블럭으로 차단되지 않도록 보호되어야 합니다.
 
     <wools>
         <wool team="blue" color="lime">
             <monument><block>0.5,11,-92.5</block></monument>
-            <!-- Blue team has to place a lime wool block at 0.5,11,-92.5 to win -->
+            <!-- 블루 팀이 승리하기 위해서는 0.5,11,-92.5에 연두색 양털을 놓아야 합니다. -->
         </wool>
         <wool team="green" color="light blue" craftable="false">
             <monument><block>0.5,11,93.5</block></monument>
-            <!-- Light blue wool can not be crafted, it must be picked up -->
+            <!-- 하늘색 양털은 조합할 수 없으며 직접 가져와야 합니다. -->
         </wool>
     </wools>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Wools Element</th>
-        <th>Description</th>
+        <th>양털 요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -34,12 +34,12 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
             <code>{{'<wools> </wools>' | escape_once}}</code>
           </span>
         </td>
-        <td>Node containing all the wools for this map.</td>
+        <td>이 맵에 대한 모든 양털을 포함하는 노드입니다.</td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
@@ -48,24 +48,24 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           </span>
         </td>
         <td>
-          A wool victory monument.
+          양털 승리 모뉴먼트입니다.
         </td>
         <td>
-          <span class='label label-default'>Wool Sub-elements</span>
+          <span class='label label-default'>양털 하위 요소</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Wool Attributes</h5>
+<h5>양털 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -73,9 +73,9 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference wool monuments from other places in the XML.</td>
+        <td>XML의 다른 위치에서 양털 모뉴먼트를 참조하는 데 사용되는 고유 식별자입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -84,15 +84,15 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>required</code>
         </td>
         <td>
-          Specify if this objective is required to win the match.
+          이 목표가 경기에서 이기기 위해 필요한지 여부를 지정합니다.
           <br/>
-          Teams completing all of their required objectives will win regardless of score or blitz configuration.
+          필요한 모든 목표를 완료한 팀은 점수 또는 Blitz 설정에 관계없이 승리합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>
-          true
+          참
         </td>
       </tr>
       <tr>
@@ -100,11 +100,11 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>team</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The team which has to place the wool.
+          <span class='label label-danger'>필수</span>
+          양털을 놓아야 하는 팀입니다.
         </td>
         <td>
-          <a href='/modules/teams'>Team ID</a>
+          <a href='/modules/teams'>팀 ID</a>
         </td>
         <td></td>
       </tr>
@@ -113,11 +113,11 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>color</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          The wools color.
+          <span class='label label-danger'>필수</span>
+          양털의 색깔입니다.
         </td>
         <td>
-          <a href='/reference/colors'>Dye Color Name</a>
+          <a href='/reference/colors'>염료 색깔 이름</a>
         </td>
         <td></td>
       </tr>
@@ -126,12 +126,12 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>monument</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The monument where the wool has to be placed.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          양털을 놓아야 하는 모뉴먼트를 설정합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Region</a>
+          <a href='/modules/regions'>지역</a>
         </td>
         <td></td>
       </tr>
@@ -139,9 +139,9 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
         <td>
           <code>craftable</code>
         </td>
-        <td>Specify if the wool can be crafted, e.g. with white wool and dye.</td>
+        <td>양털을 조합할 수 있는지를 설정합니다. (예: 흰 양털과 염료)</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td></td>
       </tr>
@@ -150,22 +150,22 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>show</code>
         </td>
         <td>
-          Specify if the objective should be hidden from all visible locations to the player. These locations include chat, the boss bar, and the scoreboard.
+          목표가 플레이어에게 보이는 모든 위치에서 숨겨져야 하는지 여부를 지정합니다. 이 위치는 채팅, 보스바 및 스코어보드가 포함됩니다.
           <br/>
-          <i>If set to false, the objective will not be logged to the database and the player will not receive any raindrops upon completion.</i>
+          <i>만약 false로 설정하면 목표는 데이터베이스에 기록되지 않으며 플레이어는 목표를 완료하여도 보상을 받지 못합니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>location</code>
         </td>
         <td>
-          <span class='label label-danger' title='Required after proto 1.3.4'>Required</span>
-          Location where the wool can be found at, used to determine proximity.
+          <span class='label label-danger' title='프로토콜 버전 1.3.4 이후 필수 항목'>필수</span>
+          양털을 찾을 수 있는 위치, 접근 알림을 결정하는 데 사용됩니다.
         </td>
         <td>
           <span class='label label-primary'>X,Y,Z</span>
@@ -177,12 +177,13 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>wool-proximity-metric</code>
         </td>
         <td>
-          Metric used to determine proximity to the wool.
+          양털의 근접한 정도를 결정하는 데 사용되는 방식입니다.
           <br/>
-          Accepts <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
+          사용가능한 값:
+          <code>closest player</code>, <code>closest block</code> 혹은 <code>closest kill</code>
         </td>
         <td>
-          <span class='label label-primary'>Proximity Metric</span>
+          <span class='label label-primary'>근접도</span>
         </td>
         <td>
           <code>closest kill</code>
@@ -193,24 +194,25 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>wool-proximity-horizontal</code>
         </td>
         <td>
-          Only calculate horizontal distance for wool proximity.
+          양털 근접 거리에 대한 수평 거리만 계산합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>monument-proximity-metric</code>
         </td>
         <td>
-          Metric used to determine proximity to the monument.
+          모뉴먼트와 근접한 정도를 결정하는 데 사용되는 방식입니다.
           <br/>
-          Accepts <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
+          사용가능한 값:
+           <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
         </td>
         <td>
-          <span class='label label-primary'>Proximity Metric</span>
+          <span class='label label-primary'>근접도</span>
         </td>
         <td>
           <code>closest block</code>
@@ -221,24 +223,24 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           <code>monument-proximity-horizontal</code>
         </td>
         <td>
-          Only calculate horizontal distance for monument proximity.
+          모뉴먼트 근접 거리에 대한 수평 거리만 계산합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Wool Sub-elements</h5>
+<h5>양털 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값</th>
       </tr>
     </thead>
     <tbody>
@@ -249,19 +251,19 @@ Players have to retrieve wool blocks from the enemy teams side of the map and th
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The monument where the wool has to be placed.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          양털이 놓여야 하는 모뉴먼트를 설정합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Region</a>
+          <a href='/modules/regions'>지역</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-You can group multiple victory monuments from the same team inside a single `<wools team="team-id">` element; and then define that teams individual wool colors inside of a `<wool>` element.
+하나의 `<wools team="team-id">` 요소 안에 여러 팀의 승리 모뉴먼트를 그룹화 할 수 있습니다. `<wool>` 요소 내부에서 팀이 개별 앙털 색상을 정의할 수 있습니다.
 
     <wools team="red">
         <wool color="cyan" location="32.5,14,0.5">

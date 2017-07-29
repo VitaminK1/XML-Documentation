@@ -6,17 +6,16 @@ title:  "몹 스폰"
 
 ---
 
-By default PGM disables all mob spawning.
-The mobs module allows this behavior to be customized to allow spawning of specific mobs.
-This module makes use of the `<spawn>`, `<mob>` and `<entity>` [filters](/modules/filters) to only allow specific mobs to spawn.
-Mob spawns can also be filtered against any other filter type including regions.
+기본적으로 Game 플러그인은 모든 몹 생성을 비활성화 합니다. 몹 모듈은 특정 몹의 생성을 허용하도록 이 동작을 사용자 정의 할 수 있습니다.
+이 모듈은 특정 몹만 스폰하도록 허용하기 위해 `<spawn>`, `<mob>` 과 `<entity>` [필터](/modules/filters)를 사용합니다.
+몹 스폰은 영역을 포함하여 다른 필터 유형에 대해서도 필터링할 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
+        <th>요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -27,28 +26,28 @@ Mob spawns can also be filtered against any other filter type including regions.
             <code>{{'<mobs> </mobs>' | escape_once}}</code>
           </span>
         </td>
-        <td colspan='3'>Node containing the custom mob spawning filters.</td>
+        <td colspan='3'>사용자 정의 몹 생성 필터가 포함된 노드입니다.</td>
       </tr>
       <tr>
-        <th colspan='2'>Attributes</th>
-        <th>Value/Children</th>
+        <th colspan='2'>속성</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          Filter what mobs can spawn when and where.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          언제 어디에서 몹이 생성될 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
@@ -57,12 +56,12 @@ Mob spawns can also be filtered against any other filter type including regions.
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          Filter what mobs can spawn when and where.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          언제 어디에서 몹이 생성될 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
     </tbody>
@@ -73,9 +72,9 @@ Mob spawns can also be filtered against any other filter type including regions.
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값</th>
       </tr>
     </thead>
     <tbody>
@@ -85,9 +84,9 @@ Mob spawns can also be filtered against any other filter type including regions.
             <code>{{'<spawn> </spawn>' | escape_once}}</code>
           </span>
         </td>
-        <td>Filter the reason a mob is being spawned.</td>
+        <td>몹이 스폰되는 이유를 필터링합니다.</td>
         <td>
-          <a href='/reference/spawn_reason'>Spawn Reason</a>
+          <a href='/reference/spawn_reason'>스폰 사유</a>
         </td>
       </tr>
       <tr>
@@ -96,9 +95,9 @@ Mob spawns can also be filtered against any other filter type including regions.
             <code>{{'<mob> </mob>' | escape_once}}</code>
           </span>
         </td>
-        <td>The mob to filter for.</td>
+        <td>필터링할 몹을 설정합니다.</td>
         <td>
-          <a href='/reference/entity_types#creatures'>Creature Type</a>
+          <a href='/reference/entity_types#creatures'>몹 유형</a>
         </td>
       </tr>
       <tr>
@@ -107,9 +106,9 @@ Mob spawns can also be filtered against any other filter type including regions.
             <code>{{'<entity> </entity>' | escape_once}}</code>
           </span>
         </td>
-        <td>The entity to filter for.</td>
+        <td>필터링할 엔티티를 설정합니다.</td>
         <td>
-          <a href='/reference/entity_types'>Entity Type</a>
+          <a href='/reference/entity_types'>엔티티 유형</a>
         </td>
       </tr>
     </tbody>
