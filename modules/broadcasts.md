@@ -164,3 +164,14 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
         <tip after="20m" every="1m">경기가 시작한 다음 20분 후에 처음 표시되고 그 후 매 분마다 표시됩니다.</tip>
         <tip after="30m" every="10m" count="3">경기가 시작한 다음 30분 40분 50분 후에 팁이 표시됩니다.</tip>
     </broadcasts>
+
+    Examples
+
+        <broadcasts>
+            <tip after="30s">A [Tip] displayed 30 seconds into the match</tip>
+            <alert after="5m">An [Alert] displayed after 5 minutes</alert>
+            <tip after="10m" count="3">Repeated [Tip] at 10m, 20m, and 30m</tip>
+            <tip after="99s" count="oo">Repeated every 99 seconds, forever</tip>
+            <tip after="20m" every="1m">Displayed at 20m and every minute after that</tip>
+            <tip after="30m" every="10m" count="3">At 30m, 40m, and 50m</tip>
+        </broadcasts>
