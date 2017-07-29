@@ -43,9 +43,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
             <code>{{'<tip> </tip>' | escape_once}}</code>
           </span>
         </td>
-        <td>
-          [Tip] <메시지> 형태로 표시합니다.
-        </td>
+        <td>[Tip] <메시지> 형태로 표시합니다</td>
         <td>
           <span class='label label-primary'>텍스트 포맷</span>
         </td>
@@ -56,9 +54,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
             <code>{{'<alert> </alert>' | escape_once}}</code>
           </span>
         </td>
-        <td>
-          [Alert] <메시지> 형태로 표시합니다.
-        </td>
+        <td>[Alert] <메시지> 형태로 표시합니다.</td>
         <td>
           <span class='label label-primary'>텍스트 포맷</span>
         </td>
