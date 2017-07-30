@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아비스 네트워크 XML 문서</title>
+
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <link href='/css/custom-highlight.css' rel='stylesheet' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
+    <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+  </head>
+  <body>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <nav class='collapse navbar-collapse navbar-main-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class=''>
+              <a href='/'>
+                <i class='fa fa-home'></i>
+                홈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/modules/main'>
+                <i class='fa fa-th-large'></i>
+                모듈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/reference/inventory'>
+                <i class='fa fa-book'></i>
+                참고 자료
+              </a>
+            </li>
+            <li class=''>
+              <a href='/guides/packaging/cleaning_files'>
+                <i class='fa fa-clipboard'></i>
+                가이드
+              </a>
+            </li>
+            <li class='active'>
+              <a href='/examples'>
+                <i class='fa fa-file-text'></i>
+                예시
+              </a>
+            </li>
+            <li class="dropdown activ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">한국어</a></li>
+                <li><a href="/en">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <div class="jumbotron main subhead">
+    <h1>
+      예시
+      <p class='lead'>XML 파일 예시</p>
+    </h1>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class='well well-sm'>
+  현재 맵 프로토콜 버전은
+  <a href='/modules/proto'>1.4.2</a>
+  입니다.
+</div>
+
+<div class='btn-group subnav visible-xs'>
+  <button class='btn btn-primary btn-block subnav-btn dropdown-toggle' data-toggle='dropdown' type='button'>
+    XML 모듈
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
+    
+  </ul>
+</div>
+
+<div class='sidebar hidden-xs'>
+  <ul class='nav nav-pills nav-stacked docs-nav-pills'>
+    
+  </ul>
+</div>
+
+
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+          <h1>
+            
+
+            Harb KoTF
+          </h1>
+        </div>
+
+        <p><a href="/modules/main"><i class="fa fa-share right-ref-link"></i></a>
+XML파일 버전을 지정한 다음 메인 맵 모듈을 열고 지도 이름, 버전 및 목표를 지정합니다.</p>
+
+<pre><code> &lt;?xml version="1.0"?&gt;
+ &lt;map proto="1.3.0"&gt;
+ &lt;name&gt;Harb KoTF&lt;/name&gt;
+ &lt;version&gt;2.1&lt;/version&gt;
+ &lt;objective&gt;승리하기 위해 가장 많은 시간 동안 깃발을 점유하세요!&lt;/objective&gt;
+</code></pre>
+
+<p>Specify the map’s authors. Each author can be given an optional attribute <code>contribution=""</code> attribute to set to their specific contribution to the map.</p>
+
+<pre><code>&lt;authors&gt;
+    &lt;author uuid="1379cb6e-f291-4498-9807-e636f9674ac0" contribution="Map Author"/&gt; &lt;!-- SH4D0W_HAWK --&gt;
+    &lt;author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8" contribution="Map Author"/&gt; &lt;!-- Plastix --&gt;
+&lt;/authors&gt;
+</code></pre>
+
+<p><a href="/modules/teams"><i class="fa fa-share right-ref-link"></i></a>
+Defining two teams, use their respective <a href="/reference/formatting#chatColors">colors</a> and names. You must have a <code>max</code> to specify the amount of players who can play, keep in mind however this is not the maximum capacity. Donors and staff will be able to join above the <code>max</code>. To combat this, use <code>max-overfill</code> with a number greater than the <code>max</code>.</p>
+
+<pre><code>&lt;teams&gt;
+    &lt;team id="blue" color="blue" max="40"&gt;Blue&lt;/team&gt;
+    &lt;team id="red" color="dark red" max="40"&gt;Red&lt;/team&gt;
+&lt;/teams&gt;
+</code></pre>
+
+<p><a href="/modules/gamemode_ctf"><i class="fa fa-share right-ref-link"></i></a>
+This map uses flags as the primary objective. To define a flag, you must use the <code>&lt;flags&gt;</code> module and at least define a <code>post</code>, as that’s the only one required. In this example, the <code>yaw</code> makes the flag turn 90 degrees. You may have multiple post locations that the flag spawns at.
+The flag, when picked up and dropped off, yields a kit that is referred to elsewhere in the file. You may customize what happens once a flag is picked up.
+    <flags>
+        <post id="post" return-time="0s" yaw="90">
+            <block>-47.5,32,0.5</block>
+            <block>-29.5,40,0.5</block>
+            <block>0.5,33,0.5</block>
+            <block>30.5,40,0.5</block>
+            <block>48.5,32,0.5</block>
+        </post>
+        <flag name="Flag" id="flag" shared="true" post="post" points-rate="0.5" pickup-kit="get-flag" drop-kit="reset-flag"></flag>
+    </flags></p>
+
+<p><a href="/modules/filters"><i class="fa fa-share right-ref-link"></i></a>
+Filters are used to apply a certain true-false condition. In these filters, <code>no-lantern</code> is used to deny the block breaking of a sea lantern, <code>no-sewers</code> is used similarly to deny access to the lower part of the sewers, and <code>no-carrier</code> is used to deny the flag carrier to certain locations.</p>
+
+<pre><code>&lt;filters&gt;
+    &lt;filter name="no-lantern"&gt;
+        &lt;deny&gt;
+            &lt;block&gt;sea lantern&lt;/block&gt;
+        &lt;/deny&gt;
+    &lt;/filter&gt;
+    &lt;filter name="no-sewers"&gt;
+        &lt;deny&gt;
+            &lt;block&gt;stained glass&lt;/block&gt;
+        &lt;/deny&gt;
+    &lt;/filter&gt;
+    &lt;filter name="no-carrier"&gt;
+        &lt;not&gt;
+            &lt;carrying-flag&gt;flag&lt;/carrying-flag&gt;
+        &lt;/not&gt;
+    &lt;/filter&gt;
+ &lt;/filters&gt;
+</code></pre>
+
+<p><a href="/modules/regions"><i class="fa fa-share right-ref-link"></i></a>
+In these regions, there are many different regions that provide different functions:</p>
+<ul>
+  <li><code>outside-map</code> provides a boundary by defining three different rectangles. You cannot leave. Using a union, you can combine regions.</li>
+  <li><code>portals-area</code> defines a region that refers to disable editing in the portal area.</li>
+  <li><code>no-lantern</code> disables the ability to destroy the block under the flag in the whole <code>map</code> region.</li>
+  <li><code>no-sewers</code> disables the ability to edit stained glass and access sewers in the whole <code>map</code> region.</li>
+  <li>The <code>&lt;apply block-break="deny-all" region="map"/&gt;</code> is applied to the whole map, making it to where you cannot break any blocks.</li>
+  <li><code>outside-map</code> restricts a user from leaving the map boundaries or editing outside of the map boundaries.</li>
+  <li>
+    <p><code>no-carrier</code> restricts a user carrying the flag from entering the bases.</p>
+
+    <regions>
+      <negative name="outside-map">
+          <union name="map">
+              <rectangle name="main-area" min="-50,-32" max="51,33" />
+              <union name="bases">
+                  <rectangle name="blue-base" min="-20,-62" max="21,-32" />
+                  <rectangle name="red-base" min="-20,33" max="21,63" />
+              </union>
+          </union>
+      </negative>
+      <complement name="portals-area">
+          <rectangle min="-56,-2" max="57,3" />
+          <region name="main-area" />
+      </complement>
+      <apply block="deny-all" region="portals-area" message="You may not edit the portal area" />
+      <apply block-break="no-lantern" region="map" message="You may not break this block since a flag may spawn here" />
+      <apply block-break="no-sewers" region="map" message="Sewer entry is disabled for this gamemode" />
+      <apply block-break="deny-all" region="map" />
+      <apply block="deny-all" enter="deny-all" region="outside-map" message="You may not interact with the game outside the map" />
+      <apply enter="no-carrier" region="bases" message="Flag carrier cannot enter the bases" />
+  </regions>
+  </li>
+</ul>
+
+<p><a href="/modules/kits"><i class="fa fa-share right-ref-link"></i></a>
+This defines the spawn kits. In this example, both teams get the same kit.
+&lt;/br&gt;
+<strong>Two special kits are applied:</strong></p>
+<ul>
+  <li><code>get-flag</code>, which lowers the health and gives night vision.</li>
+  <li>
+    <p><code>reset-flag</code>, which happens to reset you to normal once the flag is dropped.
+&lt;/br&gt;</p>
+
+    <kits>
+      <kit name="spawn">
+          <item slot="0">stone sword</item>
+          <item slot="1" enchantment="arrow infinite:1">bow</item>
+          <item slot="28" amount="1">arrow</item>
+          <item slot="2" amount="2">tnt</item>
+          <item slot="3" amount="1">golden apple</item>
+          <item slot="4" amount="32">ladder</item>
+          <potion duration="5">heal</potion>
+          <potion duration="5">damage resistance</potion>
+      </kit>
+      <kit name="red" parents="spawn">
+          <helmet locked="true" color="cd0000" unbreakable="true">leather helmet</helmet>
+          <chestplate locked="true" color="cd0000" enchantment="protection explosions:3" unbreakable="true">leather chestplate</chestplate>
+          <leggings locked="true" color="cd0000" unbreakable="true">leather leggings</leggings>
+          <boots locked="true" color="cd0000" unbreakable="true">leather boots</boots>
+      </kit>
+      <kit name="blue" parents="spawn">
+          <helmet locked="true" color="0066cc" unbreakable="true">leather helmet</helmet>
+          <chestplate locked="true" color="0066cc" enchantment="protection explosions:3" unbreakable="true">leather chestplate</chestplate>
+          <leggings locked="true" color="0066cc" unbreakable="true">leather leggings</leggings>
+          <boots locked="true" color="0066cc" unbreakable="true">leather boots</boots>
+      </kit>
+      <kit name="get-flag" force="true">
+          <potion duration="oo" amplifier="-4">health boost</potion>
+          <potion duration="oo">night vision</potion>
+      </kit>
+      <kit name="reset-flag" force="true">
+          <potion duration="0" amplifier="0">health boost</potion>
+          <potion duration="0">night vision</potion>
+      </kit>
+  </kits>
+  </li>
+</ul>
+
+<p><a href="/modules/spawns"><i class="fa fa-share right-ref-link"></i></a>
+Both teams have defined spawns that they are taken to. <code>sequential</code> spawns players at the next region in a list if the one prior to it isn’t safe, and requires <code>safe="true"</code> to function. The <code>default</code> is the spectator spawn, where newly joined players will spawn at.</p>
+
+<pre><code>&lt;spawns&gt;
+    &lt;spawns safe="true" sequential="true"&gt;
+        &lt;spawn team="blue" kit="blue" yaw="0"&gt;
+            &lt;cuboid min="-15,32,-57" max="16,42,-32"/&gt;
+            &lt;point&gt;0.5,33,-47.5&lt;/point&gt;
+        &lt;/spawn&gt;
+        &lt;spawn team="red" kit="red" yaw="180"&gt;
+            &lt;cuboid min="-15,32,33" max="16,42,58"/&gt;
+            &lt;point&gt;0.5,33,48.5&lt;/point&gt;
+        &lt;/spawn&gt;
+    &lt;/spawns&gt;
+    &lt;default yaw="90"&gt;
+        &lt;cuboid min="-75.5,42.5,-0.5" max="-73.5,42.5,1.5"/&gt;
+    &lt;/default&gt;
+&lt;/spawns&gt;
+</code></pre>
+
+<p><a href="/modules/portals"><i class="fa fa-share right-ref-link"></i></a>
+Portals are used to transport a player via walking through a region. The <code>x=""</code> is used to offset the player’s X axis.</p>
+
+<pre><code>&lt;portals filter="no-carrier"&gt;
+    &lt;portal x="110"&gt;
+        &lt;cuboid min="-56,33,-1" max="-55,35,2"/&gt;
+    &lt;/portal&gt;
+    &lt;portal x="-110"&gt;
+        &lt;cuboid min="56,33,-1" max="57,35,2"/&gt;
+    &lt;/portal&gt;
+&lt;/portals&gt;
+</code></pre>
+
+<p>The score is the amount required in order for the match to determine a winner.</p>
+
+<pre><code>&lt;score&gt;
+    &lt;limit&gt;200&lt;/limit&gt;
+&lt;/score&gt;
+</code></pre>
+
+<p><a href="/modules/repair_remove_keep"><i class="fa fa-share right-ref-link"></i></a>
+These are used to define what should be either repaired upon pickup, or removed from the map under any circumstance.</p>
+
+<pre><code>&lt;toolrepair&gt;
+    &lt;tool&gt;stone sword&lt;/tool&gt;
+    &lt;tool&gt;bow&lt;/tool&gt;
+    &lt;tool&gt;shears&lt;/tool&gt;
+&lt;/toolrepair&gt;
+&lt;itemremove&gt;
+    &lt;item&gt;leather helmet&lt;/item&gt;
+    &lt;item&gt;leather chestplate&lt;/item&gt;
+    &lt;item&gt;leather leggings&lt;/item&gt;
+    &lt;item&gt;leather boots&lt;/item&gt;
+    &lt;item&gt;arrow&lt;/item&gt;
+    &lt;item&gt;ladder&lt;/item&gt;
+    &lt;item&gt;cooked chicken&lt;/item&gt;
+    &lt;item&gt;glass bottle&lt;/item&gt;
+    &lt;item&gt;golden apple&lt;/item&gt;
+    &lt;item&gt;clay ball&lt;/item&gt;
+    &lt;item&gt;glowstone dust&lt;/item&gt;
+    &lt;item&gt;string&lt;/item&gt;
+&lt;/itemremove&gt;
+</code></pre>
+
+<p><a href="/modules/killreward"><i class="fa fa-share right-ref-link"></i></a>
+Once you kill a player, you will be given one golden apple and TNT block as a reward.</p>
+
+<pre><code>&lt;killreward&gt;
+    &lt;item&gt;golden apple&lt;/item&gt;
+    &lt;item&gt;tnt&lt;/item&gt;
+&lt;/killreward&gt;
+</code></pre>
+
+<p><a href="/modules/tnt"><i class="fa fa-share right-ref-link"></i></a>
+These are the behavioral modifications of TNT. It will instantly be primed, it does not require a license, you cannot defuse team TNT, it will not do damage to blocks,</p>
+
+<pre><code>&lt;tnt&gt;
+    &lt;instantignite&gt;on&lt;/instantignite&gt;
+    &lt;licensing&gt;off&lt;/licensing&gt;
+    &lt;friendly-defuse&gt;off&lt;/friendly-defuse&gt;
+    &lt;blockdamage&gt;off&lt;/blockdamage&gt;
+&lt;/tnt&gt;
+</code></pre>
+
+<p>Disable the ability for people to be hungry by disabling the depletion of hunger.</p>
+
+<pre><code>&lt;hunger&gt;
+    &lt;depletion&gt;off&lt;/depletion&gt;
+&lt;/hunger&gt;
+</code></pre>
+
+<p>Define how high a user can build. Once they reach the Y-axis of <code>48</code>, they will be restricted from building.
+    <maxbuildheight>48</maxbuildheight></p>
+
+<p>Disable the ability to hurt your team, but any other means of TNT will hurt you, the enemy, and entities.</p>
+
+<pre><code>&lt;disabledamage&gt;
+    &lt;damage ally="true" self="false" enemy="false" other="false"&gt;block explosion&lt;/damage&gt;
+&lt;/disabledamage&gt;
+</code></pre>
+
+<p>Finally, close the <code>&lt;map&gt;</code> tag.</p>
+
+<pre><code>&lt;/map&gt;
+</code></pre>
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+    <div class='container'>
+      <hr />
+      <footer class='docs-footer'>
+        <ul class='nav nav-pills'>
+          <li class='pull-left'>
+            <a>&copy; 2017 Avis Network</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://github.com/avisnetwork" target="_blank">GitHub</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

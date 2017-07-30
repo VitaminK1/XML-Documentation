@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아비스 네트워크 XML 문서</title>
+
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <link href='/css/custom-highlight.css' rel='stylesheet' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
+    <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+  </head>
+  <body>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <nav class='collapse navbar-collapse navbar-main-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class=''>
+              <a href='/'>
+                <i class='fa fa-home'></i>
+                홈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/modules/main'>
+                <i class='fa fa-th-large'></i>
+                모듈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/reference/inventory'>
+                <i class='fa fa-book'></i>
+                참고 자료
+              </a>
+            </li>
+            <li class='active'>
+              <a href='/guides/packaging/cleaning_files'>
+                <i class='fa fa-clipboard'></i>
+                가이드
+              </a>
+            </li>
+            <li class=''>
+              <a href='/examples'>
+                <i class='fa fa-file-text'></i>
+                예시
+              </a>
+            </li>
+            <li class="dropdown activ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">한국어</a></li>
+                <li><a href="/en">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <div class="jumbotron main subhead">
+    <h1>
+      가이드
+      <p class='lead'>XML 포인터</p>
+    </h1>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class='well well-sm'>
+  현재 맵 프로토콜 버전은
+  <a href='/modules/proto'>1.4.2</a>
+  입니다.
+</div>
+
+<div class='btn-group subnav visible-xs'>
+  <button class='btn btn-primary btn-block subnav-btn dropdown-toggle' data-toggle='dropdown' type='button'>
+    XML 모듈
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
+    <li class="dropdown-header">XML 포인터</li><li class="active"><a href="/guides/regions">지역 정의하기</a></li><li class=""><a href="/guides/filter_apply_order">필터 적용하기</a></li><li class=""><a href="/guides/xml_conventions">XML 규약</a></li><li class="divider"></li><li class="dropdown-header">맵 패키징</li><li class=""><a href="/guides/packaging/cleaning_files">월드 폴더 정리하기</a></li><li class=""><a href="/guides/packaging/pruning_chunks">청크 정리하기</a></li><li class=""><a href="/guides/packaging/compiling_releasing">컴파일 및 배포하기</a></li><li class="divider"></li><li class="dropdown-header">자료</li><li class=""><a href="/guides/plugins">추천 플러그인</a></li>
+  </ul>
+</div>
+
+<div class='sidebar hidden-xs'>
+  <ul class='nav nav-pills nav-stacked docs-nav-pills'>
+    <li><h4>XML 포인터</h4></li><li class="active"><a href="/guides/regions">지역 정의하기</a></li><li class=""><a href="/guides/filter_apply_order">필터 적용하기</a></li><li class=""><a href="/guides/xml_conventions">XML 규약</a></li><li><h4>맵 패키징</h4></li><li class=""><a href="/guides/packaging/cleaning_files">월드 폴더 정리하기</a></li><li class=""><a href="/guides/packaging/pruning_chunks">청크 정리하기</a></li><li class=""><a href="/guides/packaging/compiling_releasing">컴파일 및 배포하기</a></li><li><h4>자료</h4></li><li class=""><a href="/guides/plugins">추천 플러그인</a></li>
+  </ul>
+</div>
+
+
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+          <h1>
+            
+
+            올바르게 지역 지정하기
+          </h1>
+        </div>
+
+        <p>먼저, Game 플러그인에서 사용되는 지역 좌표는  <em>실제 숫자</em> 입니다. 이말인 즉슨, 좌표값은 2.3 4.5 6.789등의 분수 값이 될 수 있음을 의미합니다. 좌표는 세 축(X, Y 또는 Z) 중 하나의 <em>점</em> 을 나타냅니다. 세 좌표는 3차원 공간에서 <em>점</em> 을 나타냅니다. 좌표는 적어도 직접적으로는 아니지만 블럭을 나타내지는 <strong>않습니다</strong>. Game 플러그인이 블럭이 영역 내에 있는 지를 결정할 필요가 있을 때 블럭의 <strong>중심</strong> 에 있는 점이 영역 내에 있는지를 확인합니다. 블럭의 중심에 있는 점은 항상 <code>.5</code>로 끝나는 좌표를 갖습니다. 지역을 지정할 때는 모든 블럭의 중심점이 지역 <em>안</em> 에 있는지 확인해야 합니다.</p>
+
+<p>여기 예시가 있습니다. 다음과 같이 모뉴먼트 지역을 정의해봅시다.</p>
+
+<p class="scroll"><img src="/img/regions/destroyable.png" /></p>
+
+<p>첫째, 우리는 지역의 한쪽 <strong>모서리</strong>에 매우 가깝게 서 있으며, 이 좌표가 <code>32,60,-20</code>임을 알 수 있습니다:</p>
+
+<p class="scroll"><img src="/img/regions/destroyable_c1.png" /></p>
+
+<p>그다음 반대 모서리에 서서 좌표가 <code>34,60,-18</code>임을 주목하세요. 우리는 모뉴먼트가 3블럭 높이라는 것을 알고 있습니다. 그러므로 우리는 Y좌표에서 3을 빼서 <code>34,57,-18</code>이란 값을 얻을 수 있습니다.</p>
+
+<p class="scroll"><img src="/img/regions/destroyable_c2.png" /></p>
+
+<p>가장 <strong>가까운</strong> 정수로 반올림된다는 사실을 기억하세요. 그것들은 분명히 우리가 가까이 서있는 모서리의 좌표일 것입니다. 우리는 양수 와 음수 좌표에 대해 걱정할 필요가 없습니다. 같은 방식으로 작동하기 때문에 음수 값을 더하거나 뺄 필요가 없습니다.</p>
+
+<p>이 좌표를 사용하여 모뉴먼트에 대한 직육면체 지역을 만들 수 있습니다.</p>
+
+<pre><code>&lt;cuboid min="32, 60, -20" max="34, 57, -18"/&gt;
+</code></pre>
+
+<p>스타일 포인트의 경우, 낮은 좌표는 <code>min</code>에 있고 높은 좌표는 <code>max</code>에 있는지 확인할 수 있습니다.</p>
+
+<pre><code>&lt;cuboid min="32, 57, -20" max="34, 60, -18"/&gt;
+</code></pre>
+
+<p>이것은 Game 플러그인이 자동으로 고쳐줄것이기 때문에 꼭 필요한것은 아닙니다. 하지만 사람들이 읽고 편집하기가 쉬워집니다.</p>
+
+<p>정육면체 영역이 올바른지 확인하는 가장 쉬운 방법은 단순히 높은 좌표값에서 낮은 좌표값을 빼는 것입니다. 결과는 영역의 크기여야 합니다. 그렇지 않다면 당신은 무언가 잘못했을 수도있습니다.</p>
+
+<p>이제 더 흥미로운 원기둥 영역을 사용해 봅시다. 원기둥은 기본(중심)점, 반지름 및 높이로 정의됩니다. 하나의 블럭 층을 가정해 본다면, 아래 이미지의 원기둥은 <code>(53.5, 57, -10.5)</code> 에 기초를 두고 반경이 <code>2.5</code> 이고 높이가 <code>1</code>이 됩니다. 원기둥 내부에 중심점이 있는 블럭은 영역의 일부로 간주됩니다. 그림에서 지역 경계와 블럭 중심점을 강조 했으므로 이 방법의 작동 방식을 쉽게 볼 수 있습니다.</p>
+
+<p class="scroll"><img src="/img/regions/cylinder.png" /></p>
+
+<p>따라서 지역은 다음과 같습니다:</p>
+
+<pre><code>&lt;cylinder base="53.5, 57, -10.5" radius="2.5" height="1"/&gt;
+</code></pre>
+
+<p><br /></p>
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+    <div class='container'>
+      <hr />
+      <footer class='docs-footer'>
+        <ul class='nav nav-pills'>
+          <li class='pull-left'>
+            <a>&copy; 2017 Avis Network</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://github.com/avisnetwork" target="_blank">GitHub</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

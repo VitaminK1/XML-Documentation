@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아비스 네트워크 XML 문서</title>
+
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <link href='/css/custom-highlight.css' rel='stylesheet' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
+    <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+  </head>
+  <body>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <nav class='collapse navbar-collapse navbar-main-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class=''>
+              <a href='/'>
+                <i class='fa fa-home'></i>
+                홈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/modules/main'>
+                <i class='fa fa-th-large'></i>
+                모듈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/reference/inventory'>
+                <i class='fa fa-book'></i>
+                참고 자료
+              </a>
+            </li>
+            <li class='active'>
+              <a href='/guides/packaging/cleaning_files'>
+                <i class='fa fa-clipboard'></i>
+                가이드
+              </a>
+            </li>
+            <li class=''>
+              <a href='/examples'>
+                <i class='fa fa-file-text'></i>
+                예시
+              </a>
+            </li>
+            <li class="dropdown activ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">한국어</a></li>
+                <li><a href="/en">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <div class="jumbotron main subhead">
+    <h1>
+      가이드
+      <p class='lead'>XML 포인터</p>
+    </h1>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class='well well-sm'>
+  현재 맵 프로토콜 버전은
+  <a href='/modules/proto'>1.4.2</a>
+  입니다.
+</div>
+
+<div class='btn-group subnav visible-xs'>
+  <button class='btn btn-primary btn-block subnav-btn dropdown-toggle' data-toggle='dropdown' type='button'>
+    XML 모듈
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
+    <li class="dropdown-header">XML 포인터</li><li class=""><a href="/guides/regions">지역 정의하기</a></li><li class="active"><a href="/guides/filter_apply_order">필터 적용하기</a></li><li class=""><a href="/guides/xml_conventions">XML 규약</a></li><li class="divider"></li><li class="dropdown-header">맵 패키징</li><li class=""><a href="/guides/packaging/cleaning_files">월드 폴더 정리하기</a></li><li class=""><a href="/guides/packaging/pruning_chunks">청크 정리하기</a></li><li class=""><a href="/guides/packaging/compiling_releasing">컴파일 및 배포하기</a></li><li class="divider"></li><li class="dropdown-header">자료</li><li class=""><a href="/guides/plugins">추천 플러그인</a></li>
+  </ul>
+</div>
+
+<div class='sidebar hidden-xs'>
+  <ul class='nav nav-pills nav-stacked docs-nav-pills'>
+    <li><h4>XML 포인터</h4></li><li class=""><a href="/guides/regions">지역 정의하기</a></li><li class="active"><a href="/guides/filter_apply_order">필터 적용하기</a></li><li class=""><a href="/guides/xml_conventions">XML 규약</a></li><li><h4>맵 패키징</h4></li><li class=""><a href="/guides/packaging/cleaning_files">월드 폴더 정리하기</a></li><li class=""><a href="/guides/packaging/pruning_chunks">청크 정리하기</a></li><li class=""><a href="/guides/packaging/compiling_releasing">컴파일 및 배포하기</a></li><li><h4>자료</h4></li><li class=""><a href="/guides/plugins">추천 플러그인</a></li>
+  </ul>
+</div>
+
+
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+          <h1>
+            
+
+            필터 적용하기
+          </h1>
+        </div>
+
+        <p>프로토콜 버전이 <code>1.3.3</code>이상이면, 지역에 <a href="/modules/regions#applying">적용</a>되는 필터가 순서의 영향을 받습니다.
+여기 예시가 있습니다.</p>
+
+<p>먼저 TNT를 <strong>제외</strong>하고 모든 것들을 <strong>거부</strong>하는 가장 기본적인 필터를 만들어 봅시다.</p>
+
+<pre><code>&lt;filter name="only-tnt"&gt;
+    &lt;block&gt;tnt&lt;/block&gt;
+&lt;/filter&gt;
+</code></pre>
+
+<p>이제 이 필터를 <code>Region A</code>에 적용하고 모든 블럭을 거부하는 필터를 <code>Region B</code>에 적용하겠습니다.</p>
+
+<pre><code>&lt;apply block="only-tnt" region="region-a"/&gt;
+
+&lt;apply block="never" region="region-b"/&gt;
+</code></pre>
+
+<p>그러나 약간의 문제가 발생했어요, 만약 <code>Region B</code>가 <code>Region A</code>안에 있다면 어떻게 해야할까요?
+그러면 어떤 필터가 다른 필터를 덮어씌워야할까요? 여기 적용 순서를 볼 수 있는곳이 있습니다.</p>
+
+<p><img src="/img/apply_order.png" alt="Apply Order .png" /></p>
+
+<p><code>&lt;apply&gt;</code>를 어디에 쓰는지에 따라 무언가가 필터링 되는 결과가 바뀔 수 있습니다.
+앞의 예시를 보면 <code>only-tnt</code>필터는 <code>never</code>필터보다 앞에 위치하고 있기 때문에 항상 덮어씌워집니다.
+<code>Region B</code>에 대한 적용은 <code>Region A</code>와 완전히 중복되지 않으므로 Region A에 적용되지 않습니다.</p>
+
+<p>만약 우리가 필터의 순서를 바꾼다면 어떻게 될까요</p>
+
+<pre><code>&lt;apply block="never" region="region-b"/&gt;
+
+&lt;apply block="only-tnt" region="region-a"/&gt;
+</code></pre>
+
+<p>이제 <code>Region B</code>안에서는 블럭을 놓을 수 없습니다. 하지만 <code>Region A</code>밖에서는 TNT블럭만을 놓을 수 있습니다.</p>
+
+<p>비록 이것이 Blitz나 TDM과 같은 맵에서는 필요하지 않더라도 <code>&lt;void/&gt;</code>필터를 사용하는 많은 DTM/DTC/CTW 맵에서는 아주 중요합니다.
+일반적으로 <code>&lt;void/&gt;</code>필터는 XML파일 가장 아래(가장 낮은 우선 순위)에 두는 것이 가장 좋습니다.</p>
+
+<p>맵 개발자는 이 과정을 통해 맵의 지역과 필터가 올바르게 작동하는지 확인하는데 도움을 줄 수 있습니다.</p>
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+    <div class='container'>
+      <hr />
+      <footer class='docs-footer'>
+        <ul class='nav nav-pills'>
+          <li class='pull-left'>
+            <a>&copy; 2017 Avis Network</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://github.com/avisnetwork" target="_blank">GitHub</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

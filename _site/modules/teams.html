@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아비스 네트워크 XML 문서</title>
+
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <link href='/css/custom-highlight.css' rel='stylesheet' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
+    <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+  </head>
+  <body>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <nav class='collapse navbar-collapse navbar-main-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class=''>
+              <a href='/'>
+                <i class='fa fa-home'></i>
+                홈
+              </a>
+            </li>
+            <li class='active'>
+              <a href='/modules/main'>
+                <i class='fa fa-th-large'></i>
+                모듈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/reference/inventory'>
+                <i class='fa fa-book'></i>
+                참고 자료
+              </a>
+            </li>
+            <li class=''>
+              <a href='/guides/packaging/cleaning_files'>
+                <i class='fa fa-clipboard'></i>
+                가이드
+              </a>
+            </li>
+            <li class=''>
+              <a href='/examples'>
+                <i class='fa fa-file-text'></i>
+                예시
+              </a>
+            </li>
+            <li class="dropdown activ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">한국어</a></li>
+                <li><a href="/en">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <div class="jumbotron main subhead">
+    <h1>
+      모듈
+      
+    </h1>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class='well well-sm'>
+  현재 맵 프로토콜 버전은
+  <a href='/modules/proto'>1.4.2</a>
+  입니다.
+</div>
+
+<div class='btn-group subnav visible-xs'>
+  <button class='btn btn-primary btn-block subnav-btn dropdown-toggle' data-toggle='dropdown' type='button'>
+    XML 모듈
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
+    <li class="dropdown-header">일반</li><li class=""><a href="/modules/main">기본 맵 요소</a></li><li class=""><a href="/modules/includes_conditionals">Include 파일과 조건문</a></li><li class="divider"></li><li class="dropdown-header">정보</li><li class=""><a href="/modules/tutorial">튜토리얼</a></li><li class=""><a href="/modules/broadcasts">알림과 팁</a></li><li class=""><a href="/modules/rules">특정 규정</a></li><li class="divider"></li><li class="dropdown-header">환경</li><li class=""><a href="/modules/world">월드와 지형</a></li><li class=""><a href="/modules/time">시간과 차원</a></li><li class=""><a href="/modules/border">월드 보더</a></li><li class=""><a href="/modules/mobs">몹 스폰</a></li><li class="divider"></li><li class="dropdown-header">포맷</li><li class=""><a href="/modules/players">플레이어 (Free-For-All)</a></li><li class="active"><a href="/modules/teams">팀</a></li><li class="divider"></li><li class="dropdown-header">목표물</li><li class=""><a href="/modules/gamemode_ctw">양털 쟁탈 게임</a></li><li class=""><a href="/modules/gamemode_ctf">깃발 쟁탈 게임</a></li><li class=""><a href="/modules/control_points">점령 지점</a></li><li class=""><a href="/modules/gamemode_dtm">모뉴먼트 부수기 게임</a></li><li class=""><a href="/modules/gamemode_dtc">코어 부수기 게임</a></li><li class=""><a href="/modules/monument_modes">모뉴먼트 모드</a></li><li class=""><a href="/modules/gamemode_blitz">Blitz 게임</a></li><li class=""><a href="/modules/scoring">점수</a></li><li class=""><a href="/modules/gamemode_other">다른 게임 모드</a></li><li class="divider"></li><li class="dropdown-header">기능</li><li class=""><a href="/modules/filters">필터</a></li><li class=""><a href="/modules/regions">지역</a></li><li class=""><a href="/modules/spawns">스폰</a></li><li class=""><a href="/modules/portals">포탈</a></li><li class=""><a href="/modules/proximity_alarms">접근 알람</a></li><li class=""><a href="/modules/midi">MIDI 파일</a></li><li class=""><a href="/modules/damage">데미지</a></li><li class=""><a href="/modules/gamerules">게임 규칙</a></li><li class="divider"></li><li class="dropdown-header">Gear</li><li class=""><a href="/modules/items">아이템과 갑옷</a></li><li class=""><a href="/modules/potions">포션 효과</a></li><li class=""><a href="/modules/kits">키트</a></li><li class=""><a href="/modules/classes">클래스</a></li><li class=""><a href="/modules/pickups">Pickups</a></li><li class=""><a href="/modules/item_mods">아이템 모드</a></li><li class=""><a href="/modules/crafting">조합 레시피</a></li><li class=""><a href="/modules/repair_remove_keep">수리, 제거 및 유지</a></li><li class=""><a href="/modules/projectiles">투사체</a></li><li class=""><a href="/modules/tnt">TNT</a></li><li class=""><a href="/modules/killreward">처치 보상</a></li><li class=""><a href="/modules/lootables">전리품</a></li><li class="divider"></li><li class="dropdown-header">블럭</li><li class=""><a href="/modules/animations">애니메이션</a></li><li class=""><a href="/modules/blockdrops">블럭 드롭</a></li><li class=""><a href="/modules/falling_blocks">떨어지는 블럭</a></li><li class=""><a href="/modules/renewables">재생</a></li><li class=""><a href="/modules/structures">구조물</a></li>
+  </ul>
+</div>
+
+<div class='sidebar hidden-xs'>
+  <ul class='nav nav-pills nav-stacked docs-nav-pills'>
+    <li><h4>일반</h4></li><li class=""><a href="/modules/main">기본 맵 요소</a></li><li class=""><a href="/modules/includes_conditionals">Include 파일과 조건문</a></li><li><h4>정보</h4></li><li class=""><a href="/modules/tutorial">튜토리얼</a></li><li class=""><a href="/modules/broadcasts">알림과 팁</a></li><li class=""><a href="/modules/rules">특정 규정</a></li><li><h4>환경</h4></li><li class=""><a href="/modules/world">월드와 지형</a></li><li class=""><a href="/modules/time">시간과 차원</a></li><li class=""><a href="/modules/border">월드 보더</a></li><li class=""><a href="/modules/mobs">몹 스폰</a></li><li><h4>포맷</h4></li><li class=""><a href="/modules/players">플레이어 (Free-For-All)</a></li><li class="active"><a href="/modules/teams">팀</a></li><li><h4>목표물</h4></li><li class=""><a href="/modules/gamemode_ctw">양털 쟁탈 게임</a></li><li class=""><a href="/modules/gamemode_ctf">깃발 쟁탈 게임</a></li><li class=""><a href="/modules/control_points">점령 지점</a></li><li class=""><a href="/modules/gamemode_dtm">모뉴먼트 부수기 게임</a></li><li class=""><a href="/modules/gamemode_dtc">코어 부수기 게임</a></li><li class=""><a href="/modules/monument_modes">모뉴먼트 모드</a></li><li class=""><a href="/modules/gamemode_blitz">Blitz 게임</a></li><li class=""><a href="/modules/scoring">점수</a></li><li class=""><a href="/modules/gamemode_other">다른 게임 모드</a></li><li><h4>기능</h4></li><li class=""><a href="/modules/filters">필터</a></li><li class=""><a href="/modules/regions">지역</a></li><li class=""><a href="/modules/spawns">스폰</a></li><li class=""><a href="/modules/portals">포탈</a></li><li class=""><a href="/modules/proximity_alarms">접근 알람</a></li><li class=""><a href="/modules/midi">MIDI 파일</a></li><li class=""><a href="/modules/damage">데미지</a></li><li class=""><a href="/modules/gamerules">게임 규칙</a></li><li><h4>Gear</h4></li><li class=""><a href="/modules/items">아이템과 갑옷</a></li><li class=""><a href="/modules/potions">포션 효과</a></li><li class=""><a href="/modules/kits">키트</a></li><li class=""><a href="/modules/classes">클래스</a></li><li class=""><a href="/modules/pickups">Pickups</a></li><li class=""><a href="/modules/item_mods">아이템 모드</a></li><li class=""><a href="/modules/crafting">조합 레시피</a></li><li class=""><a href="/modules/repair_remove_keep">수리, 제거 및 유지</a></li><li class=""><a href="/modules/projectiles">투사체</a></li><li class=""><a href="/modules/tnt">TNT</a></li><li class=""><a href="/modules/killreward">처치 보상</a></li><li class=""><a href="/modules/lootables">전리품</a></li><li><h4>블럭</h4></li><li class=""><a href="/modules/animations">애니메이션</a></li><li class=""><a href="/modules/blockdrops">블럭 드롭</a></li><li class=""><a href="/modules/falling_blocks">떨어지는 블럭</a></li><li class=""><a href="/modules/renewables">재생</a></li><li class=""><a href="/modules/structures">구조물</a></li>
+  </ul>
+</div>
+
+
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+          <h1>
+            
+
+            팀
+          </h1>
+        </div>
+
+        <p>이 모듈은 경기에 사용된 팀과 그 속성을 지정하는 데 사용됩니다.
+팀이 없는 경기는 <a href="/modules/players">플레이어</a>모듈을 사용하여 설정할 수 있습니다.</p>
+
+<p>각 팀의 소프트 플레이어 제한은 <code>max=""</code> 속성과 <code>max-overfill</code>을 가진 하드 제한으로 설정됩니다. 만약 최대 overfill이 정의되지 않은경우 기본값은 최대 팀 크기보다 25% 크게 설정됩니다. 최대 플레이어 overfill크기에 도달하면 플레이어가 팀에 합류할 수 없습니다.</p>
+
+<p>팀의 이름은 <code>&lt;team&gt;</code>요소 내에서 지정됩니다. 이름은 “Team”을 포함하지 말고 가능한 한 짧게 유지해야 합니다. (예: “Azure Team” 대신 “Azure”)
+팀의 <code>&lt;plural&gt;</code>속성은 팀 이름이 복수인지 여부를 지정합니다. (예: Attackers); Game 플러그인은 적절한 승리 메시지를 선택하기 위해 이를 사용할것입니다. <code>show-name-tags</code> 속성은 플레이어 이름표를 볼 수 있는 사람을 지정합니다. 이것은 플레이어에게만 적용되며 관전자는 항상 모든 이름 태그를 볼 수 있습니다.</p>
+
+<p>보통 맵은 2개의 팀을 가지고 있는것이 일반적이지만 더 많이 사용할 수는 있습니다. 하지만 더 많은 경우 혼란을 야기할 수 있습니다.</p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>팀 요소</th>
+        <th>설명</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="highlight">
+            <code>&lt;teams&gt; &lt;/teams&gt;</code>
+          </span>
+        </td>
+        <td>모든 개별 팀을 포함하는 팀 노드입니다.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="2">하위 요소</th>
+        <th>값/하위</th>
+      </tr>
+      <tr>
+        <td>
+          <span class="highlight">
+            <code>&lt;team&gt; &lt;/team&gt;</code>
+          </span>
+        </td>
+        <td>
+          팀 이름이 포함된 단일 팀 노드입니다.
+        </td>
+        <td>
+          <span class="label label-primary">문자열</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h5>팀 속성</h5>
+<div class="table-responsive">
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <th style="min-width: 130px;">속성</th>
+        <th>설명</th>
+        <th style="min-width: 120px;">값</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>id</code>
+        </td>
+        <td>XML의 다른 위치에서 팀을 참조하는 데 사용되는 고유 식별자입니다.</td>
+        <td>
+          <span class="label label-primary">문자열</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>color</code>
+        </td>
+        <td>팀의 보여지는 색상입니다.</td>
+        <td>
+          <a href="/reference/formatting#chatColors">채팅 색상 이름</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>overhead-color</code>
+        </td>
+        <td>해당 팀의 플레이어 머리위에 보여지는 이름표의 색상을 지정합니다.</td>
+        <td>
+          <a href="/reference/formatting#chatColors">채팅 색상 이름</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>plural</code>
+        </td>
+        <td>
+          팀의 이름이 복수임을 나타냅니다. 주로 상태 메시지에 사용됩니다.
+          <br />
+          예: <code>Defenders wins!</code> 대신 <code>Defenders win!</code>처럼 표시됩니다.
+        </td>
+        <td>
+          <span class="label label-primary">참/거짓</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>show-name-tags</code>
+        </td>
+        <td>
+          이 팀에서 플레이어의 이름표를 볼 수있는 사용자를 지정합니다.
+          <br />
+          사용 가능한 값:
+          <code>true</code>, <code>false</code>, <code>allies</code> 혹은 <code>enemies</code>
+        </td>
+        <td>
+          <span class="label label-primary">열거형</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>min</code>
+        </td>
+        <td>
+          이 팀에 필요한 최소 플레이어의 수를 나타냅니다.
+        </td>
+        <td>
+          <span class="label label-primary">숫자</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>max</code>
+        </td>
+        <td>
+          이 팀의 최대 플레이어 수를 나타냅니다. 일반 플레이어는 이 크기에 도달하면 팀에 합류할 수 없습니다.
+          <br />
+          <i>프리미엄 플레이어는 <code>max-overfill</code>에 도달할 때 까지 이 제한을 초과할 수 있습니다.</i>
+        </td>
+        <td>
+          <span class="label label-primary">숫자</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>max-overfill</code>
+        </td>
+        <td>
+          이 팀의 최대 플레이어 수 제한을 나타냅니다. 이 한도에 도달하면 아무도 팀에 합류할 수 없습니다.
+          <br />
+          <i>앞에서 정의한 <code>max</code>값보다 커야 합니다.</i>
+        </td>
+        <td>
+          <span class="label label-primary">숫자</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>예시</p>
+
+<pre><code>&lt;teams&gt;
+   &lt;team id="red-team" color="dark red" max="50" max-overfill="70"&gt;Red&lt;/team&gt;
+   &lt;team id="blue-team" color="blue" max="50" max-overfill="70"&gt;Blue&lt;/team&gt;
+&lt;/teams&gt;
+</code></pre>
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+    <div class='container'>
+      <hr />
+      <footer class='docs-footer'>
+        <ul class='nav nav-pills'>
+          <li class='pull-left'>
+            <a>&copy; 2017 Avis Network</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://github.com/avisnetwork" target="_blank">GitHub</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

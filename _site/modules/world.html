@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아비스 네트워크 XML 문서</title>
+
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/css/style.css' rel='stylesheet' />
+    <link href='/css/custom-highlight.css' rel='stylesheet' />
+    <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
+    <link href='//fonts.googleapis.com/earlyaccess/nanumgothic.css' />
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
+    <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+  </head>
+  <body>
+    <header class='navbar navbar-default navbar-static-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='/'>
+            <img width="48" height="48" src='/img/logo.png' />
+            아비스 네트워크 XML 문서
+          </a>
+          <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <nav class='collapse navbar-collapse navbar-main-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class=''>
+              <a href='/'>
+                <i class='fa fa-home'></i>
+                홈
+              </a>
+            </li>
+            <li class='active'>
+              <a href='/modules/main'>
+                <i class='fa fa-th-large'></i>
+                모듈
+              </a>
+            </li>
+            <li class=''>
+              <a href='/reference/inventory'>
+                <i class='fa fa-book'></i>
+                참고 자료
+              </a>
+            </li>
+            <li class=''>
+              <a href='/guides/packaging/cleaning_files'>
+                <i class='fa fa-clipboard'></i>
+                가이드
+              </a>
+            </li>
+            <li class=''>
+              <a href='/examples'>
+                <i class='fa fa-file-text'></i>
+                예시
+              </a>
+            </li>
+            <li class="dropdown activ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">한국어</a></li>
+                <li><a href="/en">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <div class="jumbotron main subhead">
+    <h1>
+      모듈
+      
+    </h1>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class='well well-sm'>
+  현재 맵 프로토콜 버전은
+  <a href='/modules/proto'>1.4.2</a>
+  입니다.
+</div>
+
+<div class='btn-group subnav visible-xs'>
+  <button class='btn btn-primary btn-block subnav-btn dropdown-toggle' data-toggle='dropdown' type='button'>
+    XML 모듈
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
+    <li class="dropdown-header">일반</li><li class=""><a href="/modules/main">기본 맵 요소</a></li><li class=""><a href="/modules/includes_conditionals">Include 파일과 조건문</a></li><li class="divider"></li><li class="dropdown-header">정보</li><li class=""><a href="/modules/tutorial">튜토리얼</a></li><li class=""><a href="/modules/broadcasts">알림과 팁</a></li><li class=""><a href="/modules/rules">특정 규정</a></li><li class="divider"></li><li class="dropdown-header">환경</li><li class="active"><a href="/modules/world">월드와 지형</a></li><li class=""><a href="/modules/time">시간과 차원</a></li><li class=""><a href="/modules/border">월드 보더</a></li><li class=""><a href="/modules/mobs">몹 스폰</a></li><li class="divider"></li><li class="dropdown-header">포맷</li><li class=""><a href="/modules/players">플레이어 (Free-For-All)</a></li><li class=""><a href="/modules/teams">팀</a></li><li class="divider"></li><li class="dropdown-header">목표물</li><li class=""><a href="/modules/gamemode_ctw">양털 쟁탈 게임</a></li><li class=""><a href="/modules/gamemode_ctf">깃발 쟁탈 게임</a></li><li class=""><a href="/modules/control_points">점령 지점</a></li><li class=""><a href="/modules/gamemode_dtm">모뉴먼트 부수기 게임</a></li><li class=""><a href="/modules/gamemode_dtc">코어 부수기 게임</a></li><li class=""><a href="/modules/monument_modes">모뉴먼트 모드</a></li><li class=""><a href="/modules/gamemode_blitz">Blitz 게임</a></li><li class=""><a href="/modules/scoring">점수</a></li><li class=""><a href="/modules/gamemode_other">다른 게임 모드</a></li><li class="divider"></li><li class="dropdown-header">기능</li><li class=""><a href="/modules/filters">필터</a></li><li class=""><a href="/modules/regions">지역</a></li><li class=""><a href="/modules/spawns">스폰</a></li><li class=""><a href="/modules/portals">포탈</a></li><li class=""><a href="/modules/proximity_alarms">접근 알람</a></li><li class=""><a href="/modules/midi">MIDI 파일</a></li><li class=""><a href="/modules/damage">데미지</a></li><li class=""><a href="/modules/gamerules">게임 규칙</a></li><li class="divider"></li><li class="dropdown-header">Gear</li><li class=""><a href="/modules/items">아이템과 갑옷</a></li><li class=""><a href="/modules/potions">포션 효과</a></li><li class=""><a href="/modules/kits">키트</a></li><li class=""><a href="/modules/classes">클래스</a></li><li class=""><a href="/modules/pickups">Pickups</a></li><li class=""><a href="/modules/item_mods">아이템 모드</a></li><li class=""><a href="/modules/crafting">조합 레시피</a></li><li class=""><a href="/modules/repair_remove_keep">수리, 제거 및 유지</a></li><li class=""><a href="/modules/projectiles">투사체</a></li><li class=""><a href="/modules/tnt">TNT</a></li><li class=""><a href="/modules/killreward">처치 보상</a></li><li class=""><a href="/modules/lootables">전리품</a></li><li class="divider"></li><li class="dropdown-header">블럭</li><li class=""><a href="/modules/animations">애니메이션</a></li><li class=""><a href="/modules/blockdrops">블럭 드롭</a></li><li class=""><a href="/modules/falling_blocks">떨어지는 블럭</a></li><li class=""><a href="/modules/renewables">재생</a></li><li class=""><a href="/modules/structures">구조물</a></li>
+  </ul>
+</div>
+
+<div class='sidebar hidden-xs'>
+  <ul class='nav nav-pills nav-stacked docs-nav-pills'>
+    <li><h4>일반</h4></li><li class=""><a href="/modules/main">기본 맵 요소</a></li><li class=""><a href="/modules/includes_conditionals">Include 파일과 조건문</a></li><li><h4>정보</h4></li><li class=""><a href="/modules/tutorial">튜토리얼</a></li><li class=""><a href="/modules/broadcasts">알림과 팁</a></li><li class=""><a href="/modules/rules">특정 규정</a></li><li><h4>환경</h4></li><li class="active"><a href="/modules/world">월드와 지형</a></li><li class=""><a href="/modules/time">시간과 차원</a></li><li class=""><a href="/modules/border">월드 보더</a></li><li class=""><a href="/modules/mobs">몹 스폰</a></li><li><h4>포맷</h4></li><li class=""><a href="/modules/players">플레이어 (Free-For-All)</a></li><li class=""><a href="/modules/teams">팀</a></li><li><h4>목표물</h4></li><li class=""><a href="/modules/gamemode_ctw">양털 쟁탈 게임</a></li><li class=""><a href="/modules/gamemode_ctf">깃발 쟁탈 게임</a></li><li class=""><a href="/modules/control_points">점령 지점</a></li><li class=""><a href="/modules/gamemode_dtm">모뉴먼트 부수기 게임</a></li><li class=""><a href="/modules/gamemode_dtc">코어 부수기 게임</a></li><li class=""><a href="/modules/monument_modes">모뉴먼트 모드</a></li><li class=""><a href="/modules/gamemode_blitz">Blitz 게임</a></li><li class=""><a href="/modules/scoring">점수</a></li><li class=""><a href="/modules/gamemode_other">다른 게임 모드</a></li><li><h4>기능</h4></li><li class=""><a href="/modules/filters">필터</a></li><li class=""><a href="/modules/regions">지역</a></li><li class=""><a href="/modules/spawns">스폰</a></li><li class=""><a href="/modules/portals">포탈</a></li><li class=""><a href="/modules/proximity_alarms">접근 알람</a></li><li class=""><a href="/modules/midi">MIDI 파일</a></li><li class=""><a href="/modules/damage">데미지</a></li><li class=""><a href="/modules/gamerules">게임 규칙</a></li><li><h4>Gear</h4></li><li class=""><a href="/modules/items">아이템과 갑옷</a></li><li class=""><a href="/modules/potions">포션 효과</a></li><li class=""><a href="/modules/kits">키트</a></li><li class=""><a href="/modules/classes">클래스</a></li><li class=""><a href="/modules/pickups">Pickups</a></li><li class=""><a href="/modules/item_mods">아이템 모드</a></li><li class=""><a href="/modules/crafting">조합 레시피</a></li><li class=""><a href="/modules/repair_remove_keep">수리, 제거 및 유지</a></li><li class=""><a href="/modules/projectiles">투사체</a></li><li class=""><a href="/modules/tnt">TNT</a></li><li class=""><a href="/modules/killreward">처치 보상</a></li><li class=""><a href="/modules/lootables">전리품</a></li><li><h4>블럭</h4></li><li class=""><a href="/modules/animations">애니메이션</a></li><li class=""><a href="/modules/blockdrops">블럭 드롭</a></li><li class=""><a href="/modules/falling_blocks">떨어지는 블럭</a></li><li class=""><a href="/modules/renewables">재생</a></li><li class=""><a href="/modules/structures">구조물</a></li>
+  </ul>
+</div>
+
+
+      </div>
+      <div class="col-sm-9">
+        <div class="page-header">
+          <h1>
+            <div class='btn-group subnav pull-right'>
+  <button class='btn btn-primary btn-block dropdown-toggle' data-toggle='dropdown' type='button'>
+    <i class='fa fa-fw fa-th-list'></i>
+    <i class='fa fa-fw fa-caret-down'></i>
+  </button>
+  <ul class='dropdown-menu subnav-dropdown' role='menu'>
+    <li class=""><a href="#terrain">지형</a></li><li class=""><a href="#internal">맵 내부</a></li>
+  </ul>
+</div>
+
+
+            월드와 지형
+          </h1>
+        </div>
+
+        <h3 id="terrain">지형</h3>
+<p>월드의 지형 생성기는 바닐라 청크 생성기가 사용되는지 여부 및 특정 시드, 월드를 사용하도록 수정할 수 있습니다. 기본적으로 시드가 시드 속성에 지정되지 않으면 각 경기마다 새로운 임의의 시드가 생성됩니다.</p>
+
+<p>바닐라 생성기를 사용하면 기본 마인크래프트 지형 생성기가 null청크를 생성하는 대신 사용됩니다.
+평평한 월드와 같은 특정한 월드 규칙은 NBT Editor로 월드의 <code>level.dat</code>파일을 편집하여 변경할 수 있습니다. 레벨 데이터 파일의 <code>RandomSeed</code>값은 사용되지 않습니다.</p>
+
+<p><code>region/</code>폴더에 없는 모든 청크는 마인크래프트 청크 생성 규칙에 따라 생성됩니다. 즉, 변경한 지형만 월드와 함께 저장하면 됩니다.</p>
+
+<p><code>world=""</code> 속성은 맵의 <code>region/</code>과 <code>level.dat</code>파일을 포함하는 서브 폴더를 지정하는 데 사용됩니다.
+이것은 <a href="/modules/includes_conditionals#conditionals">조건문</a>과 함께 특정 이벤트를 위한 맵을 자동으로 로드하는 데 사용됩니다.</p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>요소</th>
+        <th>설명</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="highlight">
+            <code>&lt;terrain/&gt;</code>
+          </span>
+        </td>
+        <td>
+          월드 생성기의 속성을 정의하는 노드입니다.
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h5>지형 속성</h5>
+<div class="table-responsive">
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>world</code>
+        </td>
+        <td>
+          이 맵에서 사용할 레벨 데이터 하위 폴더입니다.
+        </td>
+        <td>
+          <span class="label label-primary">하위 폴더 이름</span>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <code>vanilla</code>
+        </td>
+        <td>
+          이 월드가 바닐라 또는 null청크 생성기를 사용하는 경우 지정합니다.
+        </td>
+        <td>
+          <span class="label label-primary">참/거짓</span>
+        </td>
+        <td>거짓</td>
+      </tr>
+      <tr>
+        <td>
+          <code>seed</code>
+        </td>
+        <td>
+          이 월드의 생성 시드입니다.
+        </td>
+        <td>
+          <span class="label label-primary">문자열</span>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <code>pre-match-physics</code>
+        </td>
+        <td>
+          경기가 시작되기 전에 물이 흐르는 것과 같은 물리적인 현상을 허용합니다.
+        </td>
+        <td>
+          <span class="label label-primary">참/거짓</span>
+        </td>
+        <td>거짓</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<pre><code>&lt;terrain vanilla="true" seed="qwerty"/&gt;
+
+&lt;!-- 크리스마스 월드 조건문 --&gt;
+&lt;if christmas="true"&gt;
+    &lt;terrain world="christmas"/&gt;
+&lt;/if&gt;
+&lt;if christmas="false"&gt;
+    &lt;terrain world="normal"/&gt;
+&lt;/if&gt;
+</code></pre>
+
+<p><br /></p>
+
+<h3 id="internal">맵 내부</h3>
+<p>완전히 실내 또는 지하에 있는 지도는 <a href="/modules/main">기본 맵 요소</a>에 있는 <code>internal</code>속성을 사용할 수 있습니다. 이 속성은 관전자가 실수로 나침반 도구를 사용하여 맵 위에 순간이동하는 것을 방지합니다.
+이 작업을 수행하려면 맵의 외부가 최대 건축 가능한 높이 까지 솔리드 블럭으로 채워져야 합니다.</p>
+
+<p><a href="/modules/main">기본 맵 요소</a>를 참고하세요</p>
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+    <div class='container'>
+      <hr />
+      <footer class='docs-footer'>
+        <ul class='nav nav-pills'>
+          <li class='pull-left'>
+            <a>&copy; 2017 Avis Network</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://github.com/avisnetwork" target="_blank">GitHub</a>
+          </li>
+          <li class="pull-right">
+            <a href="https://discord.me/arkanetwork" target="_blank">Discord</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
