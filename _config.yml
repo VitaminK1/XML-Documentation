@@ -13,4 +13,5 @@ kramdown:
   syntax_highlighter_opts:
     disable : true
 
-lang: en
+languages: ["ko", "en"]
+exclude_from_localizations: ["img", "css"]
