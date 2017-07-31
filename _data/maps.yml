@@ -20,4 +20,16 @@
 
 - name: "QK: Mine"
   slug: "qk_mine"
-  gamemode: "아케이드 게임"
+  gamemode: "아케이드 게임 (Quake)"
+
+- name: "IT: Windmill Town"
+  slug: "it_windmill_town"
+  gamemode: "아케이드 게임 (Infection Tag)"
+
+- name: "MW: Watchtower"
+  slug: "mw_watchtower"
+  gamemode: "아케이드 게임 (Missile Wars)"
+
+- name: "SG: Rise of the Orient"
+  slug: "sg_roto"
+  gamemode: "아케이드 게임 (Survival Games)"
