@@ -11,7 +11,7 @@ title:  "Organic"
 Every map XML file starts with the XML header and then the base `<map>` module.
 
     <?xml version="1.0"?>
-    <map proto="1.4.3">
+    <map proto="{{site.current_proto}}">
     <name>Organic</name>
     <version>1.0.5</version>
     <objective>Leak the enemey's core 5 blocks!</objective>

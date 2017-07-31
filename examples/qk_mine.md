@@ -11,7 +11,7 @@ title:  "QK: Mine"
 XML파일 버전을 지정한 다음 메인 맵 모듈을 열고 지도 이름, 버전 및 목표를 지정합니다.
 
 <?xml version="1.0"?>
-<map proto="1.3.6">
+<map proto="{{site.current_proto}}">
 <name>QK: Mine</name>
 <version>1.0</version>
 <objective>Kill other players and reach first to 26 kills!</objective>
