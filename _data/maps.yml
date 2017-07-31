@@ -17,3 +17,7 @@
 - name: "Storm"
   slug: "storm"
   gamemode: "거점 점령 게임"
+
+- name: "QK: Mine"
+  slug: "qk_mine"
+  gamemode: "아케이드 게임"
