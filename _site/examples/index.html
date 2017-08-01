@@ -15,6 +15,7 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/i18next/8.4.3/i18next.min.js'></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
@@ -66,13 +67,15 @@
                 예시
               </a>
             </li>
-            <li class="dropdown activ">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/">한국어</a></li>
-                <li><a href="/en">English</a></li>
-              </ul>
-            </li>
+                <ul class="dropdown-menu">
+                  <li><a>한국어</a></li>
+                  <li><a>English</a></li>
+                </ul>
+          </ul>
+        </li>
+
           </ul>
         </nav>
       </div>
@@ -149,6 +152,50 @@
                 <div class="map-banner">
                     <a href="storm" class="map-name"><strong>Storm</strong></a>
                     <span class="map-gamemode">거점 점령 게임</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-3 center">
+        <div id="qk_mine" class="thumbnail map-thumbnail">
+            <div class="map-image" style="background-image:url('../img/examples/qk_mine.png');">
+                <div class="map-banner">
+                    <a href="qk_mine" class="map-name"><strong>QK: Mine</strong></a>
+                    <span class="map-gamemode">아케이드 게임 (Quake)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-3 center">
+        <div id="it_windmill_town" class="thumbnail map-thumbnail">
+            <div class="map-image" style="background-image:url('../img/examples/it_windmill_town.png');">
+                <div class="map-banner">
+                    <a href="it_windmill_town" class="map-name"><strong>IT: Windmill Town</strong></a>
+                    <span class="map-gamemode">아케이드 게임 (Infection Tag)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-3 center">
+        <div id="mw_watchtower" class="thumbnail map-thumbnail">
+            <div class="map-image" style="background-image:url('../img/examples/mw_watchtower.png');">
+                <div class="map-banner">
+                    <a href="mw_watchtower" class="map-name"><strong>MW: Watchtower</strong></a>
+                    <span class="map-gamemode">아케이드 게임 (Missile Wars)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-3 center">
+        <div id="sg_roto" class="thumbnail map-thumbnail">
+            <div class="map-image" style="background-image:url('../img/examples/sg_roto.png');">
+                <div class="map-banner">
+                    <a href="sg_roto" class="map-name"><strong>SG: Rise of the Orient</strong></a>
+                    <span class="map-gamemode">아케이드 게임 (Survival Games)</span>
                 </div>
             </div>
         </div>

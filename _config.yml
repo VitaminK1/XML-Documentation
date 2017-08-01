@@ -3,9 +3,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 current_proto: "1.4.2"
 
-gems:
-  - jekyll-multiple-languages-plugin
-
 # Build settings
 markdown: kramdown
 

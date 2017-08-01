@@ -15,6 +15,7 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/i18next/8.4.3/i18next.min.js'></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
@@ -66,13 +67,15 @@
                 예시
               </a>
             </li>
-            <li class="dropdown activ">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/">한국어</a></li>
-                <li><a href="/en">English</a></li>
-              </ul>
-            </li>
+                <ul class="dropdown-menu">
+                  <li><a>한국어</a></li>
+                  <li><a>English</a></li>
+                </ul>
+          </ul>
+        </li>
+
           </ul>
         </nav>
       </div>
