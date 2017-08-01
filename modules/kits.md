@@ -41,7 +41,7 @@ packaged together in any combination.
 Kits can be given an `id` attribute, which is used to refer to them in other places.
 Kits can contain other kits directly, and can also inherit items from other kits through the `parents=""` attribute.
 
-Some types of kits are *removable*, meaning that the kit can be automatically taken from the player as well as given. When used in certain contexts,
+몇몇 키트의 경우 *제거할 수 있습니다*. 즉 키트가 플레이어에게 준 키트를 다시 가져올 수 있음을 의미합니다. When used in certain contexts,
 these kits will be automatically removed from the player at an appropriate time. This will be noted in the documentation where applicable.
 
 <div class='table-responsive'>
@@ -554,7 +554,7 @@ A player's team can be changed or switched to another when they enter a region o
 
 <br/>
 
-### Potion Effect Kits (removable) {#potionEffect}
+### Potion Effect Kits (제거할 수 있음) {#potionEffect}
 
 Potion effects can be applied and removed with a kit. See [Potion Effects](/modules/potions) for details about the `<effect>` element.
 
@@ -565,7 +565,7 @@ Potion effects can be applied and removed with a kit. See [Potion Effects](/modu
 
 <br/>
 
-### Attribute Modifier Kits (removable) {#attributes}
+### Attribute Modifier Kits (제거할 수 있음) {#attributes}
 
 Attribute modifiers can be applied directly to players through a kit. Modifying attributes in this way,
 instead of through an item, is a simple way to ensure that the player cannot avoid the effect of
@@ -648,7 +648,7 @@ affect a modifier applied by a different kit.
 
 <br/>
 
-### Walk Speed Kit (removable) {#walkSpeed}
+### Walk Speed Kit (제거할 수 있음) {#walkSpeed}
 Increase or decrease a player's walking speed. The value is a multiplier of the normal walking speed.
 
 <div class='table-responsive'>
@@ -690,7 +690,7 @@ Increase or decrease a player's walking speed. The value is a multiplier of the 
 
 <br/>
 
-### Knockback Reduction Kit (removable) {#knockback}
+### Knockback Reduction Kit (제거할 수 있음) {#knockback}
 Reduce (or increase) the knockback players receive when they have this kit applied.
 The normal input range is `0 - 1.0`. If the value is greater than one the knockback will be increased,
 and anything lower than zero pushes the player to the attacker instead of away from them.
@@ -728,7 +728,7 @@ and anything lower than zero pushes the player to the attacker instead of away f
 
 <br/>
 
-### Shield Kit (removable) {#shield}
+### Shield Kit (제거할 수 있음) {#shield}
 The shield kit gives the player a shield consisting of absorption hearts that recharge after a set period of time.
 Recharging of the shield is based on when damage was taken last, every time a player is damaged it resets the recharge timer.
 
@@ -800,7 +800,7 @@ Recharging of the shield is based on when damage was taken last, every time a pl
 
 <br/>
 
-### Double Jump Kit (removable) {#jump}
+### Double Jump Kit (제거할 수 있음) {#jump}
 Give players with this kit the ability to double-jump.
 This element's enabled attribute can be used to disable double-jump inside regions, etc.
 
@@ -892,7 +892,7 @@ This element's enabled attribute can be used to disable double-jump inside regio
 
 <br/>
 
-### Fly Kit (removable) {#fly}
+### Fly Kit (제거할 수 있음) {#fly}
 The fly kit gives players which it is applied to the ability to fly.
 It also allows modification of the speed at which they fly.
 If no attributes are specified can-fly defaults to true.
@@ -982,7 +982,7 @@ If no attributes are specified can-fly defaults to true.
 
 <br/>
 
-### Force and Impulse Kits (removable) {#force-impulse}
+### Force and Impulse Kits (제거할 수 있음) {#force-impulse}
 The force and impulse kits apply a force to the player, propelling them in a certain direction. Forces can be relative to the direction the player is facing. When the force direction is relative, <code>X</code> will always be infront of the player.
 
 <div class='table-responsive'>

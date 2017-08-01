@@ -6,14 +6,13 @@ title:  "깃발 쟁탈 게임"
 
 ---
 
-Flags are [banners](http://minecraft.gamepedia.com/Banner) that can be picked up and carried by players, and captured in designated regions.
-They are highly configurable and can be used to implement a wide variety of gamemodes.
+깃발은 플레이어가 픽업하고 운반할 수 있는 [배너](http://minecraft.gamepedia.com/Banner)이며 지정된 지역에서 캡처됩니다.
 
-To define a flag's appearance, a standing-banner must be manually placed by the map creator, at the flag's initial location in the map.
-This allows complete control of the banner's colors and patterns. Unlike [wools](/modules/gamemode_ctw), each flag defined in XML creates a single, physical flag in the game.
-There are never multiple objects or items representing the same flag.
+깃발의 모양을 정의하려면 맵에 있는 깃발의 처음 위치에 맵 제작자가 수동으로 배너를 배치해야 합니다.
+이것은 배너의 색깔과 패턴을 완벽하게 제어할 수 있게 해줍니다. [양털 쟁탈 게임](/modules/gamemode_ctw)과는 달리 XML에서 정의된 각 깃발은 게임에서 하나의 물리적 깃발을 만듭니다.
+같은 깃발을 나타내는 항목이나 아이템이 절대 여러개 존재하지 않습니다.
 
-In addition to flags, a CTF map also requires **nets** for flags to be captured in, and **posts** for them to respawn at.
+깃발 외에도 CTF맵에는 깃발을 캡처하기 위한 **그물(nets)**이 필요하고 **기둥(posts)**은 그것들이 리스폰하기 위해서 필요합니다.
 
     <flags>
         <post id="red-flag-post" pickup-filter="blue-only">2,5,11</post>
@@ -24,8 +23,8 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Flags Element</th>
-        <th>Description</th>
+        <th>깃발 요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -36,12 +35,12 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
             <code>{{'<flags> </flags>' | escape_once}}</code>
           </span>
         </td>
-        <td>Node containing a group of flags, nets and posts for this match.</td>
+        <td>이 경기에 대한 깃발, 네트, 포스트를 포함한 노드입니다.</td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
@@ -51,10 +50,10 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
         </td>
         <td>
           <a class='left-ref-link' href='#flags'><i class="fa fa-chevron-down"></i></a>
-          A single physical flag (banner) in the map.
+          맵에서의 단일 물리적 깃발(배너)입니다.
         </td>
         <td>
-          <span class='label label-default'>Flag Sub-elements</span>
+          <span class='label label-default'>깃발 하위 요소</span>
         </td>
       </tr>
       <tr>
@@ -65,10 +64,10 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
         </td>
         <td>
           <a class='left-ref-link' href='#posts'><i class="fa fa-chevron-down"></i></a>
-          A point or region(s) for flags to spawn at.
+          깃발이 스폰될 지점 또는 영역을 나타냅니다.
         </td>
         <td>
-          <a href='/modules/regions#pointProviders'>Point Provider</a>
+          <a href='/modules/regions#pointProviders'>지점 제공자</a>
         </td>
       </tr>
       <tr>
@@ -79,10 +78,10 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
         </td>
         <td>
           <a class='left-ref-link' href='#nets'><i class="fa fa-chevron-down"></i></a>
-          A region that flags can be captured in.
+          깃발이 캡처될 수 있는 지역을 나타냅니다.
         </td>
         <td>
-          <span class='label label-default'>Net Sub-elements</span>
+          <span class='label label-default'>그물 하위 요소</span>
         </td>
       </tr>
     </tbody>
@@ -90,23 +89,23 @@ In addition to flags, a CTF map also requires **nets** for flags to be captured 
 </div>
 <br/>
 
-#### Flags {#flags}
+#### 깃발 {#flags}
 
-A `<flag>` is a single physical banner that can be picked up, dropped, and captured.
-Its appearance is defined by an actual banner built into the map, and it has a name and color which you can override in XML.
-It can be owned by a specific team, or shared.
-It can serve as a one-time objective, similar to wools, or it can award or deduct [points](/modules/scoring).
-A flag can award points for being captured, or at a specified rate while it is carried.
-It can also come with a [kit](/modules/kits) that is given to the carrier.
-Filters can be used to control who can pickup/capture the flag and when.
+`<flag>`는 픽업하고, 드롭하고 캡처할 수 있는 단일 실제 배너입니다.
+이것의 모양은 맵에 내장된 실제 배너로 정의되며 XML로 다시 정의할 수 있는 이름과 색상이 있습니다.
+또한 깃발은 특정 팀이 소유하거나 공유할 수 있습니다.
+이것은 양털 쟁탈 게임과 비슷한 일회성 목적으로 사용되거나 [점수](/modules/scoring)를 부여하거나 차감할 수 있게 바꿀 수 있습니다.
+깃발을 캡처한 경우 점수를 부여할 수 있으며 깃발을 얼마나 오래 점유하느냐에 따라 점수를 부여할 수도 있습니다.
+또한 이것은 [키트](/modules/kits)와 함께 사용할 수 있습니다.
+필터를 사용하여 누가 언제 깃발을 픽업하거나 캡처할 수 있는지 제어 할 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Flag Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>깃발 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -117,10 +116,10 @@ Filters can be used to control who can pickup/capture the flag and when.
           </span>
         </td>
         <td>
-          A single physical flag (banner) in the map.
+          맵에서의 단일 물리적 깃발(배너)입니다.
         </td>
         <td>
-          <span class='label label-default'>Flag Sub-elements</span>
+          <span class='label label-default'>깃발 하위 요소</span>
         </td>
       </tr>
     </tbody>
@@ -130,10 +129,10 @@ Filters can be used to control who can pickup/capture the flag and when.
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 150px;'>Flag Attributes</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th style='min-width: 150px;'>깃발 속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -141,35 +140,35 @@ Filters can be used to control who can pickup/capture the flag and when.
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference this flag from other places in the XML.</td>
+        <td>XML의 다른 위치에서 이 깃발을 참조하는 데 사용되는 고유 식별자입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <code>required</code>
+          <code>필수</code>
         </td>
         <td>
-          Specify if this objective is required to win the match.
+          경기에서 이기기 위해 이 목표가 필요한지 여부를 지정합니다.
           <br/>
-          Teams completing all of their required objectives will win regardless of score or blitz configuration.
+          필요한 모든 목표를 완료한 팀은 점수 또는 Blitz 설정에 관계없이 승리합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>
-          true
+          참
         </td>
       </tr>
       <tr>
         <td>
           <code>name</code>
         </td>
-        <td>Label that appears over the flag and on the scoreboard.</td>
+        <td>깃발과 스코어보드 위에 표시되는 이름을 나타냅니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -178,12 +177,12 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>color</code>
         </td>
         <td>
-          Color of the flag, used for the label, particles, etc.
+          깃발의 이름, 파티클 등에 사용되는 깃발의 색을 나타냅니다.
           <br/>
-          If omitted, the base color of the banner is used.
+          만약 생략될 경우 배너의 기본 색상이 사용됩니다.
         </td>
         <td>
-          <a href='/reference/colors'>Dye Color Name</a>
+          <a href='/reference/colors'>염료 색깔 이름</a>
         </td>
         <td></td>
       </tr>
@@ -191,23 +190,23 @@ Filters can be used to control who can pickup/capture the flag and when.
         <td>
           <code>show</code>
         </td>
-        <td>Show this flag on the scoreboard, chat, etc.</td>
+        <td>스코어보드, 채팅에 깃발을 표시할지 설정합니다.</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>post</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The flag's initial & default post.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          깃발의 초기 및 기본 기둥입니다.
         </td>
         <td>
-          <a href='/modules/gamemode_ctf#posts'>Flag Post</a>
+          <a href='/modules/gamemode_ctf#posts'>깃발 기둥</a>
         </td>
         <td></td>
       </tr>
@@ -216,12 +215,12 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>owner</code>
         </td>
         <td>
-          The team that is defending this flag i.e. trying to prevent it from being picked up or captured.
+          이 깃발을 방어하는 팀, 즉 픽업 또는 캡처되지 못하게 하려고 하는 팀을 말합니다.
           <br/>
-          Players on this team will hear special sound effects to alert them when the flag is picked up or dropped.
+          이 팀에 속해있는 플레이어들은 깃발이 픽업되거나 드롭될때 이를 알아차리기 위해 특별한 음향 효과를 들을 수 있습니다.
         </td>
         <td>
-          <a href='/modules/teams'>Team ID</a>
+          <a href='/modules/teams'>팀 ID</a>
         </td>
         <td></td>
       </tr>
@@ -230,26 +229,26 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>shared</code>
         </td>
         <td>
-          This flag can be carried by multiple teams.
+          이 깃발은 여러 팀이 운반할 수 있습니다.
           <br/>
-          Causes the flag's scoreboard icon to have the color of the team carrying it, rather than the color of the flag itself.
+          깃발의 스코어보드 아이콘이 깃발 자체의 색이 아닌 팀의 색을 가지고 있게 합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>carry-message</code>
         </td>
         <td>
-          Custom message to display to players carrying this flag.
+          이 깃발을 들고있는 플레이어에게 표시할 사용자 지정 메시지입니다.
           <br/>
-          Can be used to give special instructions, if necessary e.g., "You are carrying the flag, return it to your base!"
+          필요한 경우 예를 들어, "깃발을 들고 당신의 기지로 돌려 보내십시오!"라는 특별한 지시를 내리는 데 사용할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -258,14 +257,14 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>points</code>
         </td>
         <td>
-          The amount of points awarded for capturing this flag.
+          이 깃발을 캡처함으로써 얻는 점수의 양입니다.
           <br/>
-          If the flag has an <code>owner</code>, that team receives the points. Otherwise, the carrier's team receives them.
+          만약 깃발에 <code>owner</code>코드가 있으면 해당 팀이 포인트를 받습니다. 그렇지않으면 깃발을 운반한 사람의 팀이 점수를 받습니다.
           <br/>
-          <i>A negative number can be used to take away points rather than give them.</i>
+          <i>음수는 점수를 부여하는 대신 점수를 빼는 데 사용할 수 있습니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>0</td>
       </tr>
@@ -274,14 +273,14 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>points-rate</code>
         </td>
         <td>
-          The amount of points awarded per second while this flag is being carried.
+          이 깃발이 운반되는 동안 초당 획득하는 점수의 양입니다.
           <br/>
-          If the flag has an <code>owner</code>, that team receives the points. Otherwise, the carrier's team receives them.
+          만약 깃발에 <code>owner</code>코드가 있으면 해당 팀이 포인트를 받습니다. 그렇지않으면 깃발을 운반한 사람의 팀이 점수를 받습니다.
           <br/>
-          <i>A negative number can be used to take away points rather than give them.</i>
+          <i>음수는 점수를 부여하는 대신 점수를 빼는 데 사용할 수 있습니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>0</td>
       </tr>
@@ -290,11 +289,11 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>pickup-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Filter who can pickup the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -303,11 +302,11 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>drop-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Filter if the flag can be dropped at the current location.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          깃발이 현재 위치에서 드롭될 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -316,11 +315,11 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>capture-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Filter who can capture the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          누가 깃발을 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -329,11 +328,11 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>pickup-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Given to players when they pick up the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          플레이어가 깃발을 픽업했을 때 주어지는 키트를 설정합니다.
         </td>
         <td>
-          <a href='/modules/kits'>Kit</a>
+          <a href='/modules/kits'>키트</a>
         </td>
         <td></td>
       </tr>
@@ -342,11 +341,11 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>drop-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Given to flag carriers when they lose the flag, for whatever reason.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          어떤 이유로든 깃발 운반자가 깃발을 드롭했을 때 주어지는 키트를 성정합니다.
         </td>
         <td>
-          <a href='/modules/kits'>Kit</a>
+          <a href='/modules/kits'>키트</a>
         </td>
         <td></td>
       </tr>
@@ -355,12 +354,12 @@ Filters can be used to control who can pickup/capture the flag and when.
           <code>carry-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Given to players when they pick up the flag, and removed when they lose the flag.
-          Only removable kits are allowed. The Kit page explains which kit types are removable.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          플레이어가 깃발을 들고 있을때 주어지고 드롭했을 때 없어지는 키트를 설정합니다.
+          제거할 수 있는 키트만 허용됩니다. 키트 페이지에서 제거할 수 있는 키트 유형을 볼 수 있습니다.
         </td>
         <td>
-          <a href='/modules/kits'>Removable Kit</a>
+          <a href='/modules/kits'>제거할 수 있는 키트</a>
         </td>
         <td></td>
       </tr>
@@ -480,7 +479,7 @@ Filters can be used to control who can pickup/capture the flag and when.
           The flag's initial & default post.
         </td>
         <td>
-          <a href='/modules/regions#pointProviders'>Point Provider</a>
+          <a href='/modules/regions#pointProviders'>지점 제공자</a>
         </td>
       </tr>
       <tr>
@@ -597,7 +596,7 @@ The `permanent` option can be used to make a post into something like a [monumen
           A point or region(s) for flags to spawn at.
         </td>
         <td>
-          <a href='/modules/regions#pointProviders'>Point Provider</a>
+          <a href='/modules/regions#pointProviders'>지점 제공자</a>
         </td>
       </tr>
     </tbody>

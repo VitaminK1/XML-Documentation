@@ -138,7 +138,7 @@ packaged together in any combination.</p>
 <p>Kits can be given an <code>id</code> attribute, which is used to refer to them in other places.
 Kits can contain other kits directly, and can also inherit items from other kits through the <code>parents=""</code> attribute.</p>
 
-<p>Some types of kits are <em>removable</em>, meaning that the kit can be automatically taken from the player as well as given. When used in certain contexts,
+<p>몇몇 키트의 경우 <em>제거할 수 있습니다</em>. 즉 키트가 플레이어에게 준 키트를 다시 가져올 수 있음을 의미합니다. When used in certain contexts,
 these kits will be automatically removed from the player at an appropriate time. This will be noted in the documentation where applicable.</p>
 
 <div class="table-responsive">
@@ -655,7 +655,7 @@ before applying the kit by using one of the elements below.</p>
 
 <p><br /></p>
 
-<h3 id="potionEffect">Potion Effect Kits (removable)</h3>
+<h3 id="potionEffect">Potion Effect Kits (제거할 수 있음)</h3>
 
 <p>Potion effects can be applied and removed with a kit. See <a href="/modules/potions">Potion Effects</a> for details about the <code>&lt;effect&gt;</code> element.</p>
 
@@ -666,7 +666,7 @@ before applying the kit by using one of the elements below.</p>
 
 <p><br /></p>
 
-<h3 id="attributes">Attribute Modifier Kits (removable)</h3>
+<h3 id="attributes">Attribute Modifier Kits (제거할 수 있음)</h3>
 
 <p>Attribute modifiers can be applied directly to players through a kit. Modifying attributes in this way,
 instead of through an item, is a simple way to ensure that the player cannot avoid the effect of
@@ -751,7 +751,7 @@ affect a modifier applied by a different kit.</p>
 
 <p><br /></p>
 
-<h3 id="walkSpeed">Walk Speed Kit (removable)</h3>
+<h3 id="walkSpeed">Walk Speed Kit (제거할 수 있음)</h3>
 <p>Increase or decrease a player’s walking speed. The value is a multiplier of the normal walking speed.</p>
 
 <div class="table-responsive">
@@ -793,7 +793,7 @@ affect a modifier applied by a different kit.</p>
 
 <p><br /></p>
 
-<h3 id="knockback">Knockback Reduction Kit (removable)</h3>
+<h3 id="knockback">Knockback Reduction Kit (제거할 수 있음)</h3>
 <p>Reduce (or increase) the knockback players receive when they have this kit applied.
 The normal input range is <code>0 - 1.0</code>. If the value is greater than one the knockback will be increased,
 and anything lower than zero pushes the player to the attacker instead of away from them.</p>
@@ -831,7 +831,7 @@ and anything lower than zero pushes the player to the attacker instead of away f
 
 <p><br /></p>
 
-<h3 id="shield">Shield Kit (removable)</h3>
+<h3 id="shield">Shield Kit (제거할 수 있음)</h3>
 <p>The shield kit gives the player a shield consisting of absorption hearts that recharge after a set period of time.
 Recharging of the shield is based on when damage was taken last, every time a player is damaged it resets the recharge timer.</p>
 
@@ -903,7 +903,7 @@ Recharging of the shield is based on when damage was taken last, every time a pl
 
 <p><br /></p>
 
-<h3 id="jump">Double Jump Kit (removable)</h3>
+<h3 id="jump">Double Jump Kit (제거할 수 있음)</h3>
 <p>Give players with this kit the ability to double-jump.
 This element’s enabled attribute can be used to disable double-jump inside regions, etc.</p>
 
@@ -996,7 +996,7 @@ This element’s enabled attribute can be used to disable double-jump inside reg
 
 <p><br /></p>
 
-<h3 id="fly">Fly Kit (removable)</h3>
+<h3 id="fly">Fly Kit (제거할 수 있음)</h3>
 <p>The fly kit gives players which it is applied to the ability to fly.
 It also allows modification of the speed at which they fly.
 If no attributes are specified can-fly defaults to true.</p>
@@ -1087,7 +1087,7 @@ If no attributes are specified can-fly defaults to true.</p>
 
 <p><br /></p>
 
-<h3 id="force-impulse">Force and Impulse Kits (removable)</h3>
+<h3 id="force-impulse">Force and Impulse Kits (제거할 수 있음)</h3>
 <p>The force and impulse kits apply a force to the player, propelling them in a certain direction. Forces can be relative to the direction the player is facing. When the force direction is relative, <code>X</code> will always be infront of the player.</p>
 
 <div class="table-responsive">
