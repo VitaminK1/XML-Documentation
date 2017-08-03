@@ -148,7 +148,7 @@ title:  "깃발 쟁탈 게임"
       </tr>
       <tr>
         <td>
-          <code>필수</code>
+          <code>required</code>
         </td>
         <td>
           경기에서 이기기 위해 이 목표가 필요한지 여부를 지정합니다.
@@ -368,36 +368,36 @@ title:  "깃발 쟁탈 게임"
           <code>drop-on-water</code>
         </td>
         <td>
-          Allow this flag to be dropped on water, freezing the block under it into ice.
+          깃발 아래에 있는 블럭을 얼음으로 바꿈으로써 깃발을 물 위에 놓을 수 있게합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>beam</code>
         </td>
         <td>
-          Show a particle beam for this flag.
+          이 깃발에 대한 파티클 광선을 표시합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>flag-proximity-metric</code>
         </td>
         <td>
-          Metric used to determine proximity to the flag.
+          깃발의 근접한 정도를 결정하는 데 사용되는 방식입니다.
           <br/>
-          Accepts <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
+          사용가능한 값: <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
         </td>
         <td>
-          <span class='label label-primary'>Proximity Metric</span>
+          <span class='label label-primary'>근접도</span>
         </td>
         <td>
           <code>closest kill</code>
@@ -408,24 +408,24 @@ title:  "깃발 쟁탈 게임"
           <code>flag-proximity-horizontal</code>
         </td>
         <td>
-          Only calculate horizontal distance for flag proximity.
+          깃발 근접 거리에 대한 수평 거리만 계산합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>net-proximity-metric</code>
         </td>
         <td>
-          Metric used to determine proximity to the net.
+          그물의 근접한 정도를 결정하는 데 사용되는 방식입니다.
           <br/>
-          Accepts <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
+          사용가능한 값: <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
         </td>
         <td>
-          <span class='label label-primary'>Proximity Metric</span>
+          <span class='label label-primary'>근접도</span>
         </td>
         <td>
           <code>closest player</code>
@@ -436,12 +436,12 @@ title:  "깃발 쟁탈 게임"
           <code>net-proximity-horizontal</code>
         </td>
         <td>
-          Only calculate horizontal distance for net proximity.
+          그물 근접 거리에 대한 수평 거리만 계산합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
     </tbody>
   </table>
@@ -450,9 +450,9 @@ title:  "깃발 쟁탈 게임"
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Flag Sub-elements</th>
-        <th>Description</th>
-        <th>Type</th>
+        <th>깃발 하위 요소</th>
+        <th>설명</th>
+        <th>종류</th>
       </tr>
     </thead>
     <tbody>
@@ -463,7 +463,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          A net where only this flag can be captured, flags accept multiple net sub-elements.
+          깃발을 캡처할 수 있는 그물, 여러개의 그물 하위 요소를 사용할 수 있습니다.
         </td>
         <td></td>
       </tr>
@@ -474,9 +474,9 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The flag's initial & default post.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          깃발의 초기 및 기본 기둥입니다.
         </td>
         <td>
           <a href='/modules/regions#pointProviders'>지점 제공자</a>
@@ -489,11 +489,11 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
-          Filter who can pickup the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
       <tr>
@@ -503,11 +503,11 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
-          Filter if the flag can be dropped at the current location.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          깃발이 현재 위치에서 드롭될 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -518,11 +518,11 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
-          Filter who can capture the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          누가 깃발을 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
       <tr>
@@ -532,11 +532,11 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
-          Given to players when they pick up the flag.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          플레이어가 깃발을 픽업했을 때 주어지는 키트를 설정합니다.
         </td>
         <td>
-          <a href='/modules/kits'>Kit</a>
+          <a href='/modules/kits'>키트</a>
         </td>
       </tr>
       <tr>
@@ -546,11 +546,11 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
-          Given to flag carriers when they lose the flag, for whatever reason.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          어떤 이유로든 깃발 운반자가 깃발을 드롭했을 때 주어지는 키트를 성정합니다.
         </td>
         <td>
-          <a href='/modules/kits'>Kit</a>
+          <a href='/modules/kits'>키트</a>
         </td>
       </tr>
     </tbody>
@@ -558,31 +558,30 @@ title:  "깃발 쟁탈 게임"
 </div>
 <br/>
 
-#### Posts {#posts}
+#### 기둥 {#posts}
 
-A **post** is a point or region where flags can respawn after being captured or dropped.
-It is essentially a [spawn](/modules/spawns) for flags instead of players,
-and like spawns, they are defined with [point providers](/modules/regions#pointProviders), and can be randomized.
+**기둥(posts)은 깃발이 캡처되거나 드롭된 후 다시 생성될 수 있는 지점 또는 지역입니다.
+이것은 기본적으로 플레이어 대신 깃발을 위한 [스폰](/modules/spawns)입니다. 기둥은 스폰 처럼 [지점 제공자](/modules/regions#pointProviders)로 정의되고 무작위화될 수 있습니다.
 
-A flag remembers the last post it was at and will respawn there after being dropped or captured.
-Each flag must have a default post, where it will be placed at the start of the match.
+깃발은 마지막 기둥(posts)를 기억하고 있으며, 드롭되거나 캡처된 후에 다시 생성됩니다.
+각 깃발은 기본 기둥을 가지고 있어야 하며 경기가 시작할 때 배치됩니다.
 
-If a post is defined with a region rather than a point, flags will respawn at a random point in the region.
-If multiple points or regions are given, one will be chosen at random (unless the `sequential` option is used).
-Multiple flags can be at a post simultaneously only if there is space available for them.
+만약 기둥이 지점이 아닌 지역으로 정의된 경우 깃발은 지역의 임의 지점에서 다시 생성됩니다.
+여러 지점이나 지역이 주어지면 `sequential`옵션을 사용하지 않는 한 임의로 선택됩니다.
+사용할 수 있는 공간이 있는 경우에만 여러 깃발을 동시에 세울 수 있습니다.
 
-The time required for a flag to respawn is configurable, as well as the time it spends on the ground after being dropped.
+깃발을 다시 생성하는 데 필요한 시간은 설정할 수 있으며 드롭된 후 지상에서 보낼 시간도 설정할 수 있습니다.
 
-Posts can be owned by a team, and award them points at a specified rate while a flag is there.
-The `permanent` option can be used to make a post into something like a [monument](/modules/gamemode_ctw), where the flag is mounted after being captured once.
+기둥은 팀에 의해서 소유되며 깃발이 그곳에 있는 동안 지정된 속도로 점수를 부여할 수 있습니다.
+`permanent`옵션은 기둥을 [모뉴먼트](/modules/gamemode_ctw)와 같은 것으로 만들 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Post Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>기둥 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -593,7 +592,7 @@ The `permanent` option can be used to make a post into something like a [monumen
           </span>
         </td>
         <td>
-          A point or region(s) for flags to spawn at.
+          깃발이 스폰될 지점 또는 영역을 나타냅니다.
         </td>
         <td>
           <a href='/modules/regions#pointProviders'>지점 제공자</a>
@@ -606,10 +605,10 @@ The `permanent` option can be used to make a post into something like a [monumen
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 130px;'>Post Attributes</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th style='min-width: 130px;'>기둥 속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -617,9 +616,9 @@ The `permanent` option can be used to make a post into something like a [monumen
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference this post from other places in the XML.</td>
+        <td>XML의 다른 위치에서 이 기둥을 참조하는 데 사용되는 고유 식별자입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -627,9 +626,9 @@ The `permanent` option can be used to make a post into something like a [monumen
         <td>
           <code>owner</code>
         </td>
-        <td>The team that owns this post.</td>
+        <td>이 기둥을 소유한 팀을 나타냅니다.</td>
         <td>
-          <a href='/modules/teams'>Team ID</a>
+          <a href='/modules/teams'>팀 ID</a>
         </td>
         <td></td>
       </tr>
@@ -638,38 +637,38 @@ The `permanent` option can be used to make a post into something like a [monumen
           <code>permanent</code>
         </td>
         <td>
-          When a flag is captured and returned to this post, remove the flag from the game and consider it a completed objective.
+          깃발이 캡처되고 기둥으로 돌아왔을 때 깃발을 게임에서 삭제하고 이 깃발을 완료된 목표물로 취급합니다.
           <br/>
-          <i>The objective is credited to the <code>owner</code> of the post, which is required in this case.</i>
+          <i>이 경우 목표에 대한 보상이 기둥의 <code>owner</code>에게 주어집니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>sequential</code>
         </td>
         <td>
-          If this post has multiple points or regions, try them in order instead of choosing one at random, when spawning a flag here.
+          만약 이 기둥이 여러 지점 혹은 지역을 가지고 있는 경우 여기에서 깃발을 생성할 때 임의로 하나를 선택하는 대신 순서대로 시도합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>points-rate</code>
         </td>
         <td>
-          Points awarded per second to this post's owner while any flag is at the post.
+          깃발이 기둥에 있는 동안 소유자가 얻는 초당 점수입니다.
           <br/>
-          <i>Requires the <code>owner</code> attribute to be set.</i>
+          <i><code>owner</code> 속성을 설정해야 합니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>0</td>
       </tr>
@@ -678,11 +677,11 @@ The `permanent` option can be used to make a post into something like a [monumen
           <code>pickup-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
-          Filter who can pickup a flag from this post.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          이 기둥에서 깃발을 집을 수 있는 사람을 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -690,9 +689,9 @@ The `permanent` option can be used to make a post into something like a [monumen
         <td>
           <code>recover-time</code>
         </td>
-        <td>Time that a flag stays on the ground after being dropped. Use <code>oo</code> to let the flag stay on the ground forever.</td>
+        <td>깃발이 드롭된 후 땅에 머물러있는 시간을 나타냅니다. 깃발을 땅에 영원히 머물게하려면 <code>oo</code>를 사용하십시오.</td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>시간 단위</a>
         </td>
         <td>30s</td>
       </tr>
@@ -701,12 +700,12 @@ The `permanent` option can be used to make a post into something like a [monumen
           <code>respawn-time</code>
         </td>
         <td>
-          Time between a flag being captured/recovered and respawning at this post.
+          깃발이 캡처/복구되어 기둥에 다시 생성될 때 까지의 시간을 나타냅니다.
           <br/>
-          <i>During this time, the flag is completely gone, giving defenders a chance to return to their base.</i>
+          <i>이 시간동안은 깃발은 완전히 사라지며 수비팀에게 그들의 기지로 깃발을 가져올 수 있는 기회를 줍니다.</i>
         </td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>시간 단위</a>
         </td>
         <td></td>
       </tr>
@@ -715,9 +714,9 @@ The `permanent` option can be used to make a post into something like a [monumen
           <code>respawn-speed</code>
         </td>
         <td>
-          Speed that a flag "moves" to respawn at this post, after being captured/recovered.
+          캡처/복구 된 후 이 기둥에서 깃발이 "이동"하여 다시 생성되는 속도를 나타냅니다.
           <br/>
-          <i>This is an alternative to <code>respawn-time</code> that calculates the time based on the distance the flag must travel.</i>
+          <i>이는 깃발이 이동해야 하는 거리를 기반으로 시간을 계산하는 <code>respawn-time</code>의 대안입니다.</i>
         </td>
         <td>
           <span class='label label-primary'>M/s</span>
@@ -728,9 +727,9 @@ The `permanent` option can be used to make a post into something like a [monumen
         <td>
           <code>yaw</code>
         </td>
-        <td>The direction a banner faces after it is returned to this post.</td>
+        <td>이 기둥으로 돌아온 후 배너가 향하는 방향을 나타냅니다.</td>
         <td>
-          <span class='label label-primary'>-180 to 180</span>
+          <span class='label label-primary'>-180 에서 180</span>
         </td>
         <td></td>
       </tr>
@@ -741,9 +740,9 @@ The `permanent` option can be used to make a post into something like a [monumen
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Post Sub-elements</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>기둥 하위 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -754,11 +753,11 @@ The `permanent` option can be used to make a post into something like a [monumen
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          Filter who can pickup the flag for this net.
+          <span class='label label-default' title='속성이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          이 그물을 위해 누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
     </tbody>
@@ -766,12 +765,12 @@ The `permanent` option can be used to make a post into something like a [monumen
 </div>
 <br/>
 
-#### Nets {#nets}
+#### 그물(nets) {#nets}
 
-A `<net>` is a region that flags can be captured in.
-Each net has a optional list of flags that it will accept.
-If a net is defined inside a flag, only that flag can be captured in the net.
-Several other options are available to control which flags can be captured and when.
+`<net>`은 깃발을 캡처할 수 있는 영역입니다.
+각 그물은 받아들일 수 있는 선택적 깃발 목록을 가지고 있습니다.
+만약 그물이 깃발 안에 정의되면 그 깃발만이 그물에 캡처할 수 있습니다.
+어떤 깃발을 캡처할 수 있는지 또 언제 캡처할 수 있는지 제어하기 위한 몇가지 옵션이 있습니다.
 
 A net can specify which post flags are returned to after being captured. This is how flags move between posts.
 A net can also force other flags to be returned when any flag is captured.
@@ -831,7 +830,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           The region flag carriers must enter to capture in this net.
         </td>
@@ -939,7 +938,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>capture-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           Filter players who can capture in this net.
         </td>
         <td>
@@ -978,7 +977,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>respawn-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           Filter when the flags captured in this net are allowed to respawn.
         </td>
         <td>
@@ -1034,7 +1033,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           The region flag carriers must enter to capture in this net.
         </td>
@@ -1049,7 +1048,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           Filter players who can capture in this net.
         </td>
         <td>
@@ -1063,7 +1062,7 @@ If the net has no owner, then the player carrying the flag will receive the poin
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           Filter when the flags captured in this net are allowed to respawn.
         </td>
         <td>
