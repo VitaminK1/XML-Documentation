@@ -772,19 +772,18 @@ title:  "깃발 쟁탈 게임"
 만약 그물이 깃발 안에 정의되면 그 깃발만이 그물에 캡처할 수 있습니다.
 어떤 깃발을 캡처할 수 있는지 또 언제 캡처할 수 있는지 제어하기 위한 몇가지 옵션이 있습니다.
 
-A net can specify which post flags are returned to after being captured. This is how flags move between posts.
-A net can also force other flags to be returned when any flag is captured.
+그물은 캡처된 후 어떤 깃발 기둥을 반환할 지 지정할 수 있습니다. 이것이 깃발들이 기둥 사이로 움직이는 방법입니다. 또한 그물은 깃발이 캡처되면 다른 깃발을 강제로 반환할 수 있습니다.
 
-A net can be owned by a team, who will receive points for the flags captured in it.
-If the net has no owner, then the player carrying the flag will receive the points.
+그물은 팀에 의해 소유될 수 있으며 그 그물안에 깃발을 캡처한 경우 점수를 받을 수 있습니다.
+만약 그물의 소유자가 없다면 깃발을 들고있는 플레이어가 점수를 받게됩니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Net Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>그물 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -795,10 +794,10 @@ If the net has no owner, then the player carrying the flag will receive the poin
           </span>
         </td>
         <td>
-          A region that flags can be captured in.
+          깃발을 캡처할 수 있는 지역을 나타냅니다.
         </td>
         <td>
-          <span class='label label-default'>Net Sub-elements.</span>
+          <span class='label label-default'>그물 하위 요소</span>
         </td>
       </tr>
     </tbody>
@@ -808,10 +807,10 @@ If the net has no owner, then the player carrying the flag will receive the poin
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 150px;'>Net Attributes</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th style='min-width: 150px;'>그물 속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -819,9 +818,9 @@ If the net has no owner, then the player carrying the flag will receive the poin
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference this net from other places in the XML.</td>
+        <td>XML의 다른 위치에서 이 그물을 참조하는 데 사용되는 고유 식별자입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -831,11 +830,11 @@ If the net has no owner, then the player carrying the flag will receive the poin
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          <span class='label label-danger'>Required</span>
-          The region flag carriers must enter to capture in this net.
+          <span class='label label-danger'>필수</span>
+          지역별 깃발 운반자가 이 그물에 캡처하려면 반드시 입력해야 합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Region</a>
+          <a href='/modules/regions'>지역</a>
         </td>
         <td></td>
       </tr>
@@ -843,9 +842,9 @@ If the net has no owner, then the player carrying the flag will receive the poin
         <td>
           <code>owner</code>
         </td>
-        <td>The team that owns this net.</td>
+        <td>이 그물을 소유한 팀을 나타냅니다.</td>
         <td>
-          <a href='/modules/teams'>Team ID</a>
+          <a href='/modules/teams'>팀 ID</a>
         </td>
         <td></td>
       </tr>
@@ -854,14 +853,14 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>points</code>
         </td>
         <td>
-          The amount of points awarded for capturing a flag in this net.
+          깃발을 이 그물안에 캡처함으로써 얻는 점수의 양입니다.
           <br/>
-          If the net has an <code>owner</code>, that team receives the points. Otherwise, the carrier's team receives them.
+          만약 깃발에 <code>owner</code> 코드가 있으면 해당 팀이 포인트를 받습니다. 그렇지않으면 깃발을 운반한 사람의 팀이 점수를 받습니다.
           <br/>
-          <i>A negative number can be used to take away points rather than give them.</i>
+          <i>음수는 점수를 부여하는 대신 점수를 빼는 데 사용할 수 있습니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>0</td>
       </tr>
@@ -870,10 +869,10 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>post</code>
         </td>
         <td>
-          The ID of the post a flag returns to after being captured in this net.
+          깃발이 그물에 캡처된 이후에 반환할 깃발 기둥의 ID입니다.
         </td>
         <td>
-          <a href='/modules/flags'>Flag Post</a>
+          <a href='/modules/flags'>깃발 기둥</a>
         </td>
         <td></td>
       </tr>
@@ -884,17 +883,17 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>flags</code>
         </td>
         <td>
-          Flag(s) that can be captured in this net.
+          이 그물에 캡처할 수 있는 깃발을 나타냅니다.
           <br/>
-          This is a list of flag IDs, separated with spaces.
+          공백으로 구분된 깃발 ID의 목록입니다.
           <br/>
-          <i>Attribute can not be specified on nets that are defined inside a flag.</i>
+          <i>속성은 깃발 안에 정의 된 그물에 지정할 수 없습니다.</i>
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td>
-          <span class='label label-default'>ALL Flags</span>
+          <span class='label label-default'>모든 깃발</span>
         </td>
       </tr>
       <tr>
@@ -902,16 +901,15 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>rescue</code>
         </td>
         <td>
-          Flag(s) that are "rescued" by this net.
+          이 그물에 의해 "구출된" 깃발을 나타냅니다.
           <br/>
-          This is a list of flag IDs, separated with spaces.
+          공백으로 구분된 깃발 ID의 목록입니다.
           <br/>
-          Nothing can be captured in the net while any of these flags are being carried.
-          However, if none of them are being carried, but some of them are dropped on the ground,
-          capturing any flag in this net will instantly return the dropped flags.
+          이 깃발들이 운반되는 동안 그물에는 아무것도 캡처할 수 없습니다.
+          하지만 그 깃발들을 아무도 들고 있지 않다면 그들 중 일부는 땅에 떨어집니다. 그리고 이 그물에 있는 깃발을 캡처하면 즉시 떨어져 있던 깃발이 반환됩니다.
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -920,16 +918,16 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>sticky</code>
         </td>
         <td>
-          A flag carrier stays "in" the net, even after they leave.
+          깃발을 그물에 캡처한 후에도 그물에 그대로 남아있게 합니다.
           <br/>
-          If a player enters the net at a time when the flag can't be captured
-          (e.g. because of <code>rescue</code> or <code>capture-filter</code>)
-          they can then leave the net and the flag will still be captured the moment it is allowed to be.
-          This only happens if the player continues to carry the flag.
-          As soon as they drop it, they are no longer "in" the net.
+          깃발을 캡처할 수 없는 경우일때 플레이어가 그물에 진입하는 경우
+          (예를 들어 <code>rescue</code> 나 <code>capture-filter</code>)
+          그리고 나서 플레이어는 그물을 떠날 수 있고 깃발은 캡처가 허용되는 순간까지 그물에 머물러 있게됩니다.
+          이것은 플레이어가 계속해서 깃발을 들고다닐 때만 일어납니다.
+          그들이 그것을 떨어뜨리는 순간 깃발은 캡처됩니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>true</td>
       </tr>
@@ -939,10 +937,10 @@ If the net has no owner, then the player carrying the flag will receive the poin
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          Filter players who can capture in this net.
+          누가 이 그물에 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -951,12 +949,12 @@ If the net has no owner, then the player carrying the flag will receive the poin
           <code>deny-message</code>
         </td>
         <td>
-          Custom message to display to flag carriers while capture is being prevented by a special rule or filter.
+          캡처가 특별한 규칙 혹은 필터로 인해 제한되는 동안 깃발 운반자에게 표시할 사용자 지정 메시지입니다.
           <br/>
-          This can be used to explain an unusual <code>capture-filter</code> to a confused player.
+          이것은 혼란스러워하는 플레이어에게 <code>capture-filter</code> 를 설명하는 데 사용할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
