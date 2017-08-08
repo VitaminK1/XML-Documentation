@@ -963,12 +963,12 @@ title:  "깃발 쟁탈 게임"
           <code>respawn-together</code>
         </td>
         <td>
-          <em>All</em> the flags listed in <code>flags</code> must be captured before <em>any</em> of them respawn.
+          <em>모든</em> <code>flags</code>에 나열된 깃발은 다시 생성되기 전에 캡처해야 합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>침/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
@@ -976,10 +976,10 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          Filter when the flags captured in this net are allowed to respawn.
+          이 그물에 캡처 된 깃발이 다시 생성될 수 있을 때 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td></td>
       </tr>
@@ -988,12 +988,12 @@ title:  "깃발 쟁탈 게임"
           <code>respawn-message</code>
         </td>
         <td>
-          Custom message to broadcast in chat when flag respawn is prevented by a special rule or filter.
+          깃발 리스폰이 특별한 규칙 혹은 필터로 인해 제한되는 동안 채팅으로 표시할 사용자 지정 메시지입니다.
           <br/>
-          This can be used to explain an unusual <code>respawn-filter</code> to confused players.
+          이것은 혼란스러워하는 플레이어에게 <code>respawn-filter</code> 를 설명하는 데 사용할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -1002,13 +1002,13 @@ title:  "깃발 쟁탈 게임"
           <code>location</code>
         </td>
         <td>
-          Location where the net can be found at, used to determine proximity.
+          그물의 위치, 주로 근접 거리를 측정할 때 사용됩니다.
         </td>
         <td>
           <span class='label label-primary'>X,Y,Z</span>
         </td>
         <td>
-          <span class='label label-default'>Net Region Center</span>
+          <span class='label label-default'>그물 중심 지역</span>
         </td>
       </tr>
     </tbody>
@@ -1018,9 +1018,9 @@ title:  "깃발 쟁탈 게임"
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Net Sub-elements</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>그물 하위 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -1032,11 +1032,11 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          <span class='label label-danger'>Required</span>
-          The region flag carriers must enter to capture in this net.
+          <span class='label label-danger'>필수</span>
+          지역별 깃발 운반자가 이 그물에 캡처하려면 반드시 입력해야 합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Regions</a>
+          <a href='/modules/regions'>지역</a>
         </td>
       </tr>
       <tr>
@@ -1047,10 +1047,10 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          Filter players who can capture in this net.
+          누가 이 그물안에 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
       <tr>
@@ -1061,23 +1061,23 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
-          Filter when the flags captured in this net are allowed to respawn.
+          이 그물에 캡처 된 깃발이 다시 생성될 수 있을 때 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filters</a>
+          <a href='/modules/filters'>필터</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-### Examples
+### 예시
 
 #### Classic CTF
 
-Capture the enemy's flag in your own net.
-You can't capture while the enemy is carrying your flag.
-Capturing the enemy's flag returns yours if it is dropped on the ground.
+자신의 그물에다가 적의 깃발을 캡처하십시오.
+적군이 깃발을 들고있는 동안에는 캡처할 수 없습니다.
+적의 깃발을 캡처하면 땅에 떨어져 있는 아군 깃발은 바로 반환됩니다.
 
     <score>
         <limit>3</limit>
@@ -1102,9 +1102,9 @@ Capturing the enemy's flag returns yours if it is dropped on the ground.
 
 #### Flag Football
 
-Capture a shared flag in the enemy's net.
-The flag respawns in the center after each capture.
-Flag carriers get a speed boost.
+적의 그물에다 서로 공유하는 하나의 깃발을 캡처합니다.
+각 캡처 후 중앙에서 깃발이 다시 생성됩니다.
+깃발 운반자는 속도 부스트를 얻습니다.
 
     <score>
         <limit>3</limit>
@@ -1131,7 +1131,7 @@ Flag carriers get a speed boost.
 
 #### King of the Flag
 
-Capture a shared flag in your own net to bring it to your side, then keep it there as long as possible.
+서로 공유하는 깃발을 아군의 그물에다 캡처하고 아군 진영으로 가져온 다음 가능한 한 오랫동안 유지하십시오.
 
     <score>
         <limit>180</limit>
@@ -1164,9 +1164,9 @@ Capture a shared flag in your own net to bring it to your side, then keep it the
 
 #### Flag Blitz
 
-Earn points while carrying a shared flag.
-The flag respawns at a randomly chosen location after being dropped.
-Dead players cannot respawn while their team has the flag (but they can spectate).
+서로 공유하는 깃발을 점유하고있는 동안 점수를 얻습니다.
+깃발을 드롭된 뒤 임의로 선택된 위치에서 다시 생성됩니다.
+죽은 플레이어는 팀이 깃발을 가지고 있는 동안에는 리스폰할 수 없습니다. (관전은 가능합니다.)
 
     <spawns>
         <spawn team="red" region="red-spawn"/>
@@ -1198,7 +1198,7 @@ Dead players cannot respawn while their team has the flag (but they can spectate
 
 #### Complete the Flag
 
-Capture each enemy flag (once) and place them on your flag monument.
+각 적의 깃발을 한번 캡처하고 깃발 모뉴먼트에 놓습니다.
 
     <flags>
         <flags owner="blue-team" pickup-filter="red-only">
