@@ -267,7 +267,7 @@ title:  "모뉴먼트 부수기 게임"
           파괴 가능 물질을 포함하는 지역입니다.
         </td>
         <td>
-          <a href='/modules/regions'>Bounded Regions</a>
+          <a href='/modules/regions'>경계 지역</a>
         </td>
       </tr>
     </tbody>
