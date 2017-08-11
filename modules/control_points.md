@@ -61,7 +61,7 @@ title:  "점령 지점"
         <th style='min-width: 150px;'>속성</th>
         <th>설명</th>
         <th style='min-width: 100px;'>값</th>
-        <th>기본값</th>
+        <th style='min-width: 63px;'>기본값</th>
         <th>KotH</th>
       </tr>
     </thead>
@@ -101,7 +101,7 @@ title:  "점령 지점"
           <span class='label label-primary'>참/거짓</span>
         </td>
         <td colspan='2'>
-          true
+          참
         </td>
       </tr>
       <tr>
@@ -183,10 +183,10 @@ title:  "점령 지점"
           <span class='label label-primary'>참/거짓</span>
         </td>
         <td>
-          false
+          거짓
         </td>
         <td>
-          true
+          참
         </td>
       </tr>
       <tr>
@@ -397,7 +397,7 @@ title:  "점령 지점"
       <tr>
         <th style='min-width: 160px;'>요소</th>
         <th>설명</th>
-        <th>값/하위</th>
+        <th style='min-width: 63px;'>값/하위</th>
       </tr>
     </thead>
     <tbody>
