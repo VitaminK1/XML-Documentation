@@ -31,7 +31,7 @@ The area a region applies to is specified with one or more of the following elem
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Block Bounded Regions</th>
+        <th>블럭 경계 지역</th>
         <th></th>
       </tr>
       <tr></tr>
