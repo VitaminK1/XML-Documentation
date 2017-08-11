@@ -19,3 +19,5 @@ content:
     name: "염료 색"
   - path: "/reference/time_periods"
     name: "시간 단위"
+  - path: "/reference/paraphrase"
+    name: "의역"
