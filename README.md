@@ -14,7 +14,7 @@ _이 페이지는 GitHub Pages를 사용하여 호스팅되고 있습니다_
 
 #### Pull Requests
 
-Pull requests에는 다음과 같은 사항이 있어야 합니다.
+Pull Requests에는 다음과 같은 사항이 있어야 합니다.
 
 1. 그 commit은 서술적인 메시지를 담고 있어야 하며 과거 시제로는 작성될 수 없습니다.
 
@@ -26,7 +26,7 @@ Pull requests에는 다음과 같은 사항이 있어야 합니다.
 
 #### 변경 사항 미리보기
 
-1. 루비를 설치합니다. ([Mac](https://gorails.com/setup/osx/10.11-el-capitan), Windows, [Ubuntu](https://gorails.com/setup/ubuntu/15.10)) (레일즈는 필요하지 않습니다)
+1. 루비를 설치합니다. ([Mac](https://gorails.com/setup/osx/10.11-el-capitan), [Windows](https://rubyinstaller.org/downloads/), [Ubuntu](https://gorails.com/setup/ubuntu/15.10)) (레일즈는 필요하지 않습니다)
 2. [bundler](http://bundler.io) 젬을 설치합니다.
 2. 프로젝트 root디렉토리에서 `bundle install`을 실행합니다.
 3. `bundle exec jekyll serve` 이나 `jekyll serve`을 실행합니다.
