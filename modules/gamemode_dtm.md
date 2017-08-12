@@ -107,7 +107,7 @@ title:  "모뉴먼트 부수기 게임"
         <td>
           <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
-          파괴 가능 물질을 포함하는 지역
+          파괴 가능 물질을 포함하는 지역입니다.
         </td>
         <td>
           <a href='/modules/regions'>경계 지역</a>

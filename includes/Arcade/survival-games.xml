@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<map proto="1.4.2">
+<objective>Be the last man standing!</objective>
+<teams>
+	<team id="players" color="yellow" max="24" max-overfill="24" show-name-tags="false">Players</team>
+</teams>
+<friendlyfire>on</friendlyfire>
+</map>

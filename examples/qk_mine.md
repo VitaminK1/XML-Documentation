@@ -12,24 +12,23 @@ XML파일 버전을 지정한 다음 메인 맵 모듈을 열고 맵 이름, 버
 
      <?xml version="1.0"?>
      <map proto="{{site.current_proto}}">
-     <name>Harb KoTF</name>
-     <version>2.1</version>
-     <objective>승리하기 위해 가장 많은 시간 동안 깃발을 점유하세요!</objective>
+     <name>QK: Mine</name>
+     <version>1.0</version>
+     <objective>Kill other players and reach first to 26 kills!</objective>
 
+<!-- TODO: 번역 및 Arcade에 맞게 파일 수정 -->
 Specify the map's authors. Each author can be given an optional attribute `contribution=""` attribute to set to their specific contribution to the map.
 
-    <authors>
-        <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0" contribution="Map Author"/> <!-- SH4D0W_HAWK -->
-        <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8" contribution="Map Author"/> <!-- Plastix -->
-    </authors>
+     <authors>
+         <author contribution="Map Building">andreaci</author>
+     </authors>
 
 [<i class="fa fa-share right-ref-link"></i>](/modules/teams)
 Defining two teams, use their respective [colors](/reference/formatting#chatColors) and names. You must have a `max` to specify the amount of players who can play, keep in mind however this is not the maximum capacity. Donors and staff will be able to join above the `max`. To combat this, use `max-overfill` with a number greater than the `max`.
 
-    <teams>
-        <team id="blue" color="blue" max="40">Blue</team>
-        <team id="red" color="dark red" max="40">Red</team>
-    </teams>
+     <teams>
+         <team color="yellow" max="20" max-overfill="25" show-name-tag="false">Players</team>
+     </teams>
 
 [<i class="fa fa-share right-ref-link"></i>](/modules/gamemode_ctf)
 This map uses flags as the primary objective. To define a flag, you must use the `<flags>` module and at least define a `post`, as that's the only one required. In this example, the `yaw` makes the flag turn 90 degrees. You may have multiple post locations that the flag spawns at.

@@ -6,14 +6,14 @@ title:  "코어 부수기 게임"
 
 ---
 
-Players have to locate and break the enemy team's core, usually an obsidian sphere filled with lava. The lava has to leak down a certain distance for the core to be destroyed. Lava should not be available anywhere else on the map, otherwise a core leak could be faked. This can also be avoided by keeping the lava far away enough from the core and not giving players buckets or the ability to craft them.
+플레이어는 적 팀의 코어를 찾아내야 하며 보통 코어는 용암으로 가득 찬 흑요석 구로 이루어져 있습니다. 용암은 코어가 파괴되기 위해 일정한 거리까지 아래로 누출되어야 합니다. 용암은 맵의 다른 곳에서 사용할 수 없습니다. 그렇지 않으면 가짜로 코어가 유출된 것처럼 꾸밀 수 있기 때문입니다. 이것은 용암을 코어와 멀리 떨어뜨려 놓거나 플레이어에게 양동이를 조합할 수 없게 만들어 방지할 수 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Cores Element</th>
-        <th>Description</th>
+        <th>코어 요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -24,12 +24,12 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
             <code>{{'<cores> </cores>' | escape_once}}</code>
           </span>
         </td>
-        <td>Node containing all the defined cores.</td>
+        <td>정의된 모든 코어가 포함된 노드입니다.</td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
       </tr>
       <tr>
         <td>
@@ -38,24 +38,24 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           </span>
         </td>
         <td>
-          A single core.
+          단일 코어입니다.
         </td>
         <td>
-          <span class='label label-default'>Core Sub-elements</span>
+          <span class='label label-default'>코어 하위 요소</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Core Attributes</h5>
+<h5>코어 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -63,9 +63,9 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
         <td>
           <code>id</code>
         </td>
-        <td>Unique identifier used to reference cores from other places in the XML.</td>
+        <td>XML의 다른 위치에서 코어를 참조하는 데 사용되는 고유 식별자입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -73,9 +73,9 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
         <td>
           <code>name</code>
         </td>
-        <td>The core's name, used in notification messages.</td>
+        <td>알림 메시지에 사용되는 코어의 이름입니다.</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td></td>
       </tr>
@@ -84,15 +84,15 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           <code>required</code>
         </td>
         <td>
-          Specify if this objective is required to win the match.
+          이 목표가 경기에서 이기기 위해 필요한 지 여부를 지정합니다.
           <br/>
-          Teams completing all of their required objectives will win regardless of score or blitz configuration.
+          필요한 모든 목표를 완료한 팀은 점수 또는 Blitz설정에 관계없이 승리합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td>
-          true
+          참
         </td>
       </tr>
       <tr>
@@ -100,12 +100,12 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          A region containing the core.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          코어를 포함하는 지역입니다.
         </td>
         <td>
-          <a href='/modules/regions'>Bounded Region</a>
+          <a href='/modules/regions'>경계 지역</a>
         </td>
         <td></td>
       </tr>
@@ -113,9 +113,9 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
         <td>
           <code>leak</code>
         </td>
-        <td>Distance below the bottom of the core <strong>region</strong> that the lava must leak.</td>
+        <td>용암이 누출되어야 하는 코어 <strong>지역</strong>의 바닥 아래 거리</td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>5</td>
       </tr>
@@ -123,22 +123,22 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
         <td>
           <code>material</code>
         </td>
-        <td>The core casing material, used to detect breaks, and for mode changes.</td>
+        <td>파괴를 감지하고 모드 변경에 사용되는 코어 표면 재료를 나타냅니다.</td>
         <td>
-          <a href='/reference/inventory#material_matchers'>Single Material Pattern</a>
+          <a href='/reference/inventory#material_matchers'>단일 재료 패턴</a>
         </td>
-        <td>obsidian</td>
+        <td>흑요석</td>
       </tr>
       <tr>
         <td>
           <code>team</code>
         </td>
         <td>
-          <span class='label label-danger'>Required</span>
-          Team the core belongs to, i.e. its owner.
+          <span class='label label-danger'>필수</span>
+          코어가 속한 팀, 즉 소유자를 말합니다.
         </td>
         <td>
-          <a href='/modules/teams'>Team ID</a>
+          <a href='/modules/teams'>팀 ID</a>
         </td>
         <td></td>
       </tr>
@@ -147,11 +147,10 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           <code>mode-changes</code>
         </td>
         <td>
-          Specify if this core uses
-          <a href='/modules/monument_modes'>monument modes</a>.
+          이 코어가 <a href='/modules/monument_modes'>모뉴먼트 모드</a>를 사용하는지 여부를 지정합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
         <td></td>
       </tr>
@@ -160,27 +159,27 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           <code>show</code>
         </td>
         <td>
-          Specify if the core should be hidden from all visible locations to the player. These locations include chat, the boss bar, and the scoreboard.
+          플레이어에게서 보이는 모든 위치에서 목표를 숨겨야하는지 여부를 지정합니다. 이 위치에는 채팅, 보스바 및 스코어보드가 포함됩니다.
           <br/>
-          <code>NOTE:</code>
-          The objective will also not be logged to the Database and the player will not recieve any raindrops upon completion.
+          <code>참고:</code>
+          목표는 데이터베이스에 기록되지 않으며 플레이어는 목표를 완료하더라도 보상을 받지 못합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>proximity-metric</code>
         </td>
         <td>
-          Metric used to determine proximity to the core.
+          코어의 근접한 정도를 결정하는 데 사용되는 방식입니다.
           <br/>
-          Accepts <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
+          사용 가능한 값: <code>closest player</code>, <code>closest block</code> 혹은 <code>closest kill</code>
         </td>
         <td>
-          <span class='label label-primary'>Proximity Metric</span>
+          <span class='label label-primary'>근접도</span>
         </td>
         <td>
           <code>closest player</code>
@@ -191,24 +190,24 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           <code>proximity-horizontal</code>
         </td>
         <td>
-          Only calculate horizontal distance for core proximity.
+          코어의 근접 거리에 대한 수평 거리만 계산합니다.
         </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Core Sub-elements</h5>
+<h5>코어 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값</th>
       </tr>
     </thead>
     <tbody>
@@ -219,12 +218,12 @@ Players have to locate and break the enemy team's core, usually an obsidian sphe
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          A region containing the core.
+          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          코어를 포함하는 지역입니다.
         </td>
         <td>
-          <a href='/modules/regions'>Bounded Regions</a>
+          <a href='/modules/regions'>경계 지역</a>
         </td>
       </tr>
     </tbody>

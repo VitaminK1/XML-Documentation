@@ -23,6 +23,10 @@ title:  "의역"
         <td>destroyables</td>
         <td>파괴 가능 물질</td>
       </tr>
+      <tr>
+        <td>Bounded Regions</td>
+        <td>경계 지역</td>
+      </tr>
     </tbody>
   </table>
 </div>

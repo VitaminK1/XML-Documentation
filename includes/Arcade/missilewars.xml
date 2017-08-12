@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<map proto="1.3.6">
+<objective>Throw Missiles to other team base! Last team standing wins!</objective>
+<classes family="missilewars" sticky="false">
+    <class name="Jumper" default="true" restrict="false" description="Jump!" longdescription="Use your jumping abilities to leap away from danger! You take no fall damage!" icon="feather">
+		<kit name="jumper">
+		    <potion duration="1" amplifier="0">blindness</potion>
+		</kit>
+    </class>
+    <!--
+    <class name="Armorer" cost="2000" restrict="true" description="Ouch!" longdescription="He uses his expert armor-making skills to block excess damage!" icon="gold chestplate">
+	<kit name="armorer">
+	    <potion duration="1" amplifier="0">blindness</potion>
+	    <helmet damage="-3000">gold helmet</helmet>
+	    <chestplate damage="-3000">gold chestplate</chestplate>
+	    <leggings damage="-3000">gold leggings</leggings>
+	    <boots damage="-3000">gold boots</boots>
+	</kit>
+    </class>
+    <class name="Velociter" cost="4000" restrict="true" description="Tick,,Tick...tick..." longdescription="You can easily pitch the perfect shot for any occasion." icon="lever">
+	<kit name="velociter">
+	    <item slot="1" name="`a`lVelociter" amount="2">lever</item>
+	    <potion duration="1" amplifier="0">blindness</potion>
+	    <helmet damage="-3000">chainmail helmet</helmet>
+	    <chestplate damage="-3000">chainmail chestplate</chestplate>
+	    <leggings damage="-3000">chainmail leggings</leggings>
+	    <boots damage="-3000">chainmail boots</boots>
+	</kit>
+    </class>
+	-->
+</classes>
+<disabledamage>
+    <damage self="true" ally="true" enemy="false" other="false">entity explosion</damage>
+</disabledamage>
+<arcade>
+	<missile-wars/>
+</arcade>
+<filters>
+	<not id="all-blocks">
+		<material>bedrock</material>
+		<material>obsidian</material>
+		<material>air</material>
+	</not>
+</filters>
+<falling-blocks delay="4">
+	<rule>
+		<filter>
+			<filter id="all-blocks"/>
+		</filter>
+		<sticky>
+			<all>
+				<filter id="all-blocks"/>
+			</all>
+		</sticky>
+	</rule>
+</falling-blocks>
+</map>
