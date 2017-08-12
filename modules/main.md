@@ -46,7 +46,7 @@ title:  "기본 맵 요소"
         <th>속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style="min-width: 63px;">기본값</th>
       </tr>
     </thead>
     <tbody>

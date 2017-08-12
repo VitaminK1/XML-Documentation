@@ -608,7 +608,7 @@ title:  "깃발 쟁탈 게임"
         <th style='min-width: 130px;'>기둥 속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style="min-width: 63px;">기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -929,7 +929,7 @@ title:  "깃발 쟁탈 게임"
         <td>
           <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>

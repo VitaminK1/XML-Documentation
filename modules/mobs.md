@@ -67,7 +67,7 @@ title:  "몹 스폰"
     </tbody>
   </table>
 </div>
-<h5>Mob Spawning Filter Matchers</h5>
+<h5>몹 스폰 필터 매처 (Matchers)</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
@@ -115,16 +115,16 @@ title:  "몹 스폰"
   </table>
 </div>
 
-Examples
+예시
 
-    <!-- Only allow mobs to spawn from monster spawners. -->
+    <!-- 몹을 스포너에서만 스폰되게 만듭니다. -->
     <mobs>
         <filter>
             <spawn>spawner</spawn>
         </filter>
     </mobs>
 
-    <!-- Only allow cave spiders spawned with spawn eggs -->
+    <!-- 동굴 거미를 스폰 알을 통해서만 스폰되게 만듭니다. -->
     <mobs>
         <filter>
             <all>
