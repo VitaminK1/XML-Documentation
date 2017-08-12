@@ -1,0 +1,154 @@
+
+body {
+    font-family: "Nanum Gothic", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Nanum Gothic",sans-serif;;
+    font-weight: bold;
+}
+
+/* Main page content headers */
+.page-header {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .page-header h1 {
+        margin-top: 0 !important;
+    }
+}
+
+/* Misc */
+code {
+   padding: 1px 4px;
+}
+
+td pre {
+    margin-bottom: 0;
+    display: inline-block;
+    border: none;
+    padding: 1px 0;
+}
+
+td pre code {
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.right-ref-link {
+    float: right;
+    margin-left: 8px;
+}
+.left-ref-link {
+    float: left;
+    margin-right: 8px;
+}
+
+
+.docs-footer {
+    margin-bottom: 20px;
+}
+
+
+/* Custom alert styles */
+.alert.alert-small {
+    padding: 5px 7px 4px 7px;
+}
+
+.alert .fa.fa-2x {
+    margin: 5px;
+    float: left;
+}
+
+.alert .alert-content {
+    margin: 0px;
+    padding-left: 48px;
+}
+
+.alert-success p a {
+    color: #2b542c
+}
+.alert-info p a {
+    color: #245269
+}
+.alert-warning p a {
+    color: #66512c
+}
+.alert-danger p a {
+    color: #843534
+}
+
+/* Bottom border on tables */
+.table-striped>tbody {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Custom dynamic button style */
+/* - Currently used for collapsible example buttons
+   - Title changes from "More Examples" to "Less Examples" and vs versa */
+a.btn-more.collapsed:before {
+    content: "더보기";
+}
+
+a.btn-more:before {
+    content: "작게 보기";
+}
+
+/* Elements with this attribute will show a scrollbar if they overflow their parent */
+.scroll {
+    overflow: auto;
+}
+
+/* Changelog list styling */
+ul.changelog {
+    list-style: none;
+    padding-left: 80px;
+}
+
+ul.changelog li {
+    margin-bottom: 10px;
+}
+
+ul.changelog .label {
+    margin-left: -80px;
+    margin-top: 3px;
+    float: left;
+}
+
+/* Make code boxes automatically scroll instead of wrapping when the screen is under this width */
+@media screen and (max-width:767px) {
+    pre {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    pre code {
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+        overflow-wrap: normal;
+        white-space: pre;
+    }
+}
+
+
+/* Material table styling */
+#blocks #dataTable tr td.data {
+    text-align: right;
+}

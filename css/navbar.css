@@ -1,0 +1,40 @@
+/* Main navigation */
+/* - Position the Stratus logo in relation to the navbar-brand text */
+.navbar-brand img {
+    margin-top: -12px;
+    margin-right: 8px;
+    margin-bottom: -11px;
+    float: left;
+}
+
+/* remove margin by default */
+.navbar {
+  margin-bottom: 0;
+  min-height: 52px;
+}
+
+/* - Tweak navbar item hover and focus colors */
+.navbar .navbar-nav > li:not(.active) > a:hover,
+.navbar .navbar-nav > li:not(.active) > a:focus {
+    border-bottom: 2px solid #3498DB;
+    background-color: transparent;
+}
+
+.navbar-default {
+  background-color: #FFF;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 -1px 0 0 #717c8c;
+}
+
+.navbar .navbar-nav > .active > a {
+  border-bottom: 2px solid #3498DB;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav> li > a:focus, .navbar .navbar-nav > li > a:hover {
+  color: #3498DB;
+  background-color: transparent;
+}
+
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
+  background-color: transparent;
+}

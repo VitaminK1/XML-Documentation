@@ -1,0 +1,17 @@
+/* Sidebar navigation */
+.subnav-btn {
+    float: none !important;
+}
+
+.docs-nav-pills > ul > li > a,
+.docs-nav-pills > li > a {
+    position: relative;
+    display: block;
+    padding: 3px 10px;
+}
+
+.docs-nav-pills h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 8px 0px;
+}
