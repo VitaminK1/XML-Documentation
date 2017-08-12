@@ -19,6 +19,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+    <script>jQuery(document).ready(function(){var btn=$('#button');$(window).scroll(function(){if($(window).scrollTop()>300){btn.addClass('show')}else{btn.removeClass('show')}});btn.on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'300')})});</script>
   </head>
   <body>
     <header class='navbar navbar-default navbar-static-top' role='navigation'>
@@ -184,7 +185,7 @@
     </tbody>
   </table>
 </div>
-<h5>Mob Spawning Filter Matchers</h5>
+<h5>몹 스폰 필터 매처 (Matchers)</h5>
 <div class="table-responsive">
   <table class="table table-striped table-condensed">
     <thead>
@@ -232,16 +233,16 @@
   </table>
 </div>
 
-<p>Examples</p>
+<p>예시</p>
 
-<pre><code>&lt;!-- Only allow mobs to spawn from monster spawners. --&gt;
+<pre><code>&lt;!-- 몹을 스포너에서만 스폰되게 만듭니다. --&gt;
 &lt;mobs&gt;
     &lt;filter&gt;
         &lt;spawn&gt;spawner&lt;/spawn&gt;
     &lt;/filter&gt;
 &lt;/mobs&gt;
 
-&lt;!-- Only allow cave spiders spawned with spawn eggs --&gt;
+&lt;!-- 동굴 거미를 스폰 알을 통해서만 스폰되게 만듭니다. --&gt;
 &lt;mobs&gt;
     &lt;filter&gt;
         &lt;all&gt;
@@ -274,5 +275,6 @@
         </ul>
       </footer>
     </div>
+    <a id="button"></a>
   </body>
 </html>

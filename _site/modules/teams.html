@@ -19,6 +19,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+    <script>jQuery(document).ready(function(){var btn=$('#button');$(window).scroll(function(){if($(window).scrollTop()>300){btn.addClass('show')}else{btn.removeClass('show')}});btn.on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'300')})});</script>
   </head>
   <body>
     <header class='navbar navbar-default navbar-static-top' role='navigation'>
@@ -124,7 +125,7 @@
         </div>
 
         <p>이 모듈은 경기에 사용된 팀과 그 속성을 지정하는 데 사용됩니다.
-팀이 없는 경기는 <a href="/modules/players">플레이어</a>모듈을 사용하여 설정할 수 있습니다.</p>
+팀이 없는 경기는 <a href="/modules/players">플레이어</a> 모듈을 사용하여 설정할 수 있습니다.</p>
 
 <p>각 팀의 소프트 플레이어 제한은 <code>max=""</code> 속성과 <code>max-overfill</code>을 가진 하드 제한으로 설정됩니다. 만약 최대 overfill이 정의되지 않은경우 기본값은 최대 팀 크기보다 25% 크게 설정됩니다. 최대 플레이어 overfill크기에 도달하면 플레이어가 팀에 합류할 수 없습니다.</p>
 
@@ -308,5 +309,6 @@
         </ul>
       </footer>
     </div>
+    <a id="button"></a>
   </body>
 </html>

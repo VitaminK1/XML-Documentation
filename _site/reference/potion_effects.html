@@ -19,6 +19,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
+    <script>jQuery(document).ready(function(){var btn=$('#button');$(window).scroll(function(){if($(window).scrollTop()>300){btn.addClass('show')}else{btn.removeClass('show')}});btn.on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'300')})});</script>
   </head>
   <body>
     <header class='navbar navbar-default navbar-static-top' role='navigation'>
@@ -102,13 +103,13 @@
     <i class='fa fa-fw fa-caret-down'></i>
   </button>
   <ul class='dropdown-menu subnav-dropdown' role='menu' style='width: 100%;'>
-    <li class="dropdown-header">아이템</li><li class=""><a href="/reference/inventory">인벤토리</a></li><li class=""><a href="/reference/enchantments">인첸트</a></li><li class=""><a href="/reference/attributes">속성</a></li><li class="divider"></li><li class="dropdown-header">엔티티</li><li class=""><a href="/reference/entity_types">엔티티 종류</a></li><li class=""><a href="/reference/spawn_reason">스폰 사유</a></li><li class="divider"></li><li class="dropdown-header">기타</li><li class=""><a href="/reference/formatting">텍스트 포맷</a></li><li class=""><a href="/reference/colors">염료 색</a></li><li class=""><a href="/reference/time_periods">시간 단위</a></li>
+    <li class="dropdown-header">아이템</li><li class=""><a href="/reference/inventory">인벤토리</a></li><li class=""><a href="/reference/enchantments">인첸트</a></li><li class=""><a href="/reference/attributes">속성</a></li><li class="divider"></li><li class="dropdown-header">엔티티</li><li class=""><a href="/reference/entity_types">엔티티 종류</a></li><li class=""><a href="/reference/spawn_reason">스폰 사유</a></li><li class="divider"></li><li class="dropdown-header">기타</li><li class=""><a href="/reference/formatting">텍스트 포맷</a></li><li class=""><a href="/reference/colors">염료 색</a></li><li class=""><a href="/reference/time_periods">시간 단위</a></li><li class=""><a href="/reference/paraphrase">의역</a></li>
   </ul>
 </div>
 
 <div class='sidebar hidden-xs'>
   <ul class='nav nav-pills nav-stacked docs-nav-pills'>
-    <li><h4>아이템</h4></li><li class=""><a href="/reference/inventory">인벤토리</a></li><li class=""><a href="/reference/enchantments">인첸트</a></li><li class=""><a href="/reference/attributes">속성</a></li><li><h4>엔티티</h4></li><li class=""><a href="/reference/entity_types">엔티티 종류</a></li><li class=""><a href="/reference/spawn_reason">스폰 사유</a></li><li><h4>기타</h4></li><li class=""><a href="/reference/formatting">텍스트 포맷</a></li><li class=""><a href="/reference/colors">염료 색</a></li><li class=""><a href="/reference/time_periods">시간 단위</a></li>
+    <li><h4>아이템</h4></li><li class=""><a href="/reference/inventory">인벤토리</a></li><li class=""><a href="/reference/enchantments">인첸트</a></li><li class=""><a href="/reference/attributes">속성</a></li><li><h4>엔티티</h4></li><li class=""><a href="/reference/entity_types">엔티티 종류</a></li><li class=""><a href="/reference/spawn_reason">스폰 사유</a></li><li><h4>기타</h4></li><li class=""><a href="/reference/formatting">텍스트 포맷</a></li><li class=""><a href="/reference/colors">염료 색</a></li><li class=""><a href="/reference/time_periods">시간 단위</a></li><li class=""><a href="/reference/paraphrase">의역</a></li>
   </ul>
 </div>
 
@@ -385,5 +386,6 @@
         </ul>
       </footer>
     </div>
+    <a id="button"></a>
   </body>
 </html>
