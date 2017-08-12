@@ -27,6 +27,10 @@ title:  "의역"
         <td>Bounded Regions</td>
         <td>경계 지역</td>
       </tr>
+      <tr>
+        <td>redeemable</td>
+        <td>교환 가능한</td>
+      </tr>
     </tbody>
   </table>
 </div>

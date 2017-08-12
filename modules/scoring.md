@@ -6,14 +6,13 @@ title:  "점수"
 
 ---
 
-The score module can be used to give matches a score limit and modify how many points are added to the score for each kill or death. It can also be used to create score boxes that give a player or team a certain amount of points when they enter it.
-
+점수 모듈은 경기에 점수 제한을 두고 매번 죽거나 죽일 때마다 점수에 추가되는 포인트의 수를 수정하는 데 사용될 수 있습니다. 또한 플레이어나 팀에게 점수를 부여할 때 일정 점수를 주는 스코어 박스를 만드는 데에도 사용할 수 있습니다.
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Score Element</th>
-        <th>Description</th>
+        <th>점수 요소</th>
+        <th>설명</th>
         <th></th>
         <th></th>
       </tr>
@@ -25,12 +24,12 @@ The score module can be used to give matches a score limit and modify how many p
             <code>{{'<score> </score>' | escape_once}}</code>
           </span>
         </td>
-        <td colspan='3'>Node containing the score settings and score boxes.</td>
+        <td colspan='3'>점수 설정 및 스코어 박스가 포함 된 노드입니다.</td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
-        <th>Default</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위</th>
+        <th>기본값</th>
       </tr>
       <tr>
         <td>
@@ -39,13 +38,13 @@ The score module can be used to give matches a score limit and modify how many p
           </span>
         </td>
         <td>
-          Max score that can be reached before the match ends.
+          경기가 끝나기 전에 도달할 수 있는 최대 점수를 설정합니다.
         </td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
         <td>
-          No limit
+          제한 없음
         </td>
       </tr>
       <tr>
@@ -55,10 +54,10 @@ The score module can be used to give matches a score limit and modify how many p
           </span>
         </td>
         <td>
-          Points to <strong>give</strong> to a team for killing an enemy player
+          적 팀 플레이어를 죽인 후 주어지는 <strong>점수</strong>를 설정합니다.
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>
           0
@@ -71,10 +70,10 @@ The score module can be used to give matches a score limit and modify how many p
           </span>
         </td>
         <td>
-          Points to <strong>deduct</strong> from a team for the <strong>accidental</strong> death of a team member
+          팀원이 <strong>실수로</strong> 사망했을 때 팀에게서 <strong>가져갈</strong> 점수를 설정합니다.
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>
           0
@@ -87,10 +86,10 @@ The score module can be used to give matches a score limit and modify how many p
           </span>
         </td>
         <td>
-          A single score box.
+          단일 스코어 박스 입니다.
         </td>
         <td>
-          <a href='#score_box'>Score Box</a>
+          <a href='#score_box'>스코어 박스</a>
         </td>
         <td></td>
       </tr>
@@ -98,29 +97,29 @@ The score module can be used to give matches a score limit and modify how many p
   </table>
 </div>
 
-Example
+예시
 
     <score>
-        <!-- First team to reach 100 points wins the match -->
+        <!-- 먼저 100점에 도달하는 팀이 경기를 승리합니다. -->
         <limit>100</limit>
 
-        <kills>3</kills> <!-- +3 points for every kill -->
-        <deaths>2</deaths> <!-- -2 points for accidentally dying -->
+        <kills>3</kills> <!-- 상대를 제거할 때마다 3점을 줍니다. -->
+        <deaths>2</deaths> <!-- 실수로 죽을 때마다 2점을 차감합니다. -->
     </score>
 
 
 <br/>
 
-#### Score Boxes {#score_box}
-A score box will give points to a players team when they enter or bring a redeemable item to the score box region. [Portals](/modules/portals) should be setup to remove the player from the immediate vicinity of the score box to prevent multiple scores.
+#### 스코어 박스 {#score_box}
+스코어 박스는 스코어 박스 지역에서 교환할 수 있는 아이템을 가져오거나 스코어 박스에 들어가면 점수를 부여합니다. 다중 득점을 방지하기 위해 [포탈](/modules/portals)을 설정하여 스코어 박스 부근에서 플레이어를 제거해야 합니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Score Box Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>스코어 박스 요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -131,24 +130,24 @@ A score box will give points to a players team when they enter or bring a redeem
           </span>
         </td>
         <td>
-          A single score box.
+          단일 스코어 박스 입니다.
         </td>
         <td>
-          <span class='label label-default'>Score Box Sub-elements</span>
+          <span class='label label-default'>스코어 박스 하위 요소</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Score Box Attributes</h5>
+<h5>스코어 박스 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>종류</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -158,7 +157,7 @@ A score box will give points to a players team when they enter or bring a redeem
         </td>
         <td>Points awarded for entering the box.</td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>0</td>
       </tr>
