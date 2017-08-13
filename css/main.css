@@ -152,3 +152,9 @@ ul.changelog .label {
 #blocks #dataTable tr td.data {
     text-align: right;
 }
+
+/* Footer drop-up */
+.drop-up {
+  top: auto;
+  bottom: 100% !important;
+}
