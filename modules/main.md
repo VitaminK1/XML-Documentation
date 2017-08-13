@@ -94,7 +94,7 @@ title:  "기본 맵 요소"
         <th style='min-width: 150px;'>요소</th>
         <th>설명</th>
         <th>값/하위 모듈</th>
-        <th>기본값</th>
+        <th style='min-width: 63px;'>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -272,7 +272,7 @@ title:  "기본 맵 요소"
         </td>
         <td>맵에 대한 기여 내용을 담고 있습니다</td>
         <td>
-          <span class='label label-primary'>String</span>
+          <span class='label label-primary'>문자열</span>
         </td>
       </tr>
       <tr>
@@ -307,7 +307,7 @@ title:  "기본 맵 요소"
 #### 맵 게임모드 {#gamemode}
 
 게임모드 요소는 맵의 게임모드를 지정하는 데 사용됩니다. 이는 주로 맵이 분류되고 표시되는 방식에 영향을 미칩니다.
-만약 `<gamemode>` 태그가 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다. 이 말은 지정되지 않은 한 destroyables와 깃발을 사용하는 맵은 "DTM 과 CTF"로 표시될 것입니다.
+만약 `<gamemode>` 태그가 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다. 이 말은 지정되지 않은 한 파괴 가능 물질과 깃발을 사용하는 맵은 "DTM 과 CTF"로 표시될 것입니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>

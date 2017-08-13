@@ -77,11 +77,11 @@ XML을 파일을 보다 깔끔하고 가독성있게 유지하려면 4개의 공
         <td>
           <code>cow</code>
         </td>
-        <td>This example has a pet cow.</td>
+        <td>이 예시에는 동물 소가 있습니다.</td>
         <td>
-          <span class="label label-primary">true/false</span>
+          <span class="label label-primary">참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
     </tbody>
   </table>
