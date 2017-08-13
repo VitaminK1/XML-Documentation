@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Nanum Gothic", Helvetica, sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 h1,
@@ -15,8 +15,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Nanum Gothic",sans-serif;;
-    font-weight: bold;
+    font-family: "Noto Sans KR",sans-serif;;
+    font-weight: 700;
 }
 
 /* Main page content headers */

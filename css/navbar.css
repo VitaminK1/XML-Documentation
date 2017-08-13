@@ -38,3 +38,14 @@
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover {
   background-color: transparent;
 }
+
+.navbar-default .navbar-brand {
+  color: #323333;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:active,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #323333;
+}
