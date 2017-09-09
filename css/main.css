@@ -158,14 +158,3 @@ ul.changelog .label {
   top: auto;
   bottom: 100% !important;
 }
-
-/* Footer Status Header */
-.statusHeader {
-  text-align: left;
-  padding-left: 20px;
-}
-
-.copy {
-  text-align: left;
-  padding-left: 20px;
-}
