@@ -164,3 +164,89 @@ ul.changelog .label {
   text-align: left;
   padding-left: 20px;
 }
+
+/* reference/colors */
+
+.dye {
+  border: 1px solid #777;
+}
+
+.white {
+  background-color: #E9ECEC;
+  color: #333;
+}
+
+.orange {
+  background-color: #F07613;
+  color: #FFF;
+}
+
+.magenta {
+  background-color: #BD44B3;
+  color: #FFF;
+}
+
+.light_blue {
+  background-color: #3AAFD9;
+  color: #FFF
+}
+
+.yellow {
+  background-color: #F8C627;
+  color: #333
+}
+
+.lime {
+  background-color: #70B919;
+  color: #FFF
+}
+
+.pink {
+  background-color: #ED8DAC;
+  color: #FFF
+}
+
+.gray {
+  background-color: #3E4447;
+  color: #FFF
+}
+
+.silver {
+  background-color: #8E8E86;
+  color: #FFF
+}
+
+.cyan {
+  background-color: #158991;
+  color: #FFF
+}
+
+.purple {
+  background-color: #792AAC;
+  color: #FFF
+}
+
+.blue {
+  background-color: #35399D;
+  color: #FFF
+}
+
+.brown {
+  background-color: #724728;
+  color: #FFF
+}
+
+.green {
+  background-color: #546D1B;
+  color: #FFF
+}
+
+.red {
+  background-color: #A12722;
+  color: #FFF;
+}
+
+.black {
+  background-color: #141519;
+  color: #FFF;
+}
