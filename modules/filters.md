@@ -338,6 +338,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td></td>
       </tr>
+      <!--
       <tr>
         <td>
           <span class='highlight'>
@@ -350,6 +351,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td></td>
       </tr>
+      -->
       <tr>
         <th colspan='3'>Entity filters</th>
       </tr>
@@ -389,6 +391,7 @@ Filter matchers test for specific conditions or properties of things.
       <tr>
         <th colspan='3'>Competitor filters (apply to teams, or FFA players)</th>
       </tr>
+      <!--
       <tr>
         <td>
           <span class='highlight'>
@@ -403,6 +406,7 @@ Filter matchers test for specific conditions or properties of things.
           <span class='label label-primary'>Dynamic</span>
         </td>
       </tr>
+      -->
       <tr>
         <td>
           <span class='highlight'>
@@ -434,6 +438,7 @@ Filter matchers test for specific conditions or properties of things.
       <tr>
         <th colspan='3'>Player filters</th>
       </tr>
+      <!--
       <tr>
         <td>
           <span class='highlight'>
@@ -460,6 +465,7 @@ Filter matchers test for specific conditions or properties of things.
           <span class='label label-primary'>Dynamic</span>
         </td>
       </tr>
+      -->
       <tr>
         <td>
           <span class='highlight'>
@@ -557,6 +563,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td></td>
       </tr>
+      <!--
       <tr>
         <td>
           <span class='highlight'>
@@ -570,6 +577,7 @@ Filter matchers test for specific conditions or properties of things.
           <span class='label label-primary'>Dynamic</span>
         </td>
       </tr>
+      -->
       <tr>
         <td>
           <span class='highlight'>

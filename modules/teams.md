@@ -11,8 +11,7 @@ title:  "팀"
 
 각 팀의 소프트 플레이어 제한은 `max=""` 속성과 `max-overfill`을 가진 하드 제한으로 설정됩니다. 만약 최대 overfill이 정의되지 않은경우 기본값은 최대 팀 크기보다 25% 크게 설정됩니다. 최대 플레이어 overfill크기에 도달하면 플레이어가 팀에 합류할 수 없습니다.
 
-팀의 이름은 `<team>`요소 내에서 지정됩니다. 이름은 "Team"을 포함하지 말고 가능한 한 짧게 유지해야 합니다. (예: "Azure Team" 대신 "Azure")
-팀의 `<plural>`속성은 팀 이름이 복수인지 여부를 지정합니다. (예: Attackers); Game 플러그인은 적절한 승리 메시지를 선택하기 위해 이를 사용할것입니다. `show-name-tags` 속성은 플레이어 이름표를 볼 수 있는 사람을 지정합니다. 이것은 플레이어에게만 적용되며 관전자는 항상 모든 이름 태그를 볼 수 있습니다.
+팀의 이름은 `<team>`요소 내에서 지정됩니다. 이름은 "Team"을 포함하지 말고 가능한 한 짧게 유지해야 합니다. (예: "Azure Team" 대신 "Azure") `show-name-tags` 속성은 플레이어 이름표를 볼 수 있는 사람을 지정합니다. 이것은 플레이어에게만 적용되며 관전자는 항상 모든 이름 태그를 볼 수 있습니다.
 
 보통 맵은 2개의 팀을 가지고 있는것이 일반적이지만 더 많이 사용할 수는 있습니다. 하지만 더 많은 경우 혼란을 야기할 수 있습니다.
 
@@ -93,6 +92,7 @@ title:  "팀"
           <a href='/reference/formatting#chatColors'>채팅 색상 이름</a>
         </td>
       </tr>
+  <!--
       <tr>
         <td>
           <code>plural</code>
@@ -106,6 +106,7 @@ title:  "팀"
           <span class='label label-primary'>참/거짓</span>
         </td>
       </tr>
+      -->
       <tr>
         <td>
           <code>show-name-tags</code>
@@ -120,6 +121,7 @@ title:  "팀"
           <span class='label label-primary'>열거형</span>
         </td>
       </tr>
+      <!--
       <tr>
         <td>
           <code>min</code>
@@ -131,6 +133,7 @@ title:  "팀"
           <span class='label label-primary'>숫자</span>
         </td>
       </tr>
+      -->
       <tr>
         <td>
           <code>max</code>

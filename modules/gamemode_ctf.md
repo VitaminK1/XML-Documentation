@@ -387,6 +387,7 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>참</td>
       </tr>
+  <!--
       <tr>
         <td>
           <code>flag-proximity-metric</code>
@@ -443,6 +444,7 @@ title:  "깃발 쟁탈 게임"
         </td>
         <td>거짓</td>
       </tr>
+      -->
     </tbody>
   </table>
 </div>

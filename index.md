@@ -77,7 +77,7 @@ XML을 파일을 보다 깔끔하고 가독성있게 유지하려면 4개의 공
         <td>
           <code>cow</code>
         </td>
-        <td>이 예시에는 동물 소가 있습니다.</td>
+        <td>이 예시에는 <code>cow</code>라는 요소가 있습니다.</td>
         <td>
           <span class="label label-primary">참/거짓</span>
         </td>

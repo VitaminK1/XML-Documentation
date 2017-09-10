@@ -172,6 +172,7 @@ title:  "양털 쟁탈 게임"
         </td>
         <td></td>
       </tr>
+      <!--
       <tr>
         <td>
           <code>wool-proximity-metric</code>
@@ -230,6 +231,7 @@ title:  "양털 쟁탈 게임"
         </td>
         <td>거짓</td>
       </tr>
+      -->
     </tbody>
   </table>
 </div>

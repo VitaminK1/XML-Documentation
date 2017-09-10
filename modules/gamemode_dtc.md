@@ -169,6 +169,7 @@ title:  "코어 부수기 게임"
         </td>
         <td>참</td>
       </tr>
+      <!--
       <tr>
         <td>
           <code>proximity-metric</code>
@@ -197,6 +198,7 @@ title:  "코어 부수기 게임"
         </td>
         <td>거짓</td>
       </tr>
+      -->
     </tbody>
   </table>
 </div>
