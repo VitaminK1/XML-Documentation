@@ -1,3 +1,11 @@
+- name: "Airship Battle"
+  slug: "airship_battle"
+  gamemode: "코어 부수기 게임"
+
+- name: "Viridun Blitz"
+  slug: "viridun_blitz"
+  gamemode: "Blitz"
+  
 - name: "Harb KoTF"
   slug: "harb_kotf"
   gamemode: "깃발 쟁탈 게임"
