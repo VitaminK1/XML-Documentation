@@ -61,6 +61,10 @@ td pre code {
     margin-bottom: 20px;
 }
 
+.docs-footer .fa-heart {
+  color: #A12722;
+}
+
 
 /* Custom alert styles */
 .alert.alert-small {
