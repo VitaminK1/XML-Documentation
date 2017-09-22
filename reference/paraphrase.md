@@ -16,20 +16,30 @@ title:  "의역"
       <tr>
         <th>원본</th>
         <th>번역</th>
+        <th>위치</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>destroyables</td>
         <td>파괴 가능 물질</td>
+        <td>
+          <a href="/modules/gamemode_dtm">모뉴먼트 부수기 게임</a>
+        </td>
       </tr>
       <tr>
         <td>Bounded Regions</td>
         <td>경계 지역</td>
+        <td>
+          <a href="/modules/regions">지역</a>
+        </td>
       </tr>
       <tr>
         <td>redeemable</td>
         <td>교환 가능한</td>
+        <td>
+          <a href="/modules/scoring">점수</a>
+        </td>
       </tr>
     </tbody>
   </table>
