@@ -64,7 +64,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Filter what blocks get modified by this rule.
         </td>
@@ -78,7 +78,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           <code>sticky</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           The blocks that are sticky.
         </td>
@@ -92,7 +92,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           <code>delay</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Tick delay till blocks start to fall after they have been disturbed.
         </td>
         <td>
@@ -122,7 +122,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Filter what blocks get modified by this rule.
           <br/>
@@ -142,7 +142,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           The blocks that are sticky.
         </td>
@@ -158,7 +158,7 @@ Falling blocks will not fall if they touch a sticky block. If you make a falling
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Tick delay till blocks start to fall after they have been disturbed.
         </td>
         <td>

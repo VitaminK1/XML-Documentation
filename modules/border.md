@@ -94,7 +94,7 @@ title:  "월드 보더"
           <code>when</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 월드 보더가 적용될 때 필터링합니다.
         </td>
         <td>
@@ -199,7 +199,7 @@ title:  "월드 보더"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 월드 보더가 적용될 때 필터링합니다.
         </td>
         <td>

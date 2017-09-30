@@ -65,7 +65,7 @@ title:  "양털 쟁탈 게임"
         <th>속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style='min-width: 63px;'>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -126,7 +126,7 @@ title:  "양털 쟁탈 게임"
           <code>monument</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           양털을 놓아야 하는 모뉴먼트를 설정합니다.
         </td>
@@ -172,66 +172,6 @@ title:  "양털 쟁탈 게임"
         </td>
         <td></td>
       </tr>
-      <!--
-      <tr>
-        <td>
-          <code>wool-proximity-metric</code>
-        </td>
-        <td>
-          양털의 근접한 정도를 결정하는 데 사용되는 방식입니다.
-          <br/>
-          사용가능한 값:
-          <code>closest player</code>, <code>closest block</code> 혹은 <code>closest kill</code>
-        </td>
-        <td>
-          <span class='label label-primary'>근접도</span>
-        </td>
-        <td>
-          <code>closest kill</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <code>wool-proximity-horizontal</code>
-        </td>
-        <td>
-          양털 근접 거리에 대한 수평 거리만 계산합니다.
-        </td>
-        <td>
-          <span class='label label-primary'>참/거짓</span>
-        </td>
-        <td>거짓</td>
-      </tr>
-      <tr>
-        <td>
-          <code>monument-proximity-metric</code>
-        </td>
-        <td>
-          모뉴먼트와 근접한 정도를 결정하는 데 사용되는 방식입니다.
-          <br/>
-          사용가능한 값:
-           <code>closest player</code>, <code>closest block</code> or <code>closest kill</code>
-        </td>
-        <td>
-          <span class='label label-primary'>근접도</span>
-        </td>
-        <td>
-          <code>closest block</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <code>monument-proximity-horizontal</code>
-        </td>
-        <td>
-          모뉴먼트 근접 거리에 대한 수평 거리만 계산합니다.
-        </td>
-        <td>
-          <span class='label label-primary'>참/거짓</span>
-        </td>
-        <td>거짓</td>
-      </tr>
-      -->
     </tbody>
   </table>
 </div>
@@ -253,7 +193,7 @@ title:  "양털 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           양털이 놓여야 하는 모뉴먼트를 설정합니다.
         </td>

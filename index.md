@@ -7,7 +7,7 @@ layout: default
 <h1>아비스 네트워크 XML 문서</h1>
 <p class="lead">서버에 추가될 각 맵에 필요한 XML에 대한 가이드</p>
 <a href="/modules/main" class="btn btn-primary btn-lg"><i class="fa fa-play" aria-hidden="true"></i> 시작하기</a>
-<a href="https://github.com/ChemistryX/XML-Documentation" class="btn btn-warning btn-lg"><i class="fa fa-github-alt" aria-hidden="true"></i> 기여하기</a>
+<a href="https://github.com/AvisNetwork/XML-Documentation" data-toggle='tooltip' title='❤' class="btn btn-warning btn-lg"><i class="fa fa-github-alt" aria-hidden="true"></i> 기여하기</a>
 </div>
 </div>
 <div class="container">

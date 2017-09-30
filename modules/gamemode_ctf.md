@@ -132,7 +132,7 @@ title:  "깃발 쟁탈 게임"
         <th style='min-width: 150px;'>깃발 속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style='min-width: 63px;'>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -201,7 +201,7 @@ title:  "깃발 쟁탈 게임"
           <code>post</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           깃발의 초기 및 기본 기둥입니다.
         </td>
@@ -289,7 +289,7 @@ title:  "깃발 쟁탈 게임"
           <code>pickup-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -302,7 +302,7 @@ title:  "깃발 쟁탈 게임"
           <code>drop-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           깃발이 현재 위치에서 드롭될 수 있는지 필터링합니다.
         </td>
         <td>
@@ -315,7 +315,7 @@ title:  "깃발 쟁탈 게임"
           <code>capture-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 깃발을 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -328,7 +328,7 @@ title:  "깃발 쟁탈 게임"
           <code>pickup-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           플레이어가 깃발을 픽업했을 때 주어지는 키트를 설정합니다.
         </td>
         <td>
@@ -341,7 +341,7 @@ title:  "깃발 쟁탈 게임"
           <code>drop-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           어떤 이유로든 깃발 운반자가 깃발을 드롭했을 때 주어지는 키트를 성정합니다.
         </td>
         <td>
@@ -354,7 +354,7 @@ title:  "깃발 쟁탈 게임"
           <code>carry-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           플레이어가 깃발을 들고 있을때 주어지고 드롭했을 때 없어지는 키트를 설정합니다.
           제거할 수 있는 키트만 허용됩니다. 키트 페이지에서 제거할 수 있는 키트 유형을 볼 수 있습니다.
         </td>
@@ -476,7 +476,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           깃발의 초기 및 기본 기둥입니다.
         </td>
@@ -491,7 +491,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -505,7 +505,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           깃발이 현재 위치에서 드롭될 수 있는지 필터링합니다.
         </td>
         <td>
@@ -520,7 +520,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 깃발을 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -534,7 +534,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           플레이어가 깃발을 픽업했을 때 주어지는 키트를 설정합니다.
         </td>
         <td>
@@ -548,7 +548,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           어떤 이유로든 깃발 운반자가 깃발을 드롭했을 때 주어지는 키트를 성정합니다.
         </td>
         <td>
@@ -679,7 +679,7 @@ title:  "깃발 쟁탈 게임"
           <code>pickup-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 기둥에서 깃발을 집을 수 있는 사람을 필터링합니다.
         </td>
         <td>
@@ -755,7 +755,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='속성이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='속성이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 그물을 위해 누가 깃발을 픽업할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -831,7 +831,7 @@ title:  "깃발 쟁탈 게임"
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           지역별 깃발 운반자가 이 그물에 캡처하려면 반드시 입력해야 합니다.
         </td>
@@ -938,7 +938,7 @@ title:  "깃발 쟁탈 게임"
           <code>capture-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 그물에 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -977,7 +977,7 @@ title:  "깃발 쟁탈 게임"
           <code>respawn-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 그물에 캡처 된 깃발이 다시 생성될 수 있을 때 필터링합니다.
         </td>
         <td>
@@ -1033,7 +1033,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           지역별 깃발 운반자가 이 그물에 캡처하려면 반드시 입력해야 합니다.
         </td>
@@ -1048,7 +1048,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 그물안에 캡처할 수 있는지 필터링합니다.
         </td>
         <td>
@@ -1062,7 +1062,7 @@ title:  "깃발 쟁탈 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 그물에 캡처 된 깃발이 다시 생성될 수 있을 때 필터링합니다.
         </td>
         <td>

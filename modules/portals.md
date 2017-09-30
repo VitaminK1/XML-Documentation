@@ -81,7 +81,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Region where this portals entrance is located.
           <br/>
@@ -97,7 +97,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>destination</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Destination of the portal, teleports players to a random point inside the region.
           <br/>
           <i>Cannot combine an exit region with <code>reverse</code> or <code>transit</code> properties.</i>
@@ -112,7 +112,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter portal player access.
         </td>
         <td>
@@ -127,7 +127,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>forward</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Apply forward transform on rising edge
         </td>
         <td>
@@ -140,7 +140,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>reverse</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Apply reverse transform on rising edge
         </td>
         <td>
@@ -153,7 +153,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>transit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Apply forward transform on rising edge and reverse transform on falling edge
           <br/>
           <i>Cannot combine <code>transit</code> property with <code>forward</code> or <code>reverse</code> properties.</i>
@@ -168,7 +168,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           <code>observers</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter portal observer access.
         </td>
         <td>
@@ -267,7 +267,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Region where this portals entrance is located.
         </td>
@@ -282,7 +282,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Destination of the portal, teleports players to a random point inside the region.
           <br/>
           <i>Region is automatically filtered against block place.</i>
@@ -298,7 +298,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter portal player access.
         </td>
         <td>
@@ -312,7 +312,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Apply forward transform on rising edge
         </td>
         <td>
@@ -327,7 +327,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Apply reverse transform on rising edge
         </td>
         <td>
@@ -342,7 +342,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Apply forward transform on rising edge and reverse transform on falling edge
           <br/>
           <i>Cannot combine <code>transit</code> property with <code>forward</code> or <code>reverse</code> properties.</i>
@@ -359,7 +359,7 @@ Portals respond to any player move event, this allows almost instant teleportati
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter portal observer access.
         </td>
         <td>

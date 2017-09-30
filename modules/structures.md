@@ -104,7 +104,7 @@ Structures are a very powerful feature that can be used to implement an endless 
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be an attribute or sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='Can be an attribute or sub-element.'>Property</span>
           <span class='label label-danger'>Required</span>
           A single region containing the structure.
         </td>
@@ -200,7 +200,7 @@ Structures are a very powerful feature that can be used to implement an endless 
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Conditions under which the structure is placed.
           <br/>
           <em>
@@ -225,7 +225,7 @@ Structures are a very powerful feature that can be used to implement an endless 
           <code>trigger</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Dynamic conditions under which the structure is placed.
         </td>
         <td>

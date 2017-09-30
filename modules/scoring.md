@@ -155,7 +155,7 @@ title:  "점수"
         <td>
           <code>points</code>
         </td>
-        <td>Points awarded for entering the box.</td>
+        <td>스코어 박스에 들어감으로써 얻는 점수를 나타냅니다.</td>
         <td>
           <span class='label label-primary'>숫자</span>
         </td>
@@ -165,23 +165,23 @@ title:  "점수"
         <td>
           <code>silent</code>
         </td>
-        <td>Don't notify players when points are scored in this box.</td>
+        <td>이 스코어 박스에서 점수를 얻었을 때 플레이어들에게 알리지 않습니다.</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>false</td>
+        <td>거짓</td>
       </tr>
       <tr>
         <td>
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The location and size of the score box.
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          스코어 박스의 위치와 크기를 지정합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Region</a>
+          <a href='/modules/regions'>지역</a>
         </td>
         <td></td>
       </tr>
@@ -190,14 +190,14 @@ title:  "점수"
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          Filter who can score in this box.
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
+          누가 이 스코어 박스에서 득점할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Filter</a>
+          <a href='/modules/filters'>필터</a>
         </td>
         <td>
-          <span class='label label-default'>No Filter</span>
+          <span class='label label-default'>필터 없음</span>
         </td>
       </tr>
       <tr>
@@ -205,25 +205,25 @@ title:  "점수"
           <code>trigger</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
-          Dynamic conditions under which this score box is applied.
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
+          이 스코어 박스에 적용된 동적 조건을 설정합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Dynamic Filter</a>
+          <a href='/modules/filters'>동적 필터</a>
         </td>
         <td></td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Score Box Sub-elements</h5>
+<h5>스코어 박스 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value/Children</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값/하위</th>
       </tr>
     </thead>
     <tbody>
@@ -234,7 +234,7 @@ title:  "점수"
           </span>
         </td>
         <td>
-          Items that can be redeemed at this score box for points.
+          특정 아이템을 들고 스코어 박스에 들어갔을 때 주어지는 점수를 설정합니다.
         </td>
         <td>
           <code>{{'<item points="1">' | escape_once}}</code>
@@ -247,12 +247,12 @@ title:  "점수"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          <span class='label label-danger'>Required</span>
-          The region where this score box is located.
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
+          <span class='label label-danger'>필수</span>
+          스코어 박스가 위치하는 지역을 나타냅니다.
         </td>
         <td>
-          <a href='/modules/regions'>Regions</a>
+          <a href='/modules/regions'>지역</a>
         </td>
       </tr>
       <tr>
@@ -262,11 +262,11 @@ title:  "점수"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          Filter who can score in this box.
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
+          누가 이 스코어 박스에서 득점할 수 있는지 필터링합니다.
         </td>
         <td>
-          <a href='/modules/regions'>Filters</a>
+          <a href='/modules/regions'>필터</a>
         </td>
       </tr>
       <tr>
@@ -276,11 +276,11 @@ title:  "점수"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
-          Dynamic conditions under which this score box is applied.
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
+          이 스코어 박스에 적용된 동적 조건을 설정합니다.
         </td>
         <td>
-          <a href='/modules/filters'>Dynamic Filters</a>
+          <a href='/modules/filters'>동적 필터</a>
         </td>
         <td></td>
       </tr>
@@ -288,12 +288,14 @@ title:  "점수"
   </table>
 </div>
 
-Example
+예시
 
     <score>
-        <!-- Only allow red team to use this score box, and give them two points -->
+        <!-- 레드 팀만 스코어 박스를 이용할 수 있게하고, 2점을 부여합니다. -->
         <box points="2" filter="only-red">
-            <region><cylinder base="21,8,63" radius="1" height="2"/></region>
+            <region>
+                <cylinder base="21,8,63" radius="1" height="2"/>
+            </region>
         </box>
     </score>
 
@@ -303,13 +305,11 @@ Example
 
 <br/>
 
-#### Redeemables
-A score box can also award points in exchange for particular items carried by the player when they
-enter the box. These items are defined inside a `<redeemables>` score box sub-element as `<item>` tags.
-Each item contains a [material name](/reference/inventory#material_finder)
-and an optional `points="..."` attribute specifying the number of points awarded for each item.
+#### 교환 가능 항목
+스코어 박스는 플레이어가 스코어 박스에 들어갈 때 플레이어가 들고 있는 특정 아이템과 교환하여 점수를 추가로 제공하게 할 수 있습니다. 이 항목들은 `<redeemables>` 스코어 박스 하위 요소 안에 있는 `<item>` 태그로 정의됩니다.
+각 항목에는 [재료 이름](/reference/inventory#material_finder)과 선택 사항인 `points="..."` 속성이 포함되어 각 항목에 대해 부여된 점수를 지정합니다.
 
-Example
+예시
 
     <score>
         <box filter="only-red" region="red-depot">
@@ -324,25 +324,25 @@ Example
 
 <br/>
 
-### Time Limit {#timeLimit}
-Give the match a time limit, the result attribute determines how the winning team or player is calculated when the time runs out.
-Result can be the name of a team, or one of the special values; "tie" for no winner, or "objectives" for the team that has the most objectives completed. The time limit can be specified in minutes, etc., by formatting it as a [time period](/reference/time_periods).
+### 제한 시간 {#timeLimit}
+경기 시간을 제한하면 결과(result) 속성은 시간이 다 되었을 때 승리한 팀 또는 플레이어가 계산되는 방식을 결정합니다.
+결과는 팀 이름이거나 특수한 값 중 하나일 수 있습니다. 승자가 없는 경우 `tie`, 또는 더 많은 목표를 달성한 팀의 경우 `objectives`로 지정할 수 있습니다. 제한 시간은 [시간 단위](/reference/time_periods) 형식으로 지정하여 분 단위로 지정할 수 있습니다.
 
-`NOTE!` This tag is **not** placed inside the score module, instead it is located in the root `<map>` element.
+`참고!` 이 태그는 점수 모듈 태그 안에 위치하지 **않습니다**, 대신 `<map>` 요소 안에 위치합니다.
 
     <time result="objectives">5m</time>
 
 
-##### Time Attributes
+##### 시간 속성
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>유형</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -351,14 +351,14 @@ Result can be the name of a team, or one of the special values; "tie" for no win
           <code>result</code>
         </td>
         <td>
-          Change how the winning team or player is calculated.
+          승리한 팀 또는 플레이어가 계산되는 방식을 변경합니다.
           <br/>
-          Accepts <code>default</code>, <code>tie</code>, <code>objectives</code> or a Team ID.
+          <code>default</code>, <code>tie</code>, <code>objectives</code> 또는 팀 ID를 사용할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>Victory Condition</span>
+          <span class='label label-primary'>승리 조건</span>
           |
-          <span class='label label-primary'>Team ID</span>
+          <span class='label label-primary'>팀 ID</span>
         </td>
         <td>default</td>
       </tr>
@@ -366,11 +366,11 @@ Result can be the name of a team, or one of the special values; "tie" for no win
         <td>
           <code>show</code>
         </td>
-        <td>Show the remaining time in the chat and boss bar.</td>
+        <td>채팅 및 보스바에 남은 시간을 표시합니다.</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
     </tbody>
   </table>

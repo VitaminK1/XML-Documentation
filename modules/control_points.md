@@ -326,7 +326,7 @@ title:  "점령 지점"
           <code>capture</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           이 점령 지점을 점령할 수 있는 지역을 나타냅니다.
         </td>
@@ -340,7 +340,7 @@ title:  "점령 지점"
           <code>progress</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 점령 지점 진행률이 표시되는 지역을 나타냅니다.
         </td>
         <td>
@@ -353,7 +353,7 @@ title:  "점령 지점"
           <code>captured</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           이 점령 지점의 소유자가 표시되는 지역입니다.
         </td>
         <td>
@@ -366,7 +366,7 @@ title:  "점령 지점"
           <code>capture-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 점령 지점을 점령할 수 있는지 필터링합니다. 기본값은 모든팀입니다. 이 필터와 일치하지 않는 팀은 점령 지점에서 다른 팀이 캡처하지 못하게 할 수 있습니다. 또한 중립 상태가 활성화 된 경우 점령 지점의 점령을 해제할 수 있습니다.
         </td>
         <td>
@@ -379,7 +379,7 @@ title:  "점령 지점"
           <code>player-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 점령 지점을 점령할 수 있는지 필터링합니다. 이 필터와 일치하지 않는 플레이어는 어떤 방식으로든 점령 지점에 영향을 줄 수 없습니다.
         </td>
         <td>
@@ -408,7 +408,7 @@ title:  "점령 지점"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           점령 지점을 캡처하기 위해 플레이어들이 서 있어야 하는 지역을 나타냅니다.
         </td>
@@ -423,7 +423,7 @@ title:  "점령 지점"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           점령 진행률을 표시할 지역입니다.
         </td>
         <td>
@@ -437,7 +437,7 @@ title:  "점령 지점"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           만약 점령 지점이 점령된 경우 표시 할 지역입니다.
         </td>
         <td>
@@ -451,7 +451,7 @@ title:  "점령 지점"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 점령 지점을 점령할 수 있는지 필터링합니다. 기본값은 모든팀입니다. 이 필터와 일치하지 않는 팀은 점령 지점에서 다른 팀이 캡처하지 못하게 할 수 있습니다. 또한 중립 상태가 활성화 된 경우 점령 지점의 점령을 해제할 수 있습니다..
         </td>
         <td>
@@ -465,7 +465,7 @@ title:  "점령 지점"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           누가 이 점령 지점을 점령할 수 있는지 필터링합니다. 이 필터와 일치하지 않는 플레이어는 어떤 방식으로든 점령 지점에 영향을 줄 수 없습니다.
         </td>
         <td>

@@ -232,7 +232,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           The region this apply affects.
         </td>
         <td>
@@ -245,7 +245,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>enter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter player enter events.
         </td>
         <td>
@@ -258,7 +258,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>leave</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter player leave events.
         </td>
         <td>
@@ -271,7 +271,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>block</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter block place and break events.
         </td>
         <td>
@@ -284,7 +284,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>block-place</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter block place events.
         </td>
         <td>
@@ -297,7 +297,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>block-place-against</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter block place against events.
         </td>
         <td>
@@ -310,7 +310,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>block-break</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter block break events.
         </td>
         <td>
@@ -323,7 +323,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>block-physics</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter world block updates; water flowing, portals disappearing, etc.
         </td>
         <td>
@@ -336,7 +336,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>use</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter right-click events.
         </td>
         <td>
@@ -374,7 +374,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Give a kit to players entering the region.
         </td>
         <td>
@@ -387,7 +387,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>lend-kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Give a kit to players entering the region, and remove it when they leave the region.
           This can be used only with removable kits. Any non-removable kit will generate an error.
           The kits page explains which kit types are removable.
@@ -412,7 +412,7 @@ The order in which apply elements are specified determines which takes precedenc
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter when/if kits and velocities are applied.
         </td>
         <td>
@@ -639,7 +639,7 @@ Input can be a region, a region modifier or simply an exact `X,Y,Z` coordinate.
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           The region the point provider modifies.
         </td>
         <td>
@@ -704,7 +704,7 @@ Input can be a region, a region modifier or simply an exact `X,Y,Z` coordinate.
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           The region or regions the point provider modifies.
         </td>
         <td>

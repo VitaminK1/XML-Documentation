@@ -153,7 +153,7 @@ Respawn behavior such as delays, etc. can be customized with the [respawn](#resp
           <code>kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           The kit to apply to players when they are spawned in this spawn.
         </td>
         <td>
@@ -166,7 +166,7 @@ Respawn behavior such as delays, etc. can be customized with the [respawn](#resp
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter when this spawn is used.
         </td>
         <td>
@@ -452,7 +452,7 @@ The respawn module allows the map creator to adjust the respawn time and if play
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter when this respawn setting is used.
         </td>
         <td>
@@ -465,7 +465,7 @@ The respawn module allows the map creator to adjust the respawn time and if play
           <code>message</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Message to display on the respawn screen to respawning players.
         </td>
         <td>
@@ -494,7 +494,7 @@ The respawn module allows the map creator to adjust the respawn time and if play
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Message to display on the respawn screen to respawning players.
         </td>
         <td>

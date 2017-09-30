@@ -55,7 +55,7 @@ title:  "코어 부수기 게임"
         <th>속성</th>
         <th>설명</th>
         <th>값</th>
-        <th>기본값</th>
+        <th style='min-width: 63px;'>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -100,7 +100,7 @@ title:  "코어 부수기 게임"
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           코어를 포함하는 지역입니다.
         </td>
@@ -169,36 +169,6 @@ title:  "코어 부수기 게임"
         </td>
         <td>참</td>
       </tr>
-      <!--
-      <tr>
-        <td>
-          <code>proximity-metric</code>
-        </td>
-        <td>
-          코어의 근접한 정도를 결정하는 데 사용되는 방식입니다.
-          <br/>
-          사용 가능한 값: <code>closest player</code>, <code>closest block</code> 혹은 <code>closest kill</code>
-        </td>
-        <td>
-          <span class='label label-primary'>근접도</span>
-        </td>
-        <td>
-          <code>closest player</code>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <code>proximity-horizontal</code>
-        </td>
-        <td>
-          코어의 근접 거리에 대한 수평 거리만 계산합니다.
-        </td>
-        <td>
-          <span class='label label-primary'>참/거짓</span>
-        </td>
-        <td>거짓</td>
-      </tr>
-      -->
     </tbody>
   </table>
 </div>
@@ -220,7 +190,7 @@ title:  "코어 부수기 게임"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           코어를 포함하는 지역입니다.
         </td>

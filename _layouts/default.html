@@ -22,6 +22,7 @@
     <link href='/css/button.css' rel='stylesheet' />
     <link href='/css/map.css' rel='stylesheet' />
     <link href='/css/sidebar.css' rel='stylesheet' />
+    <link href='/css/colors.css' rel='stylesheet' />
     <link href='/css/custom-highlight.css' rel='stylesheet' />
     <!-- favicon image -->
     <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
@@ -35,46 +36,6 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <script>$(function () { $("[data-toggle='tooltip']").tooltip(); });</script>
     <script>$(document).ready(function() { $('span.highlight > code').each(function(i, block) {hljs.highlightBlock(block);}); });</script>
-    <script>
-								$.getJSON('https://mcapi.us/server/status?ip=arkanetwork.net', function(server) {
-									var status = server.status;
-									var statusBtn = document.querySelector('.status');
-									if (status) {
-										var players = server.online;
-										statusBtn.innerHTML = '<i class="fa fa-circle" style="color:green"></i> <small>모든 서비스가 정상적으로 작동중입니다.</small>';
-									}
-									else {
-										statusBtn.innerHTML = '<i class="fa fa-circle" style="color:red"></i> <small>현재 오류를 확인중에 있습니다.</small>';
-									}
-								});
-		</script>
-    <!-- WIP:
-    <script>
-              var request = new XMLHttpRequest();
-              request.open('GET', 'https://sessionserver.mojang.com', true);
-              request.setRequestHeader('Access-Control-Allow-Origin', '*');
-              request.setRequestHeader('Content-Type', 'application/json');
-              request.onerror = function(XMLHttpRequest, textStatus, errorThrown) {
-                console.log('Failed to parase data from Mojang API');
-                console.log(JSON.stringify(XMLHttpRequest));
-              }
-              request.onload = function() {
-                console.log('DEBUG:: SUCCESS!')
-              }
-
-              $.getJSON('https://sessionserver.mojang.com', function(mojang) {
-                var status = mojang.status;
-                var mojangStatusBtn = document.querySelector('.mojangStatus');
-                if (status) {
-                  var online = mojang.online;
-                  mojangStatusBtn.innerHTML = '<i class="fa fa-circle" style="color:green"></i> <small>모든 서비스가 정상적으로 작동중입니다.</small>';
-                }
-                else {
-                  mojangStatusBtn.innerHTML = '<i class="fa fa-circle" style="color:red"></i> <small>현재 오류를 확인중에 있습니다.</small>';
-                }
-              });
-    </script>
-  -->
     <script>jQuery(document).ready(function(){var btn=$('#button');$(window).scroll(function(){if($(window).scrollTop()>300){btn.addClass('show')}else{btn.removeClass('show')}});btn.on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'300')})});</script>
   </head>
   <body {% if page.url != "/" %}style= "padding-top: 50px;"{% endif %}>
@@ -136,50 +97,25 @@
       <footer class='docs-footer'>
         <ul class='nav nav-pills'>
           <li class='pull-left'>
-            <a href="http://cafe.naver.com/avisnetwork">&copy; 2017 Avis Network</a>
+            <a href="http://cafe.naver.com/avisnetwork">&copy; 2017 아비스 네트워크</a>
           </li>
           <li class="pull-right dropdown dropdown-large">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-caret-up" aria-hidden="true"></b></a>
             <ul class="dropdown-menu drop-up">
-              <li class="statusHeader">
-                <span>
-                  <h6>아르카 네트워크</h6>
-                </span>
-              </li>
               <li>
                 <a href="https://status.chemistryx.me">
-                  <span class="status"></span>
+                  <span>
+                    <h6><i class="fa fa-refresh"></i> 서버 상태</h6>
+                  </span>
                 </a>
               </li>
-              <li role="separator" class="divider"></li>
               <li>
                 <a href="https://chemistryx.me">
                   <h6>Made with <i class="fa fa-heart"></i> by ChemistryX</h6>
                 </a>
               </li>
-      <!--        <li class="statusHeader">
-                <span>
-                  <h6>마인크래프트</h6>
-                </span>
-              </li>
-              <li>
-                <a href="https://help.mojang.com">
-                  <span class="mojangStatus"></span>
-                </a>
-              </li>
-            -->
             </ul>
           </li>
-
-  <!-- Removed Until further notice
-        <li class="pull-right dropdown dropdown-large">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='fa fa-globe'></i> 언어 <b class="fa fa-caret-up" aria-hidden="true"></b></a>
-            <ul class="dropdown-menu drop-up">
-              <li><a href="#">한국어</a></li>
-              <li><a href="#">English</a></li>
-            </ul>
-          </li>
-        -->
           <li class="pull-right">
             <a href="https://github.com/avisnetwork" target="_blank">
               <i class="fa fa-github-alt" aria-hidden="true"></i>

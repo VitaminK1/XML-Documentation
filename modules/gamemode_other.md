@@ -4,42 +4,21 @@ layout: page
 category: "모듈"
 title:  "다른 게임 모드"
 nav_content:
-  - path: "#gs"
-    name: "Ghost Squadron"
   - path: "#rage"
-    name: "Rage
+    name: "Rage"
   - path: "#tdm"
-    name: "Team Deathmatch"
+    name: "팀 데스매치"
   - path: "#ffa"
-    name: "Free-For-All"
+    name: "개인전 (Free-For-All)"
 
 ---
 
-### Ghost Squadron {#gs}
-Enables the ghostsquadron gamemode and all its features.
-The default ghostsquadron classes can be found [here](https://maps.oc.tc/Blitz/GS/gs.xml).
-Ghost squadron maps set a custom gamemode title in the `gs.xml` with the `<map game="Ghost Squadron">` attribute.
-When not using the default GS XML include a custom title should be set.
-
-`NOTE:` This module must be used in conjunction with another gamemode.
-
-    <ghostsquadron/>
-    <include src="gs.xml"/>
-
-    <time>6m</time>
-    <blitz>
-        <broadcastLives>false</broadcastLives>
-    </blitz>
-
-
-<br/>
-
 ### Rage {#rage}
-Enable the one hit kill, rage style gamemode.
+_~~원샷원킬~~_ 한방(Rage) 게임 모드를 활성화합니다.
 
-One hit kills will only be applied to items that have a sharpness enchantment greater than level 1. One shot arrow kills will only be applied to bows that have a power enchantment greater than level 1.
+한방킬은 레벨 1 이상의 날카로움 인첸트가 적용된 아이템에만 적용됩니다. 활 역시 레벨 1 이상의 힘 인첸트가 적용된 아이템만 한방킬이 가능합니다.
 
-`NOTE:` This module must be used in conjunction with another gamemode.
+`참고:` 이 모듈은 독립적으로 사용할 수 없으며 반드시 다른 게임 모드와 함께 사용해야 합니다.
 
     <rage/>
 
@@ -51,27 +30,27 @@ One hit kills will only be applied to items that have a sharpness enchantment gr
 
 <br/>
 
-### Team Death-match {#tdm}
-This gamemode uses the [scoring](/modules/scoring) module to run the game for a specified amount of time, after which the team with the highest score wins. Teams increase their score by killing players from the other team or capturing points from a [score box](/modules/scoring#score_box).
+### 팀 데스매치 {#tdm}
+이 게임모드는 [점수](/modules/scoring) 모듈을 사용하여 지정된 시간 동안 게임이 시작되고 가장 높은 점수를 얻은 팀이 승리하는 게임입니다. 팀은 다른 팀의 플레이어를 죽이거나 [스코어 박스](/modules/scoring#score_box)를 통해서 득점할 수 있습니다.
 
-`NOTE:` To be able to score points for kills and deaths the `<kills>` and `<deaths>` elements are required.
+`참고:` 킬과 죽음에 대한 점수를 얻기 위해서는 `<kills>` 과 `<deaths>` 요소가 필요합니다.
 
     <score>
-        <kills>1</kills>    <!-- +1 points for a kill -->
-        <deaths>1</deaths>  <!-- -1 points for dying -->
+        <kills>1</kills>    <!-- 매 킬마다 1점을 부여합니다. -->
+        <deaths>1</deaths>  <!-- 매 죽음마다 1점을 삭감합니다. -->
     </score>
 
-    <!-- Time till the match ends in seconds (10 minutes) -->
+    <!-- 경기 시간을 설정합니다 (10분) -->
     <time>600</time>
 
 
 <br/>
 
-### Free-For-All {#ffa}
-The FFA gamemode uses the [players](/modules/players) instead of the [teams](/modules/teams) module to create a team-less match.
-Depending on the modules used, players can increase their score by killing other players until a score or time limit is reached or by capturing objectives, etc.
+### 개인전 (Free-For-All) {#ffa}
+개인전 게임 모드는 [팀](/modules/teams) 모듈 대신 [플레이어](/modules/players) 모듈을 사용하여 팀이 없는 경기를 만듭니다.
+사용된 모듈에 따라 플레이어는 점수나 제한 시간에 도달하거나 목표를 완료할 때 까지 다른 플레이어를 죽임으로써 점수를 올릴 수 있습니다.
 
-`NOTE:` To be able to score points for kills and deaths the `<kills>` and `<deaths>` elements are required.
+`참고:` 킬과 죽음에 대한 점수를 얻기 위해서는 `<kills>` 과 `<deaths>` 요소가 필요합니다.
 
     <players max="16" max-overfill="20"/>
     <time>8m</time>

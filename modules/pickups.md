@@ -108,7 +108,7 @@ A `<point>` region does not return a randomized position but can still be used t
           <code>spawn-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter if this pickup is and can be spawned.
         </td>
         <td>
@@ -123,7 +123,7 @@ A `<point>` region does not return a randomized position but can still be used t
           <code>pickup-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter who can pick up the pickup's kit.
         </td>
         <td>
@@ -138,7 +138,7 @@ A `<point>` region does not return a randomized position but can still be used t
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Region where the pickup entity is placed into.
         </td>
@@ -152,7 +152,7 @@ A `<point>` region does not return a randomized position but can still be used t
           <code>kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           The kit to give to players who pick up this pickup.
         </td>
         <td>
@@ -236,7 +236,7 @@ A `<point>` region does not return a randomized position but can still be used t
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter if this pickup is and can be spawned.
         </td>
         <td>
@@ -253,7 +253,7 @@ A `<point>` region does not return a randomized position but can still be used t
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter who can pick up the pickup's kit.
         </td>
         <td>
@@ -270,7 +270,7 @@ A `<point>` region does not return a randomized position but can still be used t
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           <span class='label label-danger'>Required</span>
           Region where this pickup is placed into.
         </td>
@@ -286,7 +286,7 @@ A `<point>` region does not return a randomized position but can still be used t
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           The kit to give to players who pick up this pickup.
         </td>
         <td>

@@ -65,7 +65,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           <code>region</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Region in which blocks will be renewed.
         </td>
         <td>
@@ -78,7 +78,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           <code>renew-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter which blocks are renewed.
         </td>
         <td>
@@ -91,7 +91,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           <code>replace-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter which blocks can be replaced by renewing blocks.
         </td>
         <td>
@@ -104,7 +104,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           <code>shuffle-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter which renewable blocks are shuffled.
         </td>
         <td>
@@ -212,7 +212,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           The region the renewable applies to.
         </td>
         <td>
@@ -226,7 +226,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter which blocks are renewed.
         </td>
         <td>
@@ -240,7 +240,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter which blocks are replaced.
         </td>
         <td>
@@ -254,7 +254,7 @@ specify blocks to renew. If neither are specified, the renewable affects all blo
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 하위 요소 또는 속성일 수 있습니다.'>속성</span>
           Filter which blocks are shuffled.
         </td>
         <td>

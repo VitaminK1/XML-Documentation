@@ -5,38 +5,38 @@ category: "모듈"
 title:  "필터"
 nav_content:
   - path: "#list"
-    name: "Filter Matchers"
+    name: "필터 매처 (Filter Matchers)"
   - path: "#filterModifiers"
-    name: "Filter Modifiers"
+    name: "필터 수정자 (Filter Modifiers)"
   - path: "#killStreakFilter"
-    name: "Kill-Streak Filter"
+    name: "연속 처치 필터"
   - path: "#randomFilter"
-    name: "Random Filter"
+    name: "랜덤 필터"
   - path: "#rank_score"
-    name: "Rank &amp; Score Filters"
+    name: "랭크 &amp; 점수 필터"
   - path: "#players"
-    name: "Player Count Filter"
+    name: "플레이어 수 필터"
   - path: "#objectiveFilter"
-    name: "Objective Filters"
+    name: "목표 필터"
   - path: "#flagFilter"
-    name: "Flag Filters"
+    name: "깃발 필터"
   - path: "#causeFilters"
-    name: "Event Cause Filter"
+    name: "이벤트 사유 필터"
   - path: "#relationFilters"
-    name: "Player Relation Filter"
+    name: "플레이어 관계 필터"
   - path: "#itemFilters"
-    name: "Item Filters"
+    name: "아이템 필터"
   - path: "#structuralLoadFilters"
-    name: "Structural Load Filter"
+    name: "구조 로드 필터"
   - path: "#voidFilter"
-    name: "Void Filter"
+    name: "보이드 필터"
 
 ---
 
-Filters are true/false conditions about players, blocks, or the match in general.
-Other modules use filters to decide *if* and *when* things should happen to those players, blocks, or the entire match.
+필터는 일반적으로 플레이어, 블럭 또는 일반적인 게임에 대한 참/거짓 조건입니다.
+다른 모듈은 필터를 사용하여 플레이어, 블럭, 또는 전체 경기의 **언제** 그리고 **어디서** 일이 발생해야하는지 여부를 결정합니다.
 
-Filters are built from **matchers** and **modifiers**.
+필터는 **매처 (Matchers)** 와 **수정자 (Modifiers)**로 작성됩니다.
 Matchers are specific questions, like
 
 * is it made of wood?

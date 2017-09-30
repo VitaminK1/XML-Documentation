@@ -37,7 +37,7 @@ title:  "몹 스폰"
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           언제 어디에서 몹이 생성될 수 있는지 필터링합니다.
         </td>
@@ -56,7 +56,7 @@ title:  "몹 스폰"
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           <span class='label label-danger'>필수</span>
           언제 어디에서 몹이 생성될 수 있는지 필터링합니다.
         </td>

@@ -156,7 +156,7 @@ or the item form of the custom projectile itself.
           <code>destroy-filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='Can be this attribute or a sub-element.'>Property</span>
           Filter if/what blocks get destroyed when hit with this projectile.
         </td>
         <td>
@@ -197,7 +197,7 @@ or the item form of the custom projectile itself.
           </span>
         </td>
         <td>
-          <span class='label label-default' title='Can be this sub-element or an attribute.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='Can be this sub-element or an attribute.'>Property</span>
           Filter if/what blocks get destroyed when hit with this projectile.
         </td>
         <td>

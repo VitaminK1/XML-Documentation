@@ -12,7 +12,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
 
 <span class="label label-warning">참고</span>
 이 모듈은 맵에 **고유**하고 **중요**한 정보를 표시하는 데에만 사용하야 합니다.
-이것은 일반 Avis Network관련 메시지로는 사용할 수 없습니다.
+이것은 일반 아비스 네트워크관련 메시지로는 사용할 수 없습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
@@ -117,7 +117,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           지속 시간이 경과한 후 또는 생략된 경우 방송 메시지가 전송된 경우 필터링합니다.
         </td>
         <td>
@@ -145,7 +145,7 @@ broadcast의 텍스트는 [텍스트 포맷](/reference/formatting) 코드를 �
           </span>
         </td>
         <td>
-          <span class='label label-default' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위 요소일 수 있습니다.'>속성</span>
           지속 시간이 경과한 후 또는 생략된 경우 방송 메시지가 전송된 경우 필터링합니다.
         </td>
         <td>

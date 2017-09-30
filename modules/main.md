@@ -402,10 +402,6 @@ title:  "기본 맵 요소"
           <code>arcade</code>
         </td>
         <td>아케이드 게임</td>
-        <td>
-          <code>gs</code>
-        </td>
-        <td>Ghost Squadron 게임</td>
       </tr>
       <tr>
         <td>

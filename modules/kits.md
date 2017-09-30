@@ -91,7 +91,7 @@ these kits will be automatically removed from the player at an appropriate time.
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter when this kit is used.
         </td>
         <td>
@@ -258,7 +258,7 @@ Kits are able to be dynamically applied to players which match the response of [
           <code>kit</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           The kit to apply to players.
         </td>
         <td>
@@ -271,7 +271,7 @@ Kits are able to be dynamically applied to players which match the response of [
           <code>filter</code>
         </td>
         <td>
-          <span class='label label-default' title='Can be either this attribute or a sub-element.'>Property</span>
+          <span class='label label-default' data-toggle='tooltip' title='이는 속성 또는 하위요소일 수 있습니다.'>속성</span>
           Filter when this kit is dynamically given or removed.
         </td>
         <td>
