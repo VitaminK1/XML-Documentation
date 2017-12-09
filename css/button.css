@@ -42,7 +42,7 @@
   text-decoration: none;
 }
 #button::after {
-  content: "\f077";
+  content: "\f106";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;

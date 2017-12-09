@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "source-han-sans-korean", sans-serif;
 }
 
 h1,
@@ -15,7 +15,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Noto Sans KR",sans-serif;;
+    font-family: "source-han-sans-korean", sans-serif;;
     font-weight: 700;
 }
 
@@ -65,7 +65,7 @@ td pre code {
   color: #A12722;
 }
 
-.docs-footer .fa-refresh {
+.docs-footer .fa-sync {
   color: green;
 }
 

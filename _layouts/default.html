@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://docs.chemistryx.me">
     <!-- Bootstrap CDN -->
     <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />
-    <!-- Local CSS -->
+    <!-- Avis provided CSS -->
     <link href='/css/main.css' rel='stylesheet' />
     <link href='/css/navbar.css' rel='stylesheet' />
     <link href='/css/jumbotron.css' rel='stylesheet' />
@@ -27,9 +27,13 @@
     <!-- favicon image -->
     <link href='/img/favicon.ico' rel='shortcut icon' type='image/x-icon' />
     <link href='/img/favicon.ico' rel='apple-touch-icon' type='image/x-icon' />
-    <!-- Fonts & Others -->
-    <link href='//fonts.googleapis.com/earlyaccess/notosanskr.css' />
-    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' />
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/rea7yia.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'></script>
@@ -43,7 +47,7 @@
       <div class='container'>
         <div class='navbar-header'>
           <a class='navbar-brand' href='/'>
-            <img width="48" height="48" src='/img/logo.png' />
+            <img width="32" height="32" src='/img/logo.png' />
             아비스 네트워크 XML 문서
           </a>
           <button class='navbar-toggle' data-target='.navbar-main-collapse' data-toggle='collapse' type='button'>
@@ -55,33 +59,27 @@
         </div>
         <nav class='collapse navbar-collapse navbar-main-collapse'>
           <ul class='nav navbar-nav navbar-right'>
-            <li class='{% if page.url == "/" %}active{% endif %}'>
-              <a href='/'>
-                <i class='fa fa-home'></i>
-                홈
-              </a>
-            </li>
             <li class='{% if page.url contains "/modules/" %}active{% endif %}'>
               <a href='/modules/main'>
-                <i class='fa fa-th-large'></i>
+                <i class='fas fa-align-justify'></i>
                 모듈
               </a>
             </li>
             <li class='{% if page.url contains "/reference/" %}active{% endif %}'>
               <a href='/reference/inventory'>
-                <i class='fa fa-book'></i>
+                <i class='far fa-copy'></i>
                 참고 자료
               </a>
             </li>
             <li class='{% if page.url contains "/guides/" %}active{% endif %}'>
               <a href='/guides/packaging/cleaning_files'>
-                <i class='fa fa-clipboard'></i>
+                <i class='far fa-clipboard'></i>
                 가이드
               </a>
             </li>
             <li class='{% if page.url contains "/examples/" %}active{% endif %}'>
               <a href='/examples'>
-                <i class='fa fa-file-text'></i>
+                <i class='far fa-file-alt'></i>
                 예시
               </a>
             </li>
@@ -100,12 +98,12 @@
             <a href="http://cafe.naver.com/avisnetwork">&copy; 2017 아비스 네트워크</a>
           </li>
           <li class="pull-right dropdown dropdown-large">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-caret-up" aria-hidden="true"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fas fa-chevron-up" aria-hidden="true"></b></a>
             <ul class="dropdown-menu drop-up">
               <li>
                 <a href="https://status.chemistryx.me">
                   <span>
-                    <h6><i class="fa fa-refresh"></i> 서버 상태</h6>
+                    <h6><i class="fas fa-sync"></i> 서버 상태</h6>
                   </span>
                 </a>
               </li>
@@ -118,13 +116,13 @@
           </li>
           <li class="pull-right">
             <a href="https://github.com/avisnetwork" target="_blank">
-              <i class="fa fa-github-alt" aria-hidden="true"></i>
+              <i class="fab fa-github" aria-hidden="true"></i>
                GitHub
             </a>
           </li>
           <li class="pull-right">
             <a href="https://discord.me/arkanetwork" target="_blank">
-              <i class="fa fa-comments-o" aria-hidden="true"></i>
+              <i class="fab fa-discord" aria-hidden="true"></i>
                Discord
              </a>
           </li>

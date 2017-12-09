@@ -402,16 +402,18 @@ title:  "기본 맵 요소"
           <code>arcade</code>
         </td>
         <td>아케이드 게임</td>
+        <td>
+          <code>mixed</code>
+        </td>
+        <td>여러가지 게임</td>
       </tr>
       <tr>
         <td>
           <code>ffa</code>
         </td>
         <td>개인전 게임</td>
-        <td>
-          <code>mixed</code>
-        </td>
-        <td>여러가지 게임</td>
+        <td></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

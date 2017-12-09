@@ -7,7 +7,7 @@ nav_content:
   - path: "#list"
     name: "필터 매처 (Filter Matchers)"
   - path: "#filterModifiers"
-    name: "필터 수정자 (Filter Modifiers)"
+    name: "필터 한정자 (Filter Modifiers)"
   - path: "#killStreakFilter"
     name: "연속 처치 필터"
   - path: "#randomFilter"
@@ -36,87 +36,84 @@ nav_content:
 필터는 일반적으로 플레이어, 블럭 또는 일반적인 게임에 대한 참/거짓 조건입니다.
 다른 모듈은 필터를 사용하여 플레이어, 블럭, 또는 전체 경기의 **언제** 그리고 **어디서** 일이 발생해야하는지 여부를 결정합니다.
 
-필터는 **매처 (Matchers)** 와 **수정자 (Modifiers)**로 작성됩니다.
-Matchers are specific questions, like
+필터는 **매처 (Matchers)** 와 **한정자 (Modifiers)**로 작성됩니다.
+매처는 다음과 같은 구체적인 질문들에 대한 답이 될 수 있습니다.
 
-* is it made of wood?
-* is he/she on the Red Team?
-* is it inside region X?
-* has the match run past 5 minutes?
+* 나무로 만들어졌나요?
+* 그 플레이어가 레드 팀에 속해있나요?
+* 지역의 X축 안에 있나요?
+* 경기가 5분동안 진행 되었나요?
 
-Modifiers can combine questions using logic, such as
+한정자는 다음과 같은 논리를 사용하여 질문을 결합할 수 있습니다.
 
-* A and B
-* A or B
-* not A
-* (A or B) and not (A and B)
+* A 와 B
+* A 또는 B
+* A 아님
+* (A 또는 B)가 아니라 (A 와 B)
 
-Modifiers can also transform the meaning of questions, or answers, in various ways.
+한정자는 또한 다양한 방식으로 질문 혹은 답변의 의미를 변형시킬 수 있습니다.
 
-The documentation for other modules will explain where filters can be used, and how the filter affects the module's behavior.
-Generally, other modules use filters in one of two ways:
+다른 모듈에 대한 문서에서는 필터를 사용할 수 있는 위치와 필터가 모듈의 동작에 미치는 영향에 대해 설명합니다.
+일반적으로 다른 모듈은 다음 두가지 방법중 하나로 필터를 사용합니다.
 <ul>
   <li>
-    <em>Passively,</em>
-    which means whenever the module wants to do its thing, it will check the filter to decide if it should be done or not.
+    <em>수동적으로 말하자면,</em>
+    그 모듈이 작동할 때마다 필터는 필터를 확인하여 그것이 작동되어야하는지 여부를 결정합니다.
   </li>
   <li>
-    <em>Dynamically,</em>
-    in which case the filter will notify the module when it's time to do something, and who or what it should be done to.
+    <em>동적으로 말하자면,</em>
+    필터는 무언가를 할 시간이 되었을 때 모듈에 알리고 그것을 누가 처리해야 하는지를 알려줍니다.
   </li>
 </ul>
 <p>
-  Only filters labeled
-  <span class='label label-primary'>Dynamic</span>
-  are capable of the latter.
-  Modules that require dynamic filters will say so in their documentation.
+  <span class='label label-primary'>동적</span>
+  이라고 표시된 필터만이 후자의 필터를 사용할 수 있습니다. 동적 필터가 필요한 모듈은 각 모듈 문서에서 찾을 수 있습니다.
 </p>
 
-### Abstaining
-Some filters don't make sense in certain contexts.
-For example, you can't ask if a block is on the Red Team, or if a player is made of wood, or if the match is inside a region.
+### 기권
+일부 필터는 특정 상황에서 아무 의미가 없습니다. 예를 들어, 블럭이 레드 팀에 있는지 또는 플레이어가 나무로 제작되었는지 또는 경기가 지역 내에 있는지 물어볼 필요가 없습니다.
 
-Some modules will generate an error if you try to use the wrong type of filter, but other modules may allow it.
-When a filter doesn't apply to a particular decision, it will **abstain** from that decision, and things will behave as they would if the filter didn't exist.
-Generally, you should avoid using filters in such a way that they can abstain, since it tends to be confusing.
+잘못된 유형의 필터를 사용하려고 하면 일부 모듈에서 오류가 발생하지만 다른 모듈에서는 허용할 수 있습니다.
+특정 결정에 필터가 적용되지 않으면 해당 결정을 **기권**하고 필터가 존재하지 않는것처럼 행동합니다.
+일반적으로 이 방법은 혼란을 야기할 수 있기때문에 기권할 수 있는 방식으로 필터를 사용하지 않아야 합니다.
 
-However, the [event rules module](/modules/regions#applying) uses filter abstention to make very complex conditions easier to express:
-It accepts a *chain* of filters, and uses the first filter in the chain that doesn't abstain.
+그러나 [이벤트 규칙 모듈](/modules/regions#applying)은 매우 복잡한 조건을 쉽게 표현할 수 있도록 필터 기권을 사용합니다.
+그것은 필터 *체인*을 허용하고 기권하지 않는 체인의 첫번째 필터를 사용합니다.
 
-Filters can be *forced* to abstain using the `<allow>` and `<deny>` modifiers.
+필터는 `<allow>` 와 `<deny>` 한정자를 사용하여 **강제로** 기권할 수 있습니다.
 
 
-### Defining Filters
-Filters can be defined inside the top-level `<filters>` element,
-and assigned an `id` used to reference them elsewhere.
+### 필터 정의하기
+필터는 최상위 `<filters>` 요소 안에 정의될 수 있으며,
+다른 곳에서 참조하기 위해 `id` 를 사용합니다.
 
     <filters>
         <any id="filter-name">
-            <!-- Filter elements -->
+            <!-- 필터 요소 -->
         </any>
 
         <team id="viridescent-team-filter">viridescent-team</team>
 
-        <!-- More filters-->
+        <!-- 더 많은 필터 -->
     </filters>
 
 <br/>
 
-### Matcher Elements {#list}
-Filter matchers test for specific conditions or properties of things.
+### 매처 요소 {#list}
+필터 매처는 특정 조건이나 사물의 속성을 테스트합니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 300px;'>Element</th>
-        <th>Description</th>
+        <th style='min-width: 300px;'>요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th colspan='3'>Generic filters (apply to anything)</th>
+        <th colspan='3'>일반 필터 (모든 것에 적용)</th>
       </tr>
       <tr>
         <td>
@@ -124,9 +121,9 @@ Filter matchers test for specific conditions or properties of things.
             <code>{{'<filter id="filter1"/>' | escape_once}}</code>
           </span>
         </td>
-        <td>Reference a filter by its ID.</td>
+        <td>ID로 필터를 참조합니다.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -136,11 +133,11 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Matches/allows everything.<br/>
-          Can be referenced with the ID <code>always</code>
+          모든 것을 매치/허용합니다.<br/>
+          <code>always</code>로 참조할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -150,11 +147,11 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Matches nothing/denies everything.<br/>
-          Can be referenced with the ID <code>never</code>
+          아무것도 매치하지 않고 모든 것을 거부합니다.<br/>
+          <code>never</code>로 참조할 수 있습니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -164,10 +161,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Filter if the match has started.
+          경기가 시작되었는지 필터링합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -177,10 +174,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Filter if the match is running.
+          경기가 진행중인지 필터링합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -190,10 +187,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Filter if the match is over.
+          경기가 끝났는지 필터링합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -203,12 +200,11 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Filter if the specified
-          <a href='/reference/time_periods'>time period</a>
-          has elapsed since the match started.
+          경기가 시작된 이후 지정된
+          <a href='/reference/time_periods'>시간 단위</a>가 경과한 경우 필터링합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -219,10 +215,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#objectiveFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if the objective is completed.
+          목표가 완료되면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -233,10 +229,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#objectiveFilter'><i class="fa fa-chevron-down"></i></a>
-          Match players or teams who currently control the objective.
+          현재 목표를 제어하는 플레이어 또는 팀을 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -247,10 +243,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#flagFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if the flag is being carried by anyone.
+          깃발이 누군가에 의해 운반되어지고 있다면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -261,10 +257,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#flagFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if the flag is dropped on the ground.
+          깃발이 땅에 떨어지면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -275,10 +271,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#flagFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if the flag is at the return-point.
+          깃발이 반환 지점에 있으면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -289,14 +285,14 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#flagFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if the flag has been captured.
+          깃발이 캡처되면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
-        <th colspan='3'>Spatial filters (apply to anything with a physical location)</th>
+        <th colspan='3'>공간 필터 (물리적 위치가 있는 모든 것들에 적용)</th>
       </tr>
       <tr>
         <td>
@@ -306,21 +302,21 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#voidFilter'><i class="fa fa-chevron-down"></i></a>
-          Match if there is an air block at Y=0 in the vertical column of this location
+          이 위치의 수직 축에서 Y = 0에 공기 블럭이 있으면 매칭합니다.
         </td>
         <td></td>
       </tr>
       <tr>
         <td colspan='3'>
           <em>
-            Any
-            <a href='/modules/regions'>region</a>
-            element
+            모든
+            <a href='/modules/regions'>지역</a>
+            요소
           </em>
         </td>
       </tr>
       <tr>
-        <th colspan='3'>Block filters</th>
+        <th colspan='3'>블럭 필터</th>
       </tr>
       <tr>
         <td>
@@ -329,31 +325,15 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Matches blocks by their
-          <a href='/reference/inventory#material_finder'>Material</a>
-          name.
+          <a href='/reference/inventory#material_finder'>재료</a>
+          이름으로 블럭을 찾습니다.
           <br/>
-          Accepts a
-          <a href='/reference/inventory#material_matchers'>Single Material Pattern</a>
+          <a href='/reference/inventory#material_matchers'>단일 재료 패턴</a>을 사용할 수 있습니다.
         </td>
         <td></td>
       </tr>
-      <!--
       <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<structural-load>2</structural-load>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          <a class='left-ref-link' href='#structuralLoadFilters'><i class="fa fa-chevron-down"></i></a>
-          Test the number of other gravity blocks that the queried block is supporting.
-        </td>
-        <td></td>
-      </tr>
-      -->
-      <tr>
-        <th colspan='3'>Entity filters</th>
+        <th colspan='3'>엔티티 필터</th>
       </tr>
       <tr>
         <td>
@@ -362,8 +342,7 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Matches spawn event reasons, see
-          <a href='/modules/mobs'>mob spawning</a>
+          스폰 이벤트 사유를 매칭합니다. <a href='/modules/mobs'>이곳</a>을 참고하세요.
         </td>
         <td></td>
       </tr>
@@ -374,8 +353,7 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Matches mobs by their name, see
-          <a href='/modules/mobs'>mob spawning</a>
+          이름으로 몹을 매칭합니다. <a href='/modules/mobs'>이곳</a>을 참고하세요.
         </td>
         <td></td>
       </tr>
@@ -385,28 +363,12 @@ Filter matchers test for specific conditions or properties of things.
             <code>{{'<entity>entity name</entity>' | escape_once}}</code>
           </span>
         </td>
-        <td>Match entities, e.g. projectiles, boats, dropped items, etc.</td>
+        <td>엔티티를 매칭합니다. (예: 발사체, 보트, 떨어뜨린 아이템 등)</td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='3'>Competitor filters (apply to teams, or FFA players)</th>
+        <th colspan='3'>경쟁자 필터 (팀 또는 FFA 플레이어에게 적용)</th>
       </tr>
-      <!--
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<rank> </rank>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          <a class='left-ref-link' href='#rank_score'><i class="fa fa-chevron-down"></i></a>
-          Match if the player or team's rank is within the specified range.
-        </td>
-        <td>
-          <span class='label label-primary'>Dynamic</span>
-        </td>
-      </tr>
-      -->
       <tr>
         <td>
           <span class='highlight'>
@@ -415,10 +377,10 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#rank_score'><i class="fa fa-chevron-down"></i></a>
-          Match if the player or team's score is within the specified range.
+          플레이어 또는 팀의 점수가 지정된 범위 내에 있으면 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -429,52 +391,24 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#flagFilter'><i class="fa fa-chevron-down"></i></a>
-          Match the team/player carrying the specified flag.
+          지정된 깃발을 들고 있는 팀 / 플레이어를 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
-        <th colspan='3'>Player filters</th>
+        <th colspan='3'>플레이어 필터</th>
       </tr>
-      <!--
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<participating/>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          Match if the player is participating in the match.
-        </td>
-        <td>
-          <span class='label label-primary'>Dynamic</span>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<observing/>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          Match if the player is observing the match.
-        </td>
-        <td>
-          <span class='label label-primary'>Dynamic</span>
-        </td>
-      </tr>
-      -->
       <tr>
         <td>
           <span class='highlight'>
             <code>{{'<team>team</team>' | escape_once}}</code>
           </span>
         </td>
-        <td>Matches a team by its ID.</td>
+        <td>ID로 팀을 매칭합니다.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -484,7 +418,7 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match players with the specified class.
+          지정된 클래스와 플레이어를 매칭합니다.
         </td>
         <td></td>
       </tr>
@@ -496,7 +430,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#killStreakFilter'><i class="fa fa-chevron-down"></i></a>
-          Match players with a certain range or amount of kills.
+          특정 범위 또는 킬 수로 플레이어를 매칭합니다.
         </td>
         <td></td>
       </tr>
@@ -507,10 +441,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player is crouching.
+          플레이어가 웅크리고 있는 경우 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -520,10 +454,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player is walking.
+          플레이어가 걷고 있는 경우 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -533,10 +467,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player is sprinting.
+          플레이어가 달리고 있는 경우 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -546,10 +480,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player is flying.
+          플레이어가 날고 있는 경우 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -559,25 +493,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player can fly.
+          플레이어가 날 수 있는지 매칭합니다.
         </td>
         <td></td>
       </tr>
-      <!--
-      <tr>
-        <td>
-          <span class='highlight'>
-            <code>{{'<gliding/>' | escape_once}}</code>
-          </span>
-        </td>
-        <td>
-          Match if the player is gliding with an elytra.
-        </td>
-        <td>
-          <span class='label label-primary'>Dynamic</span>
-        </td>
-      </tr>
-      -->
       <tr>
         <td>
           <span class='highlight'>
@@ -585,10 +504,10 @@ Filter matchers test for specific conditions or properties of things.
           </span>
         </td>
         <td>
-          Match if the player is on the ground.
+          플레이어가 땅 위에 있는 경우 매칭합니다.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -599,7 +518,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#itemFilters'><i class="fa fa-chevron-down"></i></a>
-          Match if the player is carrying an item.
+          플레이어가 아이템을 운반하고 있는 경우 매칭합니다.
         </td>
         <td></td>
       </tr>
@@ -611,7 +530,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#itemFilters'><i class="fa fa-chevron-down"></i></a>
-          Match if the player is holding an item.
+          플레이어가 아이템을 들고 있는 경우 매칭합니다.
         </td>
         <td></td>
       </tr>
@@ -623,12 +542,12 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#itemFilters'><i class="fa fa-chevron-down"></i></a>
-          Match if the player is wearing an item.
+          플레이어가 아이템을 입고 있는 경우 매칭합니다.
         </td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='3'>Event filters (apply to transient events)</th>
+        <th colspan='3'>이벤트 필터 (일시적인 이벤트에 적용)</th>
       </tr>
       <tr>
         <td>
@@ -638,24 +557,24 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#causeFilters'><i class="fa fa-chevron-down"></i></a>
-          Filter an event's cause.
+          이벤트의 발생 원인을 필터링합니다.
         </td>
         <td></td>
       </tr>
       <tr>
         <td>
           <span class='highlight'>
-            <code>{{'<random>decimal or range</random>' | escape_once}}</code>
+            <code>{{'<random>십진수 또는 범위</random>' | escape_once}}</code>
           </span>
         </td>
         <td>
           <a class='left-ref-link' href='#randomFilter'><i class="fa fa-chevron-down"></i></a>
-          Random chance matcher.
+          랜덤 매처입니다.
         </td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='3'>Damage filters (apply to damage/combat events)</th>
+        <th colspan='3'>데미지 필터 (데미지 / 전투 이벤트 적용)</th>
       </tr>
       <tr>
         <td>
@@ -665,7 +584,7 @@ Filter matchers test for specific conditions or properties of things.
         </td>
         <td>
           <a class='left-ref-link' href='#relationFilters'><i class="fa fa-chevron-down"></i></a>
-          Filter an event's relation to the player.
+          플레이어와 이벤트의 관계를 필터링합니다.
         </td>
         <td></td>
       </tr>
@@ -674,23 +593,23 @@ Filter matchers test for specific conditions or properties of things.
 </div>
 <br/>
 
-### Modifier Elements {#filterModifiers}
+### 한정자 요소 {#filterModifiers}
 
-Filter modifiers are used to alter the meaning of other filters, and combine them into more complex conditions.
-These elements must contain either a single filter, or a list of filters, as their child elements.
+필터 한정자는 다른 필터의 의미를 변경하고 더 복잡한 조건으로 결합하는 데 사용됩니다.
+이러한 요소는 하위 요소로 단일 필터 또는 필터 목록을 포함해야 합니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th style='min-width: 85px;'>Name</th>
-        <th>Description</th>
+        <th style='min-width: 85px;'>이름</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th colspan='3'>Logic - combine other filters</th>
+        <th colspan='3'>논리 - 다른 필터 결합</th>
       </tr>
       <tr>
         <td>
@@ -698,9 +617,9 @@ These elements must contain either a single filter, or a list of filters, as the
             <code>{{'<not>' | escape_once}}</code>
           </span>
         </td>
-        <td>Invert the filters result; allow if the child filter denies, deny if it allows, abstain otherwise.</td>
+        <td>필터 결과를 반전합니다. 하위 필터가 거부하면 허용하고 만약 허용하면 거부합니다. 그렇지 않으면 기권합니다.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -709,9 +628,9 @@ These elements must contain either a single filter, or a list of filters, as the
             <code>{{'<one>' | escape_once}}</code>
           </span>
         </td>
-        <td>Allow if <i>only one</i> of the child filters allows, deny if <i>one or more allow</i> or <i>none allow and at least one denies</i>, otherwise abstain.</td>
+        <td>만약 하위 필터 중 <i>하나만</i> 허용하는 경우 허용하고, <i>하나 이상</i> 혹은 <i>어떤 것도 허용하지 않으며 적어도 하나가 거부</i>하는 경우 거부하고, 그렇지 않으면 기권합니다.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -720,9 +639,9 @@ These elements must contain either a single filter, or a list of filters, as the
             <code>{{'<all>' | escape_once}}</code>
           </span>
         </td>
-        <td>Allow if <i>all</i> of the child filters allow, deny if <i>one or more deny</i>, otherwise abstain.</td>
+        <td><i>모든</i> 하위 필터가 허용하면 허용하고, <i>하나 이상이 거부</i>하면 거부하고, 그렇지 않으면 기권합니다.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -733,7 +652,7 @@ These elements must contain either a single filter, or a list of filters, as the
         </td>
         <td>Allow if <i>one</i> of the child filters allows, deny if <i>none allow and at least one denies</i>, otherwise abstain.</td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -818,7 +737,7 @@ These elements must contain either a single filter, or a list of filters, as the
           Count the number of players that match the inner filter.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
       <tr>
@@ -832,7 +751,7 @@ These elements must contain either a single filter, or a list of filters, as the
           Countdown from the moment that the inner filter matched.
         </td>
         <td>
-          <span class='label label-primary'>Dynamic</span>
+          <span class='label label-primary'>동적</span>
         </td>
       </tr>
     </tbody>

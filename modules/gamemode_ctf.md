@@ -182,7 +182,7 @@ title:  "깃발 쟁탈 게임"
           만약 생략될 경우 배너의 기본 색상이 사용됩니다.
         </td>
         <td>
-          <a href='/reference/colors'>염료 색깔 이름</a>
+          <a href='/reference/colors'>염료 색상 이름</a>
         </td>
         <td></td>
       </tr>

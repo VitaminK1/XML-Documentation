@@ -2,19 +2,19 @@
 layout: page
 
 category: "참고 자료"
-title:  "염료 색깔"
+title:  "염료 색상"
 
 ---
 
-Dye color names are used to define a wools color on [CTW](/modules/gamemode_ctw) maps and the dyes hex color can be used to color armor. Teams are created with the chat color names defined in [formatting](/reference/formatting#chatColors).
+염료 색상 이름은 [CTW](/modules/gamemode_ctw) 맵에서 양털 색상을 정의하는 데 사용되며 염료 16진수 색상은 갑옷을 색칠하는 데 사용할 수 있습니다. 팀은 [포맷](/reference/formatting#chatColors)에 정의된 채팅 색상 이름으로 생성됩니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Color Name</th>
-        <th>Hex Color</th>
-        <th>Hex Firework Color</th>
+        <th>색상 이름</th>
+        <th>16진수 색상</th>
+        <th>16진수 폭죽 색상</th>
       </tr>
     </thead>
     <tbody>
@@ -166,4 +166,4 @@ Dye color names are used to define a wools color on [CTW](/modules/gamemode_ctw)
   </table>
 </div>
 
-Copied from: [bukkit docs - Dye Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html)
+[bukkit docs - Dye Color](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html)에서 복사되었습니다.

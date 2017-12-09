@@ -117,7 +117,7 @@ title:  "양털 쟁탈 게임"
           양털의 색깔입니다.
         </td>
         <td>
-          <a href='/reference/colors'>염료 색깔 이름</a>
+          <a href='/reference/colors'>염료 색상 이름</a>
         </td>
         <td></td>
       </tr>

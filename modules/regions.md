@@ -441,7 +441,7 @@ Apply Examples
         </filter>
     </apply>
 <p>
-  <a class='btn btn-primary btn-xs btn-more collapsed' data-target='#collapse-apply-example' data-toggle='collapse'>Examples</a>
+  <a class='btn btn-primary btn-xs btn-more collapsed' data-target='#collapse-apply-example' data-toggle='collapse'></a>
 </p>
 <div class='collapse' id='collapse-apply-example' markdown='1'>
 
