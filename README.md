@@ -26,6 +26,6 @@ Pull Requests에는 다음과 같은 사항이 있어야 합니다.
 
 1. 루비를 설치합니다. ([Mac](https://gorails.com/setup/osx/10.12-sierra), [Windows](https://rubyinstaller.org/downloads/), [Ubuntu](https://gorails.com/setup/ubuntu/16.04)) (레일즈는 필요하지 않습니다)
 2. [bundler](http://bundler.io) 젬을 설치합니다.
-2. 프로젝트 root디렉토리에서 `bundle install`을 실행합니다.
+2. 프로젝트 루트 디렉토리에서 `bundle install`을 실행합니다.
 3. `bundle exec jekyll serve` 이나 `jekyll serve`를 실행합니다.
 4. 브라우저에서 `localhost:4000`으로 접속합니다.
