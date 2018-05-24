@@ -277,7 +277,7 @@ title:  "사용자 정의 투사체"
           </span>
         </td>
         <td>
-          활의 투사체로써 사용되는 엔티티
+          활의 투사체로써 사용되는 엔티티입니다.
         </td>
         <td>
           <a href='/reference/entity_types'>엔티티 종류</a>
@@ -290,10 +290,10 @@ title:  "사용자 정의 투사체"
           </span>
         </td>
         <td>
-          The velocity modifier of the bows projectile.
+          활의 투사체에 대한 속도 수정자입니다.
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫지</span>
         </td>
       </tr>
       <tr>
@@ -303,23 +303,23 @@ title:  "사용자 정의 투사체"
           </span>
         </td>
         <td>
-          A potion effect to apply to players hit by the bow projectile.
+          활의 투사체로 맞은 플레이어에게 적용되는 포션 효과입니다.
         </td>
         <td>
-          <a href='/modules/potions'>Potion Effect</a>
+          <a href='/modules/potions'>포션 효과</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Examples
+예시)
 
     <modifybowprojectile>
         <projectile>EnderPearl</projectile>
         <velocityMod>2.5</velocityMod>
 
-        <!-- Projectile potion effect -->
+        <!-- 투사체의 포션 효과 -->
         <effect duration="5" amplifier="1">poison</effect>
     </modifybowprojectile>
 
@@ -328,13 +328,13 @@ Examples
     </modifybowprojectile>
 
 
-All the following projectiles are guaranteed to work. See [mrapple/Bukkit Entity Spawning.md](https://gist.github.com/4617111) for a list of tested entities.
+다음에 열거되는 모든 투사체들은 작동합니다. 테스트를 거친 엔티티의 목록을 보고 싶다면 [mrapple/Bukkit Entity Spawning.md](https://gist.github.com/4617111)을 참고하세요.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Supported Entity Types</th>
+        <th>지원되는 엔티티 종류</th>
         <th></th>
         <th></th>
       </tr>

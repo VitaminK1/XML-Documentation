@@ -62,6 +62,34 @@ title:  "의역"
           <a href="/modules/filters">필터</a>
         </td>
       </tr>
+      <tr>
+        <td>TNT License</td>
+        <td>TNT 자격증</td>
+        <td>
+          <a href="/modules/tnt">TNT</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Class</td>
+        <td>직업</td>
+        <td>
+          <a href="/modules/classes">직업</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Children</td>
+        <td>하위 모듈</td>
+        <td>
+          <a href="/modules/main">기본 맵 요소</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Half-Hearts</td>
+        <td>체력</td>
+        <td>
+          <a href="/modules/projectiles">투사체</a>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
