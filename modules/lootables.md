@@ -6,15 +6,15 @@ title:  "전리품"
 
 ---
 
-Lootables are chests or other containers that generate their contents based on custom rules and probabilities.
-They can optionally refill themselves on a schedule, or in response to dynamic filters.
+전리품상자(Lootables)는 사용자 정의 규칙이나 지정된 확률에 따라 안에 넣을 내용물을 스스로 생성하는 상자 등의 컨테이너(containers)를 말합니다.
+전리품들은 예약한 대로 내용물이 다시 채워질 수 있으며, 동적 필터에 따라 반응할 수도 있습니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Lootables Element</th>
-        <th>Description</th>
+        <th>전리품상자 요소</th>
+        <th>설명</th>
         <th></th>
       </tr>
     </thead>
@@ -29,8 +29,8 @@ They can optionally refill themselves on a schedule, or in response to dynamic f
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위 모듈</th>
       </tr>
       <tr>
         <td>
@@ -40,10 +40,10 @@ They can optionally refill themselves on a schedule, or in response to dynamic f
         </td>
         <td>
           <a class='left-ref-link' href='#loot'><i class="fa fa-chevron-down"></i></a>
-          A generated set of items
+          아이템들로 구성되어, 내용물이 될 하나의 세트
         </td>
         <td>
-          <span class='label label-default'>Loot Sub-elements</span>
+          <span class='label label-default'>전리품 하위 요소</span>
         </td>
       </tr>
       <tr>
@@ -54,19 +54,19 @@ They can optionally refill themselves on a schedule, or in response to dynamic f
         </td>
         <td>
           <a class='left-ref-link' href='#posts'><i class="fa fa-chevron-down"></i></a>
-          Configuration for filling containers with loot
+          전리품으로 컨테이너를 채우는 것에 대한 환경 설정(config)
         </td>
         <td>
-          <span class='label label-default'>Fill Sub-elements</span>
+          <span class='label label-default'>채우기 하위 요소</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-### Loot {#loot}
+### Loot (전리품) {#loot}
 
-The `<loot>` element defines a generated set of items, using literal `<item>` elements,
+`<loot>` 요소는 defines a generated set of items, using literal `<item>` elements,
 and operations for choosing them.
 
 <div class='table-responsive'>

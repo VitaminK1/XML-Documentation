@@ -6,16 +6,16 @@ title:  "게임 규칙"
 
 ---
 
-Minecraft's built in game rules can be set via the `<gamerules>` module. Not all gamerules are supported, the table below lists which are supported.
+마인크래프트에 내장된 게임 규칙 (gamerule) 은 `<gamerules>` 모듈을 사용하여 설정할 수 있습니다. 모두 가능한 것은 아니고, 밑의 표에 열겨된 것들 중에서만 사용 가능합니다.
 
-When stopping the daylight cycle, you should either use the `<doDaylightCycle>` gamerule, or the [timelock](/modules/other_settings#timelock) element.  One will overwrite the other, so be consistent.
+일광 주기 (daylight cycle)를 고정하고 싶을 때, `<doDaylightCycle>` 게임 규칙이나, [timelock](/modules/other_settings#timelock) 요소를 사용해야 합니다. 한 구문이 나머지 한 구문을 덮어 쓸 수 있으니, 설정하는 데 있어 일관성 있게 작성해야 합니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
+        <th>요소</th>
+        <th>설명</th>
       </tr>
     </thead>
     <tbody>
@@ -25,19 +25,19 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<gamerules> </gamerules>' | escape_once}}</code>
           </span>
         </td>
-        <td>Node containing the defined game rules.</td>
+        <td>게임 규칙 정의에 관한 내용을 포함하는 노드</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Supported Gamerule Sub-elements</h5>
+<h5>지원되는 게임 규칙의 하위 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Values</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>깂</th>
       </tr>
     </thead>
     <tbody>
@@ -47,9 +47,9 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<doFireTick>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether firespread occurs.</td>
+        <td>불이 번지는 현상이 일어나는지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
       <tr>
@@ -58,9 +58,9 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<doTileDrops>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether tile entities drop.</td>
+        <td>타일 엔티티가 드랍되는지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
       <tr>
@@ -69,9 +69,9 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<doMobLoot>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether mobs drop loot on death.</td>
+        <td>몬스터를 죽이고 얻는 보상 아이템이 드랍되는지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
       <tr>
@@ -80,9 +80,9 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<mobGriefing>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether mobs such as Creepers and Endermen cause enviromental damage.</td>
+        <td>크리퍼가 폭발하거나 엔더맨이 블록을 빼가는 등의 몹들로 인해 환경에 피해를 줄 수 있는지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
       <tr>
@@ -91,9 +91,9 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<naturalRegeneration>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether or not players naturally regain heath.</td>
+        <td>플레이어들이 자연적으로 체력을 회복 가능한지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
       <tr>
@@ -102,16 +102,16 @@ When stopping the daylight cycle, you should either use the `<doDaylightCycle>` 
             <code>{{'<doDaylightCycle>' | escape_once}}</code>
           </span>
         </td>
-        <td>Toggles whether or not the time tick occurs.</td>
+        <td>월드의 시간이 흐르는지를 토글합니다.</td>
         <td>
-          <span class='label label-primary'>true / false</span>
+          <span class='label label-primary'>참 / 거짓</span>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Example
+예시)
 
     <gamerules>
         <doDaylightCycle>false</doDaylightCycle>
@@ -121,14 +121,14 @@ Example
 
 <br/>
 
-#### Unsupported Gamerules
+#### 지원되지 않는 게임 규칙
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Rule</th>
-        <th>Reason</th>
+        <th>규칙</th>
+        <th>이유</th>
       </tr>
     </thead>
     <tbody>
@@ -137,52 +137,51 @@ Example
           <code>doMobSpawning</code>
         </td>
         <td>
-          Not supported in favor of the
           <a href='/modules/mobs'>mobs</a>
-          module.
+          모듈 설정을 더 용이하게 하기 위해 지원되지 않습니다.
         </td>
       </tr>
       <tr>
         <td>
           <code>keepInventory</code>
         </td>
-        <td>Not supported since PGM already solves this with kits.</td>
+        <td>PGM 플러그인이 키트 기능으로 이미 해결이 가능하므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>commandBlockOutput</code>
         </td>
-        <td>Command blocks are disabled in PGM.</td>
+        <td>커맨드 블럭이 PGM 플러그인에 의해 기능하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>logAdminCommands</code>
         </td>
-        <td>Not useful in custom maps.</td>
+        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>randomTickSpeed</code>
         </td>
-        <td>Not useful in custom maps.</td>
+        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>reducedDebugInfo</code>
         </td>
-        <td>Not useful in custom maps.</td>
+        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>sendCommandFeedback</code>
         </td>
-        <td>Not useful in custom maps.</td>
+        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>showDeathMessages</code>
         </td>
-        <td>Not useful in custom maps.</td>
+        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
     </tbody>
   </table>

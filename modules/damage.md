@@ -6,27 +6,30 @@ title:  "데미지와 데미지 비활성화"
 
 ---
 
-### Friendly Fire
-Allows teammates to kill each other. Arrows will be absorbed if they hit a teammate.
+### Friendly Fire (팀원 피해 허용)
+팀원끼리 서로에게 데미지를 입히는 것을 허용할 것인가를 설정하는 모듈입니다.
+만약 화살로 팀원을 맞추었다면, 그 화살은 그대로 흡수되어 회수 할 수 없습니다.
 
-    <friendlyfire>on</friendlyfire> <!-- Defaults to off -->
+    <friendlyfire>on</friendlyfire> <!-- 기본값 : off -->
 
-Refunds arrows blocked by teammates from non-infinity bows.
+무한 인첸트가 없는 활로 쏜 화살이 팀원을 맞춰서 회수가 안될때, <friendlyfirerefund>를 on으로 설정하면 쏜 사람에게 그 화살이 반환됩니다.
 
-    <friendlyfirerefund>off</friendlyfirerefund> <!-- Defaults to on -->
-
-<br/>
-
-### Difficulty
-The difficulty level can be set to `peaceful`, `easy`, `normal`, or `hard`. The default is `hard`.
-
-    <difficulty>easy</difficulty> <!-- Defaults to hard -->
+    <friendlyfirerefund>off</friendlyfirerefund> <!-- 기본값 : on -->
 
 <br/>
 
-### Hunger
-Specify if a player can starve to death, usually used with the difficulty setting.<br/>
-This can also be accomplished with the `naturalRegeneration` [gamerule](/modules/gamerules).
+### Difficulty (게임 내 난이도)
+게임 내 난이도를 설정하는 모듈입니다.
+난이도는 `peaceful`, `easy`, `normal`, 혹은 `hard`로 설정 될 수 있습니다. 기본값은 `hard` 입니다.
+
+    <difficulty>easy</difficulty> <!-- 기본값 : hard -->
+
+<br/>
+
+### Hunger (허기)
+플레이어가 허기가 부족해 죽을 수 있는 지 여부를 규정할 때 쓰이는 모듈입니다.
+주로 난이도 설정(Difficulty)과 함께 쓰입니다.<br/>
+`naturalRegeneration` [게임 규칙](/modules/gamerules) 과 같이 동반되기도 합니다.
 
     <hunger>
         <depletion>off</depletion>
@@ -34,14 +37,14 @@ This can also be accomplished with the `naturalRegeneration` [gamerule](/modules
 
 <br/>
 
-### Damage Filtering {#filter}
+### Damage Filtering (데미지 필터링) {#filter}
 
 This module is used to filter when or if damage is applied to entities.
-Its contents can be a filter or combination of filters.
-It doesn't have to be `<allow>` and `<deny>` at the top level but that's usually what you want.
-Regions can also be used since they are filters that filter for a location.
+그 안에 적을 내용은 하나의 필터가 될 수도 있고, 필터들의 조합으로 이루어질 수도 있습니다.
+하위 요소들 중에서도 `<allow>` and `<deny>` 를 가장 높은 수준의 요소로 적는 것이 좋습니다. 필수는 아니지만, 대부분의 맵이 그렇게 적도록 요구할 것입니다.
+지역(Regions)도 한 장소를 필터링하는 필터들로써 사용이 가능합니다.
 
-Examples
+예시)
 
     <damage>
         <deny>
@@ -49,7 +52,7 @@ Examples
         </deny>
     </damage>
 
-    <!-- Deny damage events where the attacker is on the red team -->
+    <!-- 공격자가 레드팀에 있을때 데미지 발생을 허락 하지 않습니다. -->
     <damage>
         <deny>
             <attacker>
@@ -60,17 +63,17 @@ Examples
 
 <br/>
 
-### Disable Damage {#disable}
-Use this module to disable damage from specific causes.
+### Disable Damage (데미지 비활성화) {#disable}
+특정한 원인으로 발생한 데미지를 비활성화할때 사용하는 모듈입니다.
 
-While almost every form of damage can be disabled safely it is recommended that you do **not** disable `VOID` damage.
+거의 모든 형태의 데미지를 안전하게 비활성화할 수 있지만, `VOID` 데미지는 비활성화 할 경우 정상적인 플레이에 **치명적일 수 있습니다.**  
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Disable Damage Element</th>
-        <th>Description</th>
+        <th>데미지 비활성화 요소</th>
+        <th>설명</th>
       </tr>
     </thead>
     <tbody>
@@ -80,12 +83,12 @@ While almost every form of damage can be disabled safely it is recommended that 
             <code>{{'<disabledamage> </disabledamage>' | escape_once}}</code>
           </span>
         </td>
-        <td>Node containing the disabled damage types.</td>
+        <td>비활성화된 데미지 유형에 관한 내용을 포함하는 노드입니다.</td>
         <td></td>
       </tr>
       <tr>
-        <th colspan='2'>Sub-elements</th>
-        <th>Value/Children</th>
+        <th colspan='2'>하위 요소</th>
+        <th>값/하위 모듈</th>
       </tr>
       <tr>
         <td>
@@ -94,38 +97,38 @@ While almost every form of damage can be disabled safely it is recommended that 
           </span>
         </td>
         <td>
-          The damage type that is disabled.
+          비활성화되는 데미지의 종류를 설정합니다.
         </td>
         <td>
-          <a href='#causes'>Damage Cause</a>
+          <a href='#causes'>데미지 원인</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Example
+예시)
 
     <disabledamage>
-        <!-- Disable fall damage -->
+        <!-- 착지 데미지 비활성화 -->
         <damage>fall</damage>
     </disabledamage>
 
 
 <br/>
 
-#### Block Explosion Attributes {#block_explosion}
+#### Block Explosion Attributes (블럭으로 인한 폭발 데미지 방지 속성) {#block_explosion}
 
-The `BLOCK_EXPLOSION` damage cause has several extended attributes to customize who/what gets damaged. Only attributes with `false` as the value need to be explicitly defined since all attributes default to `true`.
+ 블럭으로 인한 폭발 데미지(the `BLOCK_EXPLOSION` damage)의 원인은 누가/무엇이 피해를 입었는지를 커스터마이징하기 위해 더 넓은 범위의 속성들을 가지고 있게 하였습니다. 모든 속성의 기본값은 `true` 이기 때문에 `false`를 값으로 가지게할 속성들만 명확하게 정의하면 될 것입니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -133,66 +136,66 @@ The `BLOCK_EXPLOSION` damage cause has several extended attributes to customize 
         <td>
           <code>ally</code>
         </td>
-        <td>Damage to players on the same team as the person that caused the explosion.</td>
+        <td>폭발을 일으킨 사람과 같은 팀에 속한 플레이어들이 입는 데미지를 방지 </td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>self</code>
         </td>
-        <td>Damage to the person that caused the explosion.</td>
+        <td>폭발을 일으킨 사람 스스로가 입는 데미지를 방지</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>enemy</code>
         </td>
-        <td>Damage to players not on the same team as the person that caused the explosion.</td>
+        <td>폭발을 일으킨 사람과 다른 팀에 속한 플레이어들이 입는 데미지를 방지</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
       <tr>
         <td>
           <code>other</code>
         </td>
-        <td>Any other damage caused by the explosion.</td>
+        <td>위에 언급된 데미지 외에 폭발로 인한 다른 데미지를 방지</td>
         <td>
-          <span class='label label-primary'>true/false</span>
+          <span class='label label-primary'>참/거짓</span>
         </td>
-        <td>true</td>
+        <td>참</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Example
+예시)
 
     <disabledamage>
-        <!-- TNT damages enemies and self, but not teammates -->
+        <!-- TNT가 적과 자신에게는 피해를 주지만, 팀원에게는 주지 않습니다. -->
         <damage ally="true" self="false" enemy="false" other="false">block explosion</damage>
     </disabledamage>
 
 
 <br/>
 
-#### Damage Causes {#causes}
-The following damage causes can be used in the disable damage module.
-These causes do not need to be capitalized or contain underscores, i.e., `FIRE_TICK` and `fire tick` will both work.
+#### Damage Causes (데미지 원인) {#causes}
+다음의 열거된 데미지 원인들이 데미지 비활성화 모듈에서 이용이 가능합니다.
+이러한 원인들은 구지 전부 대문자로 적거나 밑줄로 띄어쓰기를 표시할 필요는 없습니다. 예를 들어, `FIRE_TICK` 와 `fire tick`는 둘 다 동일하게 작동할 것입니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Description</th>
+        <th>이름</th>
+        <th>설명</th>
       </tr>
     </thead>
     <tbody>
@@ -201,7 +204,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>CONTACT</code>
         </td>
         <td>
-          Damage caused when an entity contacts a block such as a Cactus.
+          선인장에 찔리는 것 처럼, 특정 블럭과의 접촉으로 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -209,7 +212,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>ENTITY_ATTACK</code>
         </td>
         <td>
-          Damage caused when an entity attacks another entity.
+          한 엔티티가 다른 엔티티를 공격함으로서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -217,7 +220,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>PROJECTILE</code>
         </td>
         <td>
-          Damage caused when attacked by a projectile.
+          발사체를 맞아서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -225,7 +228,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>SUFFOCATION</code>
         </td>
         <td>
-          Damage caused by being put in a block.
+          블럭 안에 갇혀서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -233,7 +236,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>FALL</code>
         </td>
         <td>
-          Damage caused when an entity falls a distance greater than 3 blocks.
+          한 엔티티가 4블럭 이상 떨어져서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -241,7 +244,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>FIRE</code>
         </td>
         <td>
-          Damage caused by direct exposure to fire.
+          불과 직접적으로 접촉해서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -249,7 +252,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>FIRE_TICK</code>
         </td>
         <td>
-          Damage caused due to burns caused by fire.
+          플레이어가 화상을 입어 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -257,7 +260,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>MELTING</code>
         </td>
         <td>
-          Damage caused due to a snowman melting.
+          녹는 눈사람이 받는 데미지
         </td>
       </tr>
       <tr>
@@ -265,7 +268,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>LAVA</code>
         </td>
         <td>
-          Damage caused by direct exposure to lava.
+          용암과 직접적으로 접촉해서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -273,7 +276,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>DROWNING</code>
         </td>
         <td>
-          Damage caused by running out of air while in water.
+          물 속에 있을 때 공기가 부족해서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -281,7 +284,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>BLOCK_EXPLOSION</code>
         </td>
         <td>
-          Damage caused by being in the area when a block explodes.
+          블럭이 폭발 할 때 그 근처에 있을 경우 받는 데미지
         </td>
       </tr>
       <tr>
@@ -289,7 +292,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>ENTITY_EXPLOSION</code>
         </td>
         <td>
-          Damage caused by being in the area when an entity, such as a Creeper, explodes.
+          크리퍼 같은 엔티티가 폭발할 때 그 근처에 있을 경우 받는 데미지
         </td>
       </tr>
       <tr>
@@ -297,7 +300,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>VOID</code>
         </td>
         <td>
-          Damage caused by falling into the void.
+          보이드로 떨어져서 받는 데미지
         </td>
       </tr>
       <tr>
@@ -305,7 +308,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>LIGHTNING</code>
         </td>
         <td>
-          Damage caused by being struck by lightning.
+          번개에 맞아서 받는 데미지
         </td>
       </tr>
       <tr>
@@ -313,7 +316,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>SUICIDE</code>
         </td>
         <td>
-          Damage caused by committing suicide using the command "/kill".
+          "/kill" 명령어를 사용 했을때 스스로에게 주는 죽을 만큼의 데미지
         </td>
       </tr>
       <tr>
@@ -321,7 +324,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>STARVATION</code>
         </td>
         <td>
-          Damage caused by starving due to having an empty hunger bar.
+          허기가 다 떨어져서 받는 데미지
         </td>
       </tr>
       <tr>
@@ -329,7 +332,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>POISON</code>
         </td>
         <td>
-          Damage caused due to an ongoing poison effect.
+          지속되는 독 효과에 의해 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -337,7 +340,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>MAGIC</code>
         </td>
         <td>
-          Damage caused by being hit by a damage potion or spell.
+          즉시 피해 포션 혹은 마법(spell)에 맞아서 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -345,7 +348,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>WITHER</code>
         </td>
         <td>
-          Damage caused by Wither potion effect.
+          위더 효과에 의해 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -353,7 +356,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>FALLING_BLOCK</code>
         </td>
         <td>
-          Damage caused by being hit by a falling block which deals damage.
+          모루 등의 떨어질때 맞으면 피해를 주는 블럭으로 받은 데미지
         </td>
       </tr>
       <tr>
@@ -361,7 +364,7 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>THORNS</code>
         </td>
         <td>
-          Damage caused in retaliation to another attack by the Thorns enchantment.
+          가시 인첸트에 의해 다른 공격에 대한 반발로 발생하는 데미지
         </td>
       </tr>
       <tr>
@@ -369,11 +372,11 @@ These causes do not need to be capitalized or contain underscores, i.e., `FIRE_T
           <code>CUSTOM</code>
         </td>
         <td>
-          Custom damage.
+          사용자가 정의한 유형의 데미지
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-Copied from: [bukkit docs - Damage Cause](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
+출처 : [bukkit docs - Damage Cause](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)

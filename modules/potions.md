@@ -6,20 +6,19 @@ title:  "포션 효과"
 
 ---
 
-The potion `<effect>` element can be used in a kit to apply potion effects directly to a player,
-or used to give a custom effect to a [potion bottle item](/modules/items#potions).
+포션 효과를 나타내는 `<effect>` 요소는 플레이어에게 포션 효과를 직접 적용하기 위해 킷 내에서 사용되기도 하고, [potion bottle item](/modules/items#potions) 에 사용자 정의 효과를 주기 위해 사용되기도 합니다.
 
-Duration specifies how long the potion will last, and amplifier determines what level / how strong the potion is.
-The effect type is specified by its [Minecraft ID](http://minecraft.gamepedia.com/Data_values#Status_effects).
-Effect ID's should be specified without their `minecraft:` prefix.
-<h5>Effect Element</h5>
+효과 지속 시간(Duration)은 포션이 얼마나 오래 지속될 것인가를 규정하는 수치이고, 효과 증폭 정도 (amplifier)는 그 포션의 효과가 어느 수준으로 강력한지를 정하는 수치입니다.
+포션 효과의 종류는 [Minecraft ID](http://minecraft.gamepedia.com/Data_values#Status_effects) 로 정할 수 있습니다.
+포션 효과의 ID는 `minecraft:`를 앞에 접두사로 붙이지 않고 적어야 합니다.
+<h5>포션 효과 요소</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Element</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>요소</th>
+        <th>설명</th>
+        <th>값</th>
       </tr>
     </thead>
     <tbody>
@@ -30,24 +29,24 @@ Effect ID's should be specified without their `minecraft:` prefix.
           </span>
         </td>
         <td>
-          A potion effect
+          포션 효과를 지정하는 요소
         </td>
         <td>
-          <a href='http://minecraft.gamepedia.com/Data_values#Status_effects'>Status Effect ID</a>
+          <a href='http://minecraft.gamepedia.com/Data_values#Status_effects'>상태 효과 ID</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Effect Attributes</h5>
+<h5>포션 효과의 속성</h5>
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
     <thead>
       <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-        <th>Value</th>
-        <th>Default</th>
+        <th>속성</th>
+        <th>설명</th>
+        <th>값</th>
+        <th>기본값</th>
       </tr>
     </thead>
     <tbody>
@@ -56,14 +55,14 @@ Effect ID's should be specified without their `minecraft:` prefix.
           <code>duration</code>
         </td>
         <td>
-          Duration of the effect.
+          포션효과의 지속 시간을 나타낸다.
         </td>
         <td>
-          <a href='/reference/time_periods'>Time Period</a>
+          <a href='/reference/time_periods'>시간의 단위</a>
         </td>
         <td>
           oo
-          (forever)
+          (무한)
         </td>
       </tr>
       <tr>
@@ -71,17 +70,16 @@ Effect ID's should be specified without their `minecraft:` prefix.
           <code>amplifier</code>
         </td>
         <td>
-          Strength of the effect. The value matches what is displayed to the player in-game,
-          so the first tier of potions have amplifier 1.
+          포션 효과의 강도를 나타낸다. 이 값은 게임 내에 플레이어에게 표시되는 효과의 레벨과 일치하므로, 레벨 I의 포션효과를 적용하고 싶다면, amplifier를 1로 설정한다.
         </td>
         <td>
-          <span class='label label-primary'>Number</span>
+          <span class='label label-primary'>숫자</span>
         </td>
         <td>1</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5>Example</h5>
+<h5>예시</h5>
     <effect duration="10" amplifier="4">resistance</effect>
     <effect duration="900" amplifier="1">jump_boost</effect>
