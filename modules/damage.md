@@ -188,7 +188,7 @@ This module is used to filter when or if damage is applied to entities.
 
 #### Damage Causes (데미지 원인) {#causes}
 다음의 열거된 데미지 원인들이 데미지 비활성화 모듈에서 이용이 가능합니다.
-이러한 원인들은 구지 전부 대문자로 적거나 밑줄로 띄어쓰기를 표시할 필요는 없습니다. 예를 들어, `FIRE_TICK` 와 `fire tick`는 둘 다 동일하게 작동할 것입니다.
+이러한 원인들은 굳이 전부 대문자로 적거나 밑줄로 띄어쓰기를 표시할 필요는 없습니다. 예를 들어, `FIRE_TICK` 와 `fire tick`는 둘 다 동일하게 작동할 것입니다.
 
 <div class='table-responsive'>
   <table class='table table-striped table-condensed'>
