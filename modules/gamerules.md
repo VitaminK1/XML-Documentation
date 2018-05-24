@@ -157,31 +157,31 @@ title:  "게임 규칙"
         <td>
           <code>logAdminCommands</code>
         </td>
-        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
+        <td>맵이 기능하는데 굳이 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>randomTickSpeed</code>
         </td>
-        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
+        <td>맵이 기능하는데 굳이 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>reducedDebugInfo</code>
         </td>
-        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
+        <td>맵이 기능하는데 굳이 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>sendCommandFeedback</code>
         </td>
-        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
+        <td>맵이 기능하는데 굳이 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
       <tr>
         <td>
           <code>showDeathMessages</code>
         </td>
-        <td>맵이 기능하는데 구지 필요하지 않으므로 지원되지 않습니다.</td>
+        <td>맵이 기능하는데 굳이 필요하지 않으므로 지원되지 않습니다.</td>
       </tr>
     </tbody>
   </table>
